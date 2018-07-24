@@ -15,6 +15,7 @@ class SingleSwitchTopo(Topo):
         for h in range(n):
             host = self.addHost('h%s' % (h + 1))
             self.addLink(host, switch)
+            #Añadir el controlador opendaylight (así probamos a ver el tráfico)
 
 def simpleTest():
     "Create and test a simple network"
@@ -26,7 +27,7 @@ def simpleTest():
     print "Testing network connectivity"
     net.pingAll()
     ale = net.get('h1')
-    cmd = 'su bayesiansdn -c "vlc /home/bayesiansdn/vlcprueba/small.mp4"'
+    cmd = 'su bayesiansdn -c "vlc /home/bayesiansdn/vlcprueba/small.mp4"' #Cambiar por url de youtube, por ejemplo
     miterm = makeTerm(ale, title='VLC PRUEBA', term='xterm', display=None, cmd=cmd)
     #CLI(net)
     
