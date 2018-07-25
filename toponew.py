@@ -17,7 +17,7 @@ class SingleSwitchTopo(Topo):
             self.addLink(host, switch)
 
 def simpleTest():
-	#Añadimos controlador odl, ip por defecto
+    #Añadimos controlador odl, ip por defecto
     controller = RemoteController('c1', ip='127.0.0.1', port=6633)
     topo = SingleSwitchTopo(n=4)
     net = Mininet(topo=topo, controller=controller)
