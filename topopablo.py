@@ -18,8 +18,7 @@ class SingleSwitchTopo(Topo):
             self.addLink(host, switch)
 
 def simpleTest():
-#Añadimos controlador odl, ip por defecto
-
+    #Añadimos controlador odl, ip por defecto
     controller = RemoteController('c1', ip='127.0.0.1', port=6633)
     topo = SingleSwitchTopo(n=4)
     net = Mininet(topo=topo, controller=controller)
@@ -32,21 +31,18 @@ def simpleTest():
     h3=net.get('h3')
     h2=net.get('h2')
     h1=net.get('h1')
-    
     #cmd='su -c "vlc-wrapper bayesiansdn bayesiansdn-demos/network-simulator/mininet/net/samples/small.mp4"'
     #cmd= 'su -c "vlc-wrapper -vvv small.mp4 --sout \'#rtp{dst=10.0.0.2,port=5004}\''
     #cmd2='su -c "vlc-wrapper rtp://10.0.0.1:5004 &"'
     cmd3='wireshark'
     #h2.cmd('wireshark')
     #h1.cmd(cmd)
-    
     #miTerm1=makeTerm(h1, term='xterm', cmd=cmd)
     #miTerm2=makeTerm(h2, term='xterm', cmd=cmd2)
     #CLI(net)
     #net.stop()
 
     print 'Executing command on h2'
-    
     cmd2='vlc-wrapper rtp://@:5004 --sout "#transcode{vcodec=h264,acodec=mpga,ab=128,channels=2,samplerate=44100}:std{access=file,mux=mp4,dst=output.mp4}"' 
 
     """
@@ -67,15 +63,9 @@ def simpleTest():
     miTerm2=makeTerm(h2, term='xterm', cmd=cmd2)
     miTerm1=makeTerm(h1, term='xterm', cmd=cmd1)
     miTerm3=makeTerm(h2, term='xterm', cmd=cmd3)
-   
-    
-    
-
     print 'commands on h1, h2 done FINISHED'
 
-
-
 if __name__ == '__main__':
-    # Tell mininet to print useful information   /bayesiansdn-demos/network-simulator/mininet/net/samples
+    # Tell mininet to print useful information /bayesiansdn-demos/network-simulator/mininet/net/samples
     setLogLevel('info')
     simpleTest()
