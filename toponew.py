@@ -1,3 +1,4 @@
+#usr
 # coding: utf-8
 from mininet.topo import Topo
 from mininet.net import Mininet
@@ -9,14 +10,14 @@ from mininet.node import RemoteController, Controller
 import os
 
 
-class SingleSwitchTopo(Topo):exit
+class SingleSwitchTopo(Topo):
 
     def build(self, n=2):
-        switch = self.addSwitch('s1')
-	
-        for h in range(n):
-            host = self.addHost('h%s' % (h + 1))
-            self.addLink(host, switch)
+	    switch = self.addSwitch('s1')
+
+	    for h in range(n):
+		    host = self.addHost('h%s' % (h + 1))
+  		    self.addLink(host, switch)
 
 def simpleTest():
     #Añadimos controlador odl, ip por defecto
