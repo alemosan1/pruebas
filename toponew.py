@@ -34,14 +34,16 @@ def simpleTest():
     
     #Server side
     cmdServer = "su bayesiansdn ;"
-    cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout '#duplicate{dst=rtp{dst=10.0.0.2,port=5004,mux=ts},dst=display}'"
+    cmdServer = "vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=logs/serverVLC-log.txt -vvv sampleVideo.mkv --sout '#duplicate{dst=rtp{dst=10.0.0.2,port=5004,mux=ts},dst=display} --sout-keep --loop'"
     #Client side
     cmdClient = "su bayesiansdn ;"
-    cmdClient = "vlc-wrapper rtp://10.0.0.2:5004"
+    cmdClient = "vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=logs/clientVLC-log.txt rtp://10.0.0.2:5004"
     
     termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
     
+
+    #vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=vlc-log.txt
     CLI(net)
     
 
