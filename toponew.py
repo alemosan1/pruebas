@@ -9,6 +9,7 @@ from mininet.term import cleanUpScreens, makeTerm
 from mininet.node import RemoteController, Controller
 import os
 import time
+import datetime
 
 
 class SingleSwitchTopo(Topo):
@@ -27,12 +28,16 @@ def follow(thefile):
             time.sleep(0.1)
             continue
         yield line
+def containNumber(inputString):
+    return any(char.isdigit() for char in inputString)
 
 def renameLog():
     os.chdir("logs")
+    ts = time.time()
+    st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d-%H:%M:%S')
     for filename in os.listdir("."):
-        if (filename.endswith(".old") != True):
-            os.rename(filename,filename+".old")
+        if (containNumber(filename) != True):
+            os.rename(filename,filename[:-4]+st+".txt")
     os.chdir("..")
 def simpleTest():
     #Añadimos controlador odl, ip por defecto
