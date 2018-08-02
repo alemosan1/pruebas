@@ -8,6 +8,7 @@ from mininet.cli import CLI
 from mininet.term import cleanUpScreens, makeTerm
 from mininet.node import RemoteController, Controller
 import os
+import time
 
 
 class SingleSwitchTopo(Topo):
@@ -19,6 +20,25 @@ class SingleSwitchTopo(Topo):
 		    host = self.addHost('h%s' % (h + 1))
   		    self.addLink(host, switch)
 
+# Reads the full file line per line
+def follow(thefile):
+    thefile.seek(0,2)
+    while True:
+        line = thefile.readline()
+        if not line:
+            time.sleep(0.1)
+            continue
+        yield line
+
+# Renames the log file so we have a new one each time
+def renameLog():
+    os.chdir("logs")
+    for filename in os.listdir("."):
+        if (filename.endswith(".old") != True):
+            os.rename(filename,filename+".old")
+    os.chdir("..")
+
+# Starts simulation    
 def simpleTest():
     #Añadimos controlador odl, ip por defecto
     controller = RemoteController('c1', ip='127.0.0.1', port=6633)
@@ -42,11 +62,17 @@ def simpleTest():
     termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
     
-
+    time.sleep(5)
     #vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=vlc-log.txt
+    logfile = open("logs/clientVLC-log.txt","r") 
+    loglines = follow(logfile)
+    for line in loglines:
+        print line,
     CLI(net)
     
 
 if __name__ == '__main__':
     setLogLevel('info')
+    #Vamos a renombrar los logs para cada vez que se ejecueten se guarden los previos.
+    renameLog()
     simpleTest()
