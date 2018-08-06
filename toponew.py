@@ -30,7 +30,7 @@ def follow(thefile):
             time.sleep(0.1)
             continue
         yield line
-        
+
 def containNumber(inputString):
     return any(char.isdigit() for char in inputString)
 
@@ -56,24 +56,25 @@ def simpleTest():
     print "Let's do a pingAll..."
     net.pingAll()
     src = net.get('h1') 
-    #dst = net.get('h2')
+    dst = net.get('h2')
     
     #Server side
     #cmdServer = "su bayesiansdn ;"
-    #cmdServer = "vlc-wrapper --extraintf=http:logger --verbose=3 --file-logging --logfile=logs/serverVLC-log.txt -vvv sampleVideo.mkv --sout '#duplicate{dst=rtp{dst=10.0.0.2,port=5004,mux=ts},dst=display} --sout-keep --loop'"
+    cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout '#duplicate{dst=rtp{dst=10.0.0.2,port=5004,mux=ts},dst=display} --sout-keep --loop' 2>&1 | ./timestamp.sh server"
     #Client side
     #cmdClient = "su bayesiansdn ;"
-    #cmdClient = "vlc-wrapper --extraintf=http:logger --verbose=3 --file-logging --logfile=logs/clientVLC-log.txt rtp://10.0.0.2:5004"
-    #termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
-    #termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
-    src.cmd('./net/vlc_send.sh &')
+    cmdClient = "vlc-wrapper -vvv rtp://10.0.0.2:5004 2>&1 | ./timestamp.sh cliente"
+    termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
+    termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
+    #src.cmd('./net/vlc_send.sh &')
     
-    # time.sleep(5)
-    # #vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=vlc-log.txt
+    time.sleep(5)
+    
     # logfile = open("logs/clientVLC-log.txt","r") 
     # loglines = follow(logfile)
     # for line in loglines:
-    #     print line,
+    #     st = datetime.datetime.now()
+    #     print "["+str(st)+"]"+line,
     CLI(net)
     
 
