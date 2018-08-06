@@ -30,6 +30,7 @@ def follow(thefile):
             time.sleep(0.1)
             continue
         yield line
+        
 def containNumber(inputString):
     return any(char.isdigit() for char in inputString)
 
