@@ -50,24 +50,24 @@ def simpleTest():
     print "Let's do a pingAll..."
     net.pingAll()
     src = net.get('h1') 
-    dst = net.get('h2')
+    #dst = net.get('h2')
     
     #Server side
-    cmdServer = "su bayesiansdn ;"
-    cmdServer = "vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=logs/serverVLC-log.txt -vvv sampleVideo.mkv --sout '#duplicate{dst=rtp{dst=10.0.0.2,port=5004,mux=ts},dst=display} --sout-keep --loop'"
+    #cmdServer = "su bayesiansdn ;"
+    #cmdServer = "vlc-wrapper --extraintf=http:logger --verbose=3 --file-logging --logfile=logs/serverVLC-log.txt -vvv sampleVideo.mkv --sout '#duplicate{dst=rtp{dst=10.0.0.2,port=5004,mux=ts},dst=display} --sout-keep --loop'"
     #Client side
-    cmdClient = "su bayesiansdn ;"
-    cmdClient = "vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=logs/clientVLC-log.txt rtp://10.0.0.2:5004"
+    #cmdClient = "su bayesiansdn ;"
+    #cmdClient = "vlc-wrapper --extraintf=http:logger --verbose=3 --file-logging --logfile=logs/clientVLC-log.txt rtp://10.0.0.2:5004"
+    #termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
+    #termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
+    src.cmd('./net/vlc_send.sh &')
     
-    termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
-    termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
-    
-    time.sleep(5)
-    #vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=vlc-log.txt
-    logfile = open("logs/clientVLC-log.txt","r") 
-    loglines = follow(logfile)
-    for line in loglines:
-        print line,
+    # time.sleep(5)
+    # #vlc-wrapper --extraintf=http:logger --verbose=2 --file-logging --logfile=vlc-log.txt
+    # logfile = open("logs/clientVLC-log.txt","r") 
+    # loglines = follow(logfile)
+    # for line in loglines:
+    #     print line,
     CLI(net)
     
 
