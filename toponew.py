@@ -75,7 +75,12 @@ def simpleTest():
     # for line in loglines:
     #     st = datetime.datetime.now()
     #     print "["+str(st)+"]"+line,
+
     CLI(net)
+    cmdExit = "kill $(ps aux | grep 'vlc' | grep -v grep | awk '{print $2}')"
+    os.system(cmdExit)
+    net.stop()
+
     
 
 if __name__ == '__main__':
