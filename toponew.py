@@ -47,9 +47,10 @@ def renameLog():
 # Starts simulation    
 def simpleTest():
     #Añadimos controlador odl, ip por defecto
-    controller = RemoteController('c1', ip='127.0.0.1', port=6633)
+    #controller = RemoteController('c1', ip='127.0.0.1', port=6633)
     topo = SingleSwitchTopo(n=4)
-    net = Mininet(topo=topo, controller=controller)
+    #net = Mininet(topo=topo, controller=controller)
+    net = Mininet(topo=topo) # Quito el controller para no tener que estar iniciando ODL
     net.start()
     print "Dumping host connections"
     dumpNodeConnections(net.hosts)
