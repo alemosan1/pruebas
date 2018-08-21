@@ -1,0 +1,487 @@
+[2018-08-21 14:22:58:411] [00000000011eb148] core libvlc debug: VLC media player - 2.2.2 Weatherwax
+[2018-08-21 14:22:58:420] [00000000011eb148] core libvlc debug: Copyright © 1996-2016 the VideoLAN team
+[2018-08-21 14:22:58:466] [00000000011eb148] core libvlc debug: revision 2.2.2-0-g6259d80
+[2018-08-21 14:22:58:505] [00000000011eb148] core libvlc debug: configured with ./configure '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--libexecdir=${prefix}/lib/x86_64-linux-gnu' '--disable-maintainer-mode' '--disable-dependency-tracking' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc-data' '--libdir=/usr/lib' '--with-binary-version=2.2.2-5ubuntu0.16.04.4' '--enable-a52' '--enable-aa' '--enable-bluray' '--enable-bonjour' '--enable-caca' '--enable-chromaprint' '--enable-dbus' '--enable-dca' '--enable-directfb' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freerdp' '--enable-freetype' '--enable-fribidi' '--disable-gles1' '--enable-gles2' '--enable-gnutls' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-mkv' '--enable-mod' '--enable-mpc' '--enable-mtp' '--enable-mux_ogg' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-schroedinger' '--enable-sdl' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vcdx' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/kde4/apps/solid/actions/' '--disable-decklink' '--disable-dxva2' '--disable-fdkaac' '--disable-gnomevfs' '--disable-goom' '--disable-libtar' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-sndio' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-atmo' '--enable-dc1394' '--enable-dv1394' '--enable-linsys' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security'
+[2018-08-21 14:22:58:544] [00000000011eb148] core libvlc debug: searching plug-in modules
+[2018-08-21 14:22:58:569] [00000000011eb148] core libvlc debug: loading plugins cache file /usr/lib/vlc/plugins/plugins.dat
+[2018-08-21 14:22:58:594] [00000000011eb148] core libvlc debug: recursively browsing `/usr/lib/vlc/plugins'
+[2018-08-21 14:22:58:617] [00000000011eb148] core libvlc debug: saving plugins cache /usr/lib/vlc/plugins/plugins.dat
+[2018-08-21 14:22:58:632] [00000000011eb148] core libvlc debug: plug-ins loaded: 459 modules
+[2018-08-21 14:22:58:638] [00000000011eb148] core libvlc debug: opening config file (/home/bayes/.config/vlc/vlcrc)
+[2018-08-21 14:22:58:651] [00000000011eb148] core libvlc debug: translation test: code is "es"
+[2018-08-21 14:22:58:663] [00000000011eb148] core libvlc debug: CPU has capabilities MMX MMXEXT SSE SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 AVX AVX FPU
+[2018-08-21 14:22:58:674] [0000000001216688] core input debug: Creating an input for 'Biblioteca multimedia'
+[2018-08-21 14:22:58:685] [0000000001216688] core input debug: Input is a meta file: disabling unneeded options
+[2018-08-21 14:22:58:713] [0000000001216688] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-08-21 14:22:58:716] [0000000001216688] core input debug: `file/xspf-open:///home/bayes/.local/share/vlc/ml.xspf' gives access `file' demux `xspf-open' path `/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:22:58:722] [0000000001216688] core input debug: creating demux: access='file' demux='xspf-open' location='/home/bayes/.local/share/vlc/ml.xspf' file='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:22:58:743] [00000000012c7238] core demux debug: looking for access_demux module matching "file": 20 candidates
+[2018-08-21 14:22:58:760] [00000000012c7238] core demux debug: no access_demux modules matched
+[2018-08-21 14:22:58:764] [0000000001216688] core input debug: creating access 'file' location='/home/bayes/.local/share/vlc/ml.xspf', path='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:22:58:779] [00000000012c7238] core access debug: looking for access module matching "file": 25 candidates
+[2018-08-21 14:22:58:803] [00000000012c7238] filesystem access debug: opening file `/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:22:58:848] [00000000012c7238] core access debug: using access module "filesystem"
+[2018-08-21 14:22:58:874] [00000000012ee548] core stream debug: Using stream method for AStream*
+[2018-08-21 14:22:58:891] [00000000012ee548] core stream debug: starting pre-buffering
+[2018-08-21 14:22:58:909] [00000000012ee548] core stream debug: received first data after 0 ms
+[2018-08-21 14:22:58:941] [00000000012ee548] core stream debug: pre-buffering done 304 bytes in 0s - 16493 KiB/s
+[2018-08-21 14:22:58:962] [00000000012ee7a8] core stream debug: looking for stream_filter module matching "any": 9 candidates
+[2018-08-21 14:22:58:974] [00000000012ee7a8] core stream debug: no stream_filter modules matched
+[2018-08-21 14:22:59:014] [00000000012ee7a8] core stream debug: looking for stream_filter module matching "record": 9 candidates
+[2018-08-21 14:22:59:051] [00000000012ee7a8] core stream debug: using stream_filter module "record"
+[2018-08-21 14:22:59:055] [0000000001216688] core input debug: creating demux: access='file' demux='xspf-open' location='/home/bayes/.local/share/vlc/ml.xspf' file='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:22:59:087] [00000000012f1748] core demux debug: looking for demux module matching "xspf-open": 66 candidates
+[2018-08-21 14:22:59:102] [00000000012f1748] xspf demux debug: using XSPF playlist reader
+[2018-08-21 14:22:59:128] [00000000012f1748] core demux debug: using demux module "playlist"
+[2018-08-21 14:22:59:131] [00000000012f2148] core demux meta debug: looking for meta reader module matching "any": 2 candidates
+[2018-08-21 14:22:59:151] [00000000012f2148] lua demux meta debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/reader
+[2018-08-21 14:22:59:167] [00000000012f2148] lua demux meta debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/reader
+[2018-08-21 14:22:59:180] [00000000012f2148] lua demux meta debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/reader/filename.luac
+[2018-08-21 14:22:59:224] [00000000012f2148] lua demux meta debug: Trying Lua scripts in /usr/share/vlc/lua/meta/reader
+[2018-08-21 14:22:59:262] [00000000012f2148] core demux meta debug: no meta reader modules matched
+[2018-08-21 14:22:59:287] [0000000001216688] core input debug: `file/xspf-open:///home/bayes/.local/share/vlc/ml.xspf' successfully opened
+[2018-08-21 14:22:59:311] [0000000001305948] core xml reader debug: looking for xml reader module matching "any": 1 candidates
+[2018-08-21 14:22:59:345] [0000000001305948] core xml reader debug: using xml reader module "xml"
+[2018-08-21 14:22:59:369] [00000000012f1748] xspf demux debug: parsed 0 tracks successfully
+[2018-08-21 14:22:59:394] [0000000001216688] core input debug: EOF reached
+[2018-08-21 14:22:59:426] [00000000012f1748] core demux debug: removing module "playlist"
+[2018-08-21 14:22:59:447] [00000000012ee7a8] core stream debug: removing module "record"
+[2018-08-21 14:22:59:483] [00000000012c7238] core access debug: removing module "filesystem"
+[2018-08-21 14:22:59:539] [00000000012d4148] core playlist debug: creating audio output
+[2018-08-21 14:22:59:568] [00000000012ee548] core audio output debug: looking for audio output module matching "any": 5 candidates
+[2018-08-21 14:22:59:614] [00000000012ee548] pulse audio output debug: using library version 8.0.0
+[2018-08-21 14:22:59:666] [00000000012ee548] pulse audio output debug: (compiled with version 8.0.0, protocol 30)
+[2018-08-21 14:22:59:671] [00000000012ee548] pulse audio output debug: connected locally to unix:/run/user/1000/pulse/native as client #22
+[2018-08-21 14:22:59:753] [00000000012ee548] pulse audio output debug: using protocol 30, server protocol 30
+[2018-08-21 14:22:59:756] [00000000012ee548] pulse audio output debug: adding sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-21 14:22:59:770] [00000000012ee548] core audio output debug: using audio output module "pulse"
+[2018-08-21 14:22:59:787] [00000000012d4148] core playlist debug: keeping audio output
+[2018-08-21 14:22:59:818] [00000000012d4148] core playlist debug: adding item `sampleVideo.mkv' ( file:///home/bayes/Repositories/pruebas/sampleVideo.mkv )
+[2018-08-21 14:22:59:838] [0000000001301dd8] core interface debug: looking for interface module matching "hotkeys,none": 19 candidates
+[2018-08-21 14:22:59:854] [0000000001301dd8] core interface debug: using interface module "hotkeys"
+[2018-08-21 14:22:59:876] [0000000001306b88] core interface debug: looking for interface module matching "globalhotkeys,none": 19 candidates
+[2018-08-21 14:22:59:904] [00007fa61c000958] core input debug: Creating an input for 'sampleVideo.mkv'
+[2018-08-21 14:22:59:930] [0000000001306b88] core interface debug: using interface module "xcb_hotkeys"
+[2018-08-21 14:22:59:955] [0000000001307ab8] core interface debug: looking for interface module matching "dbus,none": 19 candidates
+[2018-08-21 14:22:59:979] [0000000001307ab8] dbus interface error: Failed to connect to the D-Bus session daemon: Failed to connect to socket /tmp/dbus-CPKwYbdXbK: Conexión rehusada
+[2018-08-21 14:22:59:987] [0000000001307ab8] core interface debug: no interface modules matched
+[2018-08-21 14:23:00:027] [0000000001307ab8] core interface error: no suitable interface module
+[2018-08-21 14:23:00:051] [00000000011eb148] core libvlc error: interface "dbus,none" initialization failed
+[2018-08-21 14:23:00:087] [00000000011eb148] core libvlc: Ejecutar vlc con la interfaz predeterminada. Use «cvlc» para usar vlc sin interfaz.
+[2018-08-21 14:23:00:104] [00000000013086f8] core interface debug: looking for interface module matching "any": 19 candidates
+[2018-08-21 14:23:00:141] [00000000012d4148] core playlist debug: meta ok for (null), need to fetch art
+[2018-08-21 14:23:00:150] [00007fa61c004068] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:23:00:166] [00007fa61c004068] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:23:00:193] [00007fa61c004068] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:23:00:199] [00007fa61c004068] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:23:00:206] [00007fa61c004068] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:23:00:219] [00007fa61c004068] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-08-21 14:23:00:246] [00007fa61c004068] core art finder debug: no meta fetcher modules matched
+[2018-08-21 14:23:00:321] [00000000012d4148] core playlist debug: searching art for sampleVideo.mkv
+[2018-08-21 14:23:00:335] [00007fa61cc04ec8] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:23:00:366] [00007fa61cc04ec8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:23:00:368] [00007fa61cc04ec8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:23:00:386] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:23:00:429] [00007fa61cc04ec8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:23:00:435] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:23:00:443] [00007fa61cc04ec8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:23:00:464] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:23:00:479] [00007fa61cc04ec8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:23:00:496] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:23:00:528] [00007fa61cc04ec8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:23:00:547] [00007fa61cc04ec8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:23:00:571] [00007fa61cc04ec8] core art finder debug: no art finder modules matched
+[2018-08-21 14:23:00:586] [00007fa61cc04ec8] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:23:00:595] [00007fa61cc04ec8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:23:00:618] [00007fa61cc04ec8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:23:00:627] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:23:00:650] [00007fa61cc04ec8] core art finder debug: using meta fetcher module "lua"
+[2018-08-21 14:23:00:655] [00007fa61cc04ec8] core art finder debug: removing module "lua"
+[2018-08-21 14:23:00:676] [00000000012d4148] core playlist debug: searching art for sampleVideo.mkv
+[2018-08-21 14:23:00:695] [00007fa61cc04ec8] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:23:00:716] [00007fa61cc04ec8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:23:00:742] [00007fa61cc04ec8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:23:00:757] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:23:00:763] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:23:00:779] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:23:00:799] [00007fa61cc04ec8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:23:00:824] [00007fa61cc04ec8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:23:00:829] [00007fa61cc04ec8] core art finder debug: no art finder modules matched
+[2018-08-21 14:23:00:846] [00000000012d4148] core playlist debug: art not found for sampleVideo.mkv
+[2018-08-21 14:23:00:873] [00007fa6140b77d8] core generic debug: looking for extension module matching "any": 1 candidates
+[2018-08-21 14:23:00:879] [00007fa6140b77d8] lua generic debug: Opening Lua Extension module
+[2018-08-21 14:23:00:906] [00007fa6140b77d8] lua generic debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/extensions
+[2018-08-21 14:23:00:925] [00007fa6140b77d8] lua generic debug: Trying Lua scripts in /usr/lib/vlc/lua/extensions
+[2018-08-21 14:23:00:939] [00007fa6140b77d8] lua generic debug: Trying Lua playlist script /usr/lib/vlc/lua/extensions/VLSub.luac
+[2018-08-21 14:23:00:952] [00007fa6140b77d8] lua generic debug: Scanning Lua script /usr/lib/vlc/lua/extensions/VLSub.luac
+[2018-08-21 14:23:00:967] [00007fa6140b77d8] lua generic debug: Script /usr/lib/vlc/lua/extensions/VLSub.luac has the following capability flags: 0x5
+[2018-08-21 14:23:01:008] [00007fa6140b77d8] lua generic debug: Trying Lua scripts in /usr/share/vlc/lua/extensions
+[2018-08-21 14:23:01:043] [00007fa6140b77d8] core generic debug: using extension module "lua"
+[2018-08-21 14:23:01:286] [00000000013086f8] core interface debug: using interface module "qt4"
+[2018-08-21 14:23:01:316] [00000000012d4148] core playlist debug: processing request item: null, node: Lista de reproducción, skip: 0
+[2018-08-21 14:23:01:343] [00000000012d4148] core playlist debug: rebuilding array of current - root Lista de reproducción
+[2018-08-21 14:23:01:366] [00000000012d4148] core playlist debug: rebuild done - 1 items, index -1
+[2018-08-21 14:23:01:390] [00000000012d4148] core playlist debug: starting playback of the new playlist item
+[2018-08-21 14:23:01:428] [00000000012d4148] core playlist debug: resyncing on sampleVideo.mkv
+[2018-08-21 14:23:01:455] [00000000012d4148] core playlist debug: sampleVideo.mkv is at 0
+[2018-08-21 14:23:01:466] [00000000012d4148] core playlist debug: creating new input thread
+[2018-08-21 14:23:01:501] [00007fa61cc04ec8] core input debug: Creating an input for 'sampleVideo.mkv'
+[2018-08-21 14:23:01:543] [00000000012d4148] core playlist debug: requesting art for sampleVideo.mkv
+[2018-08-21 14:23:01:562] [00000000013086f8] qt4 interface debug: IM: Setting an input
+[2018-08-21 14:23:01:597] [00007fa600000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:23:01:630] [00007fa5f8000c08] core stream output debug: using sout chain=`transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=22050}:rtp{sdp=rtsp://:5004/}'
+[2018-08-21 14:23:01:640] [00007fa5f8000c08] core stream output debug: stream=`rtp'
+[2018-08-21 14:23:01:662] [00007fa5f8001228] core stream out debug: looking for sout stream module matching "rtp": 22 candidates
+[2018-08-21 14:23:01:679] [00007fa5f8001228] core stream out debug: set config option: sout-rtp-sdp to rtsp://:5004/
+[2018-08-21 14:23:01:718] [00007fa5f8001228] stream_out_rtp stream out debug: RTSP stream at /
+[2018-08-21 14:23:01:738] [00007fa5f8001228] core stream out debug: net: listening to config_vlc.py logs net README.md sampleVideo.mkv timestamp.sh toponew.py port 5004
+[2018-08-21 14:23:01:780] [00007fa5f8001228] core stream out debug: using sout stream module "stream_out_rtp"
+[2018-08-21 14:23:01:835] [00007fa5f8000c08] core stream output debug: stream=`transcode'
+[2018-08-21 14:23:01:891] [00007fa600000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:23:01:939] [00007fa600000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:23:01:961] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:23:02:014] [00007fa5f8002e18] core stream out debug: looking for sout stream module matching "transcode": 22 candidates
+[2018-08-21 14:23:02:051] [00007fa5f8002e18] core stream out debug: set config option: sout-transcode-vcodec to mp4v
+[2018-08-21 14:23:02:097] [00007fa5f8002e18] core stream out debug: set config option: sout-transcode-scale to Auto
+[2018-08-21 14:23:02:192] [00007fa5f8002e18] core stream out debug: set config option: sout-transcode-acodec to mpga
+[2018-08-21 14:23:02:241] [00007fa5f8002e18] core stream out debug: set config option: sout-transcode-ab to 128
+[2018-08-21 14:23:02:281] [00007fa5f8002e18] core stream out debug: set config option: sout-transcode-channels to 2
+[2018-08-21 14:23:02:301] [00007fa5f8002e18] core stream out debug: set config option: sout-transcode-samplerate to 22050
+[2018-08-21 14:23:02:358] [00007fa5f8002e18] stream_out_transcode stream out debug: Checking codec mapping for mpga got mpga
+[2018-08-21 14:23:02:389] [00007fa5f8002e18] stream_out_transcode stream out debug: codec audio=mpga 22050Hz 2 channels 128Kb/s
+[2018-08-21 14:23:02:419] [00007fa5f8002e18] stream_out_transcode stream out debug: Checking video codec mapping for mp4v got mp4v
+[2018-08-21 14:23:02:450] [00007fa5f8002e18] stream_out_transcode stream out debug: codec video=mp4v 0x0 scaling: 0,000000 0kb/s
+[2018-08-21 14:23:02:487] [00007fa5f8002e18] core stream out debug: using sout stream module "stream_out_transcode"
+[2018-08-21 14:23:02:514] [00007fa61cc04ec8] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-08-21 14:23:02:539] [00007fa61cc04ec8] core input debug: `file:///home/bayes/Repositories/pruebas/sampleVideo.mkv' gives access `file' demux `' path `/home/bayes/Repositories/pruebas/sampleVideo.mkv'
+[2018-08-21 14:23:02:570] [00007fa61cc04ec8] core input debug: specified demux `any'
+[2018-08-21 14:23:02:592] [00007fa61cc04ec8] core input debug: creating demux: access='file' demux='any' location='/home/bayes/Repositories/pruebas/sampleVideo.mkv' file='/home/bayes/Repositories/pruebas/sampleVideo.mkv'
+[2018-08-21 14:23:02:641] [00007fa5f8006618] core demux debug: looking for access_demux module matching "file": 20 candidates
+[2018-08-21 14:23:02:714] [00007fa5f8006618] core demux debug: no access_demux modules matched
+[2018-08-21 14:23:02:815] [00007fa61cc04ec8] core input debug: creating access 'file' location='/home/bayes/Repositories/pruebas/sampleVideo.mkv', path='/home/bayes/Repositories/pruebas/sampleVideo.mkv'
+[2018-08-21 14:23:02:905] [00007fa5f8006618] core access debug: looking for access module matching "file": 25 candidates
+[2018-08-21 14:23:02:919] [00007fa5f8006618] filesystem access debug: opening file `/home/bayes/Repositories/pruebas/sampleVideo.mkv'
+[2018-08-21 14:23:02:986] [00007fa5f8006618] core access debug: using access module "filesystem"
+[2018-08-21 14:23:03:006] [00007fa5f80068b8] core stream debug: Using stream method for AStream*
+[2018-08-21 14:23:03:054] [00007fa5f80068b8] core stream debug: starting pre-buffering
+[2018-08-21 14:23:03:096] [00007fa5f80068b8] core stream debug: received first data after 0 ms
+[2018-08-21 14:23:03:108] [00007fa5f80068b8] core stream debug: pre-buffering done 1024 bytes in 0s - 52631 KiB/s
+[2018-08-21 14:23:03:148] [00007fa5f8c06c68] core stream debug: looking for stream_filter module matching "any": 9 candidates
+[2018-08-21 14:23:03:176] [00007fa5f8c06c68] core stream debug: no stream_filter modules matched
+[2018-08-21 14:23:03:199] [00007fa5f8c06c68] core stream debug: looking for stream_filter module matching "record": 9 candidates
+[2018-08-21 14:23:03:235] [00007fa5f8c06c68] core stream debug: using stream_filter module "record"
+[2018-08-21 14:23:03:239] [00007fa61cc04ec8] core input debug: creating demux: access='file' demux='any' location='/home/bayes/Repositories/pruebas/sampleVideo.mkv' file='/home/bayes/Repositories/pruebas/sampleVideo.mkv'
+[2018-08-21 14:23:03:267] [00007fa5f8c06e88] core demux debug: looking for demux module matching "mkv": 66 candidates
+[2018-08-21 14:23:03:301] [00007fa5f8c06e88] mkv demux debug: | + Seek head
+[2018-08-21 14:23:03:303] [00007fa5f8c06e88] mkv demux debug: | | + Seek
+[2018-08-21 14:23:03:334] [00007fa5f8c06e88] mkv demux debug: | - info at 282
+[2018-08-21 14:23:03:379] [00007fa5f8c06e88] mkv demux debug: | + Information
+[2018-08-21 14:23:03:383] [00007fa5f8c06e88] mkv demux debug: | | + TimecodeScale=1000000
+[2018-08-21 14:23:03:394] [00007fa5f8c06e88] mkv demux debug: | | + Muxing Application=Lavf53.24.2
+[2018-08-21 14:23:03:468] [00007fa5f8c06e88] mkv demux debug: | | + Writing Application=Lavf53.24.2
+[2018-08-21 14:23:03:478] [00007fa5f8c06e88] mkv demux debug: | | + UID=2147042805
+[2018-08-21 14:23:03:491] [00007fa5f8c06e88] mkv demux debug: | | + Duration=170520
+[2018-08-21 14:23:03:510] [00007fa5f8c06e88] mkv demux debug: | | + Seek
+[2018-08-21 14:23:03:513] [00007fa5f8c06e88] mkv demux debug: | - tracks at 359
+[2018-08-21 14:23:03:540] [00007fa5f8c06e88] mkv demux debug: | + Tracks
+[2018-08-21 14:23:03:565] [00007fa5f8c06e88] mkv demux debug: | | + Track Entry
+[2018-08-21 14:23:03:594] [00007fa5f8c06e88] mkv demux debug: | | | + Track Number=1
+[2018-08-21 14:23:03:607] [00007fa5f8c06e88] mkv demux debug: | | | + Track UID=1
+[2018-08-21 14:23:03:643] [00007fa5f8c06e88] mkv demux debug: | | | + Track Lacing=0
+[2018-08-21 14:23:03:654] [00007fa5f8c06e88] mkv demux debug: | | | + Track Language=`und'
+[2018-08-21 14:23:03:670] [00007fa5f8c06e88] mkv demux debug: | | | + Track Default=1
+[2018-08-21 14:23:03:687] [00007fa5f8c06e88] mkv demux debug: | | | + Track CodecId=V_MPEG4/ISO/ASP
+[2018-08-21 14:23:03:695] [00007fa5f8c06e88] mkv demux debug: | | | + Track Type=video
+[2018-08-21 14:23:03:711] [00007fa5f8c06e88] mkv demux debug: | | | + Track Default Duration=40000000
+[2018-08-21 14:23:03:728] [00007fa5f8c06e88] mkv demux debug: | | | + Track Video
+[2018-08-21 14:23:03:742] [00007fa5f8c06e88] mkv demux debug: | | | | + width=1280
+[2018-08-21 14:23:03:783] [00007fa5f8c06e88] mkv demux debug: | | | | + height=720
+[2018-08-21 14:23:03:821] [00007fa5f8c06e88] mkv demux debug: | | | | + display width=1280
+[2018-08-21 14:23:03:829] [00007fa5f8c06e88] mkv demux debug: | | | | + display height=720
+[2018-08-21 14:23:03:851] [00007fa5f8c06e88] mkv demux debug: | | | | + Track Video Display Unit=inches
+[2018-08-21 14:23:03:906] [00007fa5f8c06e88] mkv demux debug: | | | + Track CodecPrivate size=47
+[2018-08-21 14:23:03:924] [00007fa5f8c06e88] mkv demux debug: | | + Track Entry
+[2018-08-21 14:23:03:945] [00007fa5f8c06e88] mkv demux debug: | | | + Track Number=2
+[2018-08-21 14:23:04:001] [00007fa5f8c06e88] mkv demux debug: | | | + Track UID=2
+[2018-08-21 14:23:04:015] [00007fa5f8c06e88] mkv demux debug: | | | + Track Lacing=0
+[2018-08-21 14:23:04:030] [00007fa5f8c06e88] mkv demux debug: | | | + Track Language=`und'
+[2018-08-21 14:23:04:047] [00007fa5f8c06e88] mkv demux debug: | | | + Track Default=1
+[2018-08-21 14:23:04:061] [00007fa5f8c06e88] mkv demux debug: | | | + Track CodecId=A_AAC
+[2018-08-21 14:23:04:104] [00007fa5f8c06e88] mkv demux debug: | | | + Track Type=audio
+[2018-08-21 14:23:04:125] [00007fa5f8c06e88] mkv demux debug: | | | + Track Audio
+[2018-08-21 14:23:04:144] [00007fa5f8c06e88] mkv demux debug: | | | | + achan=6
+[2018-08-21 14:23:04:162] [00007fa5f8c06e88] mkv demux debug: | | | | + afreq=48000
+[2018-08-21 14:23:04:181] [00007fa5f8c06e88] mkv demux debug: | | | + Track CodecPrivate size=2
+[2018-08-21 14:23:04:186] [00007fa5f8c06e88] mkv demux debug: | | + Seek
+[2018-08-21 14:23:04:211] [00007fa5f8c06e88] mkv demux debug: | - tags at 575
+[2018-08-21 14:23:04:216] [00007fa5f8c06e88] mkv demux debug: | + Tags
+[2018-08-21 14:23:04:235] [00007fa5f8c06e88] mkv demux debug: + Tag
+[2018-08-21 14:23:04:254] [00007fa5f8c06e88] mkv demux debug: | + Targets
+[2018-08-21 14:23:04:260] [00007fa5f8c06e88] mkv demux debug: | + Simple Tag
+[2018-08-21 14:23:04:306] [00007fa5f8c06e88] mkv demux debug: | | + Meta ENCODER: Lavf53.24.2
+[2018-08-21 14:23:04:329] [00007fa5f8c06e88] mkv demux debug: loading tags done.
+[2018-08-21 14:23:04:332] [00007fa5f8c06e88] mkv demux debug: | | + Seek
+[2018-08-21 14:23:04:347] [00007fa5f8c06e88] mkv demux debug: | | + Unknown (N7libebml8EbmlVoidE)
+[2018-08-21 14:23:04:366] [00007fa5f8c06e88] mkv demux debug: | - cues at 31531678
+[2018-08-21 14:23:04:388] [00007fa5f8c06e88] mkv demux debug: | + Cues
+[2018-08-21 14:23:04:399] [00007fa5f8c06e88] mkv demux warning: MKV/Ebml Parser: m_el[mi_level] == NULL
+[2018-08-21 14:23:04:423]
+[2018-08-21 14:23:04:431] [00007fa5f8c06e88] mkv demux warning: MKV/Ebml Parser: Up cannot escape itself
+[2018-08-21 14:23:04:451] [00007fa5f8c06e88] mkv demux debug: | - loading cues done.
+[2018-08-21 14:23:04:494] [00007fa5f8c06e88] mkv demux debug: | + Void
+[2018-08-21 14:23:04:516] [00007fa5f8c06e88] mkv demux debug: | + Information
+[2018-08-21 14:23:04:531] [00007fa5f8c06e88] mkv demux debug: | + Tracks
+[2018-08-21 14:23:04:551] [00007fa5f8c06e88] mkv demux debug: | + Preload Unknown (N11libmatroska7KaxTagsE)
+[2018-08-21 14:23:04:574] [00007fa5f8c06e88] mkv demux debug: | + Cluster
+[2018-08-21 14:23:04:596] [00007fa5f8c06e88] mkv demux debug: found 2 es
+[2018-08-21 14:23:04:611] [00007fa600000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:23:04:629] [00007fa600000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-08-21 14:23:04:651] [00007fa600000958] core art finder debug: no meta fetcher modules matched
+[2018-08-21 14:23:04:667] [00000000011eb148] core libvlc debug: searching art for sampleVideo.mkv
+[2018-08-21 14:23:04:677] [00007fa600000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:23:04:700] [00007fa61cc04ec8] core input debug: selecting program id=0
+[2018-08-21 14:23:04:719] [00007fa61cc04ec8] core input debug: Buffering 0%
+[2018-08-21 14:23:04:728] [00007fa5f8c06e88] mkv demux debug: Starting the UI Hook
+[2018-08-21 14:23:04:743] [00007fa5f8c06e88] core demux debug: using demux module "mkv"
+[2018-08-21 14:23:04:781] [00007fa61cc04ec8] core input debug: looking for a subtitle file in /home/bayes/Repositories/pruebas/
+[2018-08-21 14:23:04:791] [00007fa5f8c118e8] core decoder debug: looking for packetizer module matching "any": 23 candidates
+[2018-08-21 14:23:04:807] [00007fa5f8c118e8] packetizer_mpeg4video decoder debug: opening with vol size: 47
+[2018-08-21 14:23:04:819] [00007fa5f8c118e8] core decoder debug: using packetizer module "packetizer_mpeg4video"
+[2018-08-21 14:23:04:834] [00007fa600000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:23:04:847] [00007fa600000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:23:04:873] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:23:04:878] [00007fa5f8c1a9f8] core decoder debug: looking for packetizer module matching "any": 23 candidates
+[2018-08-21 14:23:04:893] [00007fa5f8c1a9f8] packetizer_mpeg4audio decoder debug: running MPEG4 audio packetizer
+[2018-08-21 14:23:04:927] [00007fa5f8c1a9f8] packetizer_mpeg4audio decoder debug: AAC 48000Hz 1024 samples/frame
+[2018-08-21 14:23:04:947] [00007fa5f8c1a9f8] core decoder debug: using packetizer module "packetizer_mpeg4audio"
+[2018-08-21 14:23:04:962] [00007fa61cc04ec8] core input debug: starting in async mode
+[2018-08-21 14:23:04:976] [00007fa5f8c1f618] core demux meta debug: looking for meta reader module matching "any": 2 candidates
+[2018-08-21 14:23:04:998] [00007fa5f8c1f618] lua demux meta debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/reader
+[2018-08-21 14:23:05:018] [00007fa5f8c1f618] lua demux meta debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/reader
+[2018-08-21 14:23:05:040] [00007fa5f8c1f618] lua demux meta debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/reader/filename.luac
+[2018-08-21 14:23:05:058] [00007fa600000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:23:05:064] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:23:05:084] [00007fa600000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:23:05:117] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:23:05:137] [00007fa5f8c1f618] lua demux meta debug: Trying Lua scripts in /usr/share/vlc/lua/meta/reader
+[2018-08-21 14:23:05:146] [00007fa5f8c1f618] core demux meta debug: no meta reader modules matched
+[2018-08-21 14:23:05:159] [00007fa61cc04ec8] core input debug: `file:///home/bayes/Repositories/pruebas/sampleVideo.mkv' successfully opened
+[2018-08-21 14:23:05:181] [00007fa61cc04ec8] core input debug: switching to sync mode
+[2018-08-21 14:23:05:204] [00007fa5f8000c08] core stream output debug: adding a new sout input (sout_input:0x7fa5fc000920)
+[2018-08-21 14:23:05:249] [00007fa5f8002e18] stream_out_transcode stream out debug: creating video transcoding from fcc=`mp4v' to fcc=`mp4v'
+[2018-08-21 14:23:05:278] [00007fa5fc000ab8] core generic debug: looking for decoder module matching "any": 42 candidates
+[2018-08-21 14:23:05:304] [00007fa600000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:23:05:321] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:23:05:337] [00007fa600000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:23:05:351] [00007fa600000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:23:05:378] [00007fa600000958] core art finder debug: no art finder modules matched
+[2018-08-21 14:23:05:383] [00007fa600000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:23:05:387] [00007fa5f8000c08] core stream output debug: adding a new sout input (sout_input:0x7fa5e8000900)
+[2018-08-21 14:23:05:413] [00007fa600000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:23:05:430] [00007fa600000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:23:05:445] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:23:05:458] [00007fa61cc04ec8] core input debug: Buffering 0%
+[2018-08-21 14:23:05:485] [00007fa61cc04ec8] core input debug: Stream buffering done (304 ms in 999 ms)
+[2018-08-21 14:23:05:514] [00007fa5fc000ab8] avcodec generic debug: CPU flags: 0x0100d3db
+[2018-08-21 14:23:05:519] [00007fa5fc000ab8] avcodec generic debug: trying to use direct rendering
+[2018-08-21 14:23:05:538] [00007fa5fc000ab8] avcodec generic debug: allowing 1 thread(s) for decoding
+[2018-08-21 14:23:05:562] [00007fa5fc000ab8] avcodec generic debug: avcodec codec (MPEG-4 Video) started
+[2018-08-21 14:23:05:582] [00007fa5fc000ab8] core generic debug: using decoder module "avcodec"
+[2018-08-21 14:23:05:600] [00007fa5fc000f18] core encoder debug: looking for encoder module matching "any": 21 candidates
+[2018-08-21 14:23:05:615] [00007fa600000958] core art finder debug: using meta fetcher module "lua"
+[2018-08-21 14:23:05:639] [00007fa600000958] core art finder debug: removing module "lua"
+[2018-08-21 14:23:05:643] [00000000011eb148] core libvlc debug: searching art for sampleVideo.mkv
+[2018-08-21 14:23:05:674] [00007fa600000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:23:05:681] [00007fa5fc000f18] avcodec encoder debug: CPU flags: 0x0100d3db
+[2018-08-21 14:23:05:695] [00007fa5fc000f18] avcodec encoder debug: Time base for probing setted to 1/25
+[2018-08-21 14:23:05:710] [00007fa5fc000f18] avcodec encoder debug: Time base set to 1/25
+[2018-08-21 14:23:05:726] [00007fa5fc000f18] avcodec encoder debug: found encoder MPEG-4 Video
+[2018-08-21 14:23:05:749] [00007fa5fc000f18] core encoder debug: using encoder module "avcodec"
+[2018-08-21 14:23:05:785] [00007fa5fc000f18] core encoder debug: removing module "avcodec"
+[2018-08-21 14:23:05:799] [00007fa5f8002e18] stream_out_transcode stream out debug: creating audio transcoding from fcc=`mp4a' to fcc=`mpga'
+[2018-08-21 14:23:05:818] [00007fa5e8000a98] core generic debug: looking for decoder module matching "any": 42 candidates
+[2018-08-21 14:23:05:841] [00007fa5e8000a98] core generic debug: using decoder module "faad"
+[2018-08-21 14:23:05:848] [00007fa5e8000ef8] core encoder debug: looking for encoder module matching "any": 21 candidates
+[2018-08-21 14:23:05:867] [00007fa5e8000ef8] core encoder debug: using encoder module "twolame"
+[2018-08-21 14:23:05:885] [00007fa5f8002e18] core stream out debug: input 'f32l' 48000 Hz 3F2R/LFE frame=1 samples/24 bytes
+[2018-08-21 14:23:05:917] [00007fa5f8002e18] core stream out debug: conversion: 'f32l'->'s16l' 48000 Hz->48000 Hz 3F2R/LFE->Stereo
+[2018-08-21 14:23:05:938] [00007fa5e80158f8] core audio converter debug: looking for audio converter module matching "any": 12 candidates
+[2018-08-21 14:23:05:944] [00007fa5e80158f8] core audio converter debug: using audio converter module "simple_channel_mixer"
+[2018-08-21 14:23:05:969] [00007fa5e8019d48] core audio converter debug: looking for audio converter module matching "any": 12 candidates
+[2018-08-21 14:23:05:974] [00007fa5e8019d48] audio_format audio converter debug: f32l->s16l, bits per sample: 32->16
+[2018-08-21 14:23:05:991] [00007fa5e8019d48] core audio converter debug: using audio converter module "audio_format"
+[2018-08-21 14:23:06:000] [00007fa5f8002e18] core stream out debug: conversion pipeline complete
+[2018-08-21 14:23:06:045] [00007fa5e801c288] core audio resampler debug: looking for audio resampler module matching "any": 3 candidates
+[2018-08-21 14:23:06:056] [00007fa5e801c288] core audio resampler debug: using audio resampler module "ugly_resampler"
+[2018-08-21 14:23:06:070] [00007fa5f8001228] stream_out_rtp stream out debug: maximum RTP packet size: 1400 bytes
+[2018-08-21 14:23:06:082] [00007fa5f8001228] stream_out_rtp stream out debug: RTSP: adding /trackID=0
+[2018-08-21 14:23:06:102] [00007fa5f8001228] stream_out_rtp stream out debug: sdp=
+[2018-08-21 14:23:06:114] v=0
+[2018-08-21 14:23:06:123] o=- 16079683172176110922 16079683172176110922 IN IP4 bayes-VirtualBox
+[2018-08-21 14:23:06:143] s=Unnamed
+[2018-08-21 14:23:06:163] i=N/A
+[2018-08-21 14:23:06:167] c=IN IP4 0.0.0.0
+[2018-08-21 14:23:06:179] t=0 0
+[2018-08-21 14:23:06:210] a=tool:vlc 2.2.2
+[2018-08-21 14:23:06:230] a=recvonly
+[2018-08-21 14:23:06:261] a=type:broadcast
+[2018-08-21 14:23:06:271] a=charset:UTF-8
+[2018-08-21 14:23:06:295] m=audio 0 RTP/AVP 14
+[2018-08-21 14:23:06:308] b=AS:128
+[2018-08-21 14:23:06:328] b=RR:0
+[2018-08-21 14:23:06:352] a=rtpmap:14 MPA/90000/2
+[2018-08-21 14:23:06:354]
+[2018-08-21 14:23:06:366] [00007fa5e8000ef8] core encoder debug: removing module "twolame"
+[2018-08-21 14:23:06:378] [00007fa5e801c288] core audio resampler debug: removing module "ugly_resampler"
+[2018-08-21 14:23:06:385] [00007fa5e80158f8] core audio converter debug: removing module "simple_channel_mixer"
+[2018-08-21 14:23:06:400] [00007fa5e8019d48] core audio converter debug: removing module "audio_format"
+[2018-08-21 14:23:06:422] [00007fa61cc04ec8] core input debug: Decoder wait done in 271 ms
+[2018-08-21 14:23:06:437] [00007fa5fc000ab8] avcodec generic debug: available hardware decoder output format 53 (vaapi_vld)
+[2018-08-21 14:23:06:450] [00007fa5fc000ab8] avcodec generic debug: available hardware decoder output format 109 (vdpau)
+[2018-08-21 14:23:06:460] [00007fa5fc000ab8] avcodec generic debug: available software decoder output format 0 (yuv420p)
+[2018-08-21 14:23:06:474] [00007fa5fc034998] core generic debug: looking for hw decoder module matching "none": 4 candidates
+[2018-08-21 14:23:06:486] [00007fa5fc034998] core generic debug: no hw decoder modules matched
+[2018-08-21 14:23:06:501] [00007fa5fc000ab8] avcodec generic warning: plane 0 not aligned
+[2018-08-21 14:23:06:525] [00007fa5fc000ab8] avcodec generic warning: disabling direct rendering
+[2018-08-21 14:23:06:540] [00007fa600000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:23:06:570] [00007fa600000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:23:06:585] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:23:06:598] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:23:06:617] [00007fa5f8002e18] stream_out_transcode stream out debug: decoder aspect is 1,739130:1
+[2018-08-21 14:23:06:637] [00007fa5f8002e18] stream_out_transcode stream out debug: source pixel aspect is 0,978261:1
+[2018-08-21 14:23:06:649] [00007fa5f8002e18] stream_out_transcode stream out debug: scaled pixel aspect is 0,978261:1
+[2018-08-21 14:23:06:665] [00007fa5f8002e18] stream_out_transcode stream out debug: source 1280x720, destination 1280x720
+[2018-08-21 14:23:06:690] [00007fa5f8002e18] stream_out_transcode stream out debug: source fps 25/1, destination 25/1
+[2018-08-21 14:23:06:703] [00007fa5f8002e18] stream_out_transcode stream out: input interval 40000 (base 1)
+[2018-08-21 14:23:06:720] [00007fa5f8002e18] stream_out_transcode stream out: output interval 40000 (base 1)
+[2018-08-21 14:23:06:730] [00007fa5f8002e18] stream_out_transcode stream out debug: encoder aspect is 1280:736
+[2018-08-21 14:23:06:742] [00007fa5f8002e18] stream_out_transcode stream out debug: destination (after video filters) 1280x736
+[2018-08-21 14:23:06:755] [00007fa5fc000f18] core encoder debug: looking for encoder module matching "any": 21 candidates
+[2018-08-21 14:23:06:772] [00007fa5fc000f18] avcodec encoder debug: CPU flags: 0x0100d3db
+[2018-08-21 14:23:06:775] [00007fa5fc000f18] avcodec encoder debug: Time base for probing setted to 1/25
+[2018-08-21 14:23:06:790] [00007fa5fc000f18] avcodec encoder debug: Time base set to 1/25
+[2018-08-21 14:23:06:801] [00007fa5fc000f18] avcodec encoder debug: found encoder MPEG-4 Video
+[2018-08-21 14:23:06:811] [00007fa5fc000f18] core encoder debug: using encoder module "avcodec"
+[2018-08-21 14:23:06:827] [00007fa5f8001228] stream_out_rtp stream out debug: maximum RTP packet size: 1400 bytes
+[2018-08-21 14:23:06:845] [00007fa5f8001228] stream_out_rtp stream out debug: RTSP: adding /trackID=1
+[2018-08-21 14:23:06:863] [00007fa5f8001228] stream_out_rtp stream out debug: sdp=
+[2018-08-21 14:23:06:907] v=0
+[2018-08-21 14:23:06:915] o=- 16079683174129321534 16079683174129321534 IN IP4 bayes-VirtualBox
+[2018-08-21 14:23:06:935] s=Unnamed
+[2018-08-21 14:23:06:968] i=N/A
+[2018-08-21 14:23:06:986] c=IN IP4 0.0.0.0
+[2018-08-21 14:23:07:005] t=0 0
+[2018-08-21 14:23:07:019] a=tool:vlc 2.2.2
+[2018-08-21 14:23:07:045] a=recvonly
+[2018-08-21 14:23:07:050] a=type:broadcast
+[2018-08-21 14:23:07:060] a=charset:UTF-8
+[2018-08-21 14:23:07:081] m=audio 0 RTP/AVP 14
+[2018-08-21 14:23:07:090] b=AS:128
+[2018-08-21 14:23:07:120] b=RR:0
+[2018-08-21 14:23:07:127] a=rtpmap:14 MPA/90000/2
+[2018-08-21 14:23:07:140] m=video 0 RTP/AVP 96
+[2018-08-21 14:23:07:183] b=RR:0
+[2018-08-21 14:23:07:202] a=rtpmap:96 MP4V-ES/90000
+[2018-08-21 14:23:07:225] a=fmtp:96 profile-level-id=3; config=000001b001000001b58913000001000000012000c48d8800cd28045a1463000001b24c61766335362e36302e313030;
+[2018-08-21 14:23:07:246]
+[2018-08-21 14:23:07:265] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:23:07:275] [00007fa600000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:23:07:304] [00007fa600000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:23:07:307] [00007fa600000958] core art finder debug: no art finder modules matched
+[2018-08-21 14:23:07:324] [00000000011eb148] core libvlc debug: art not found for sampleVideo.mkv
+[2018-08-21 14:23:07:342] [00007fa5e8000a98] faad generic warning: decoded zero sample
+[2018-08-21 14:23:07:359] [00007fa5e8000ef8] core encoder debug: looking for encoder module matching "any": 21 candidates
+[2018-08-21 14:23:07:382] [00007fa5e8000ef8] core encoder debug: using encoder module "twolame"
+[2018-08-21 14:23:07:395] [00007fa5f8002e18] core stream out debug: input 'f32l' 48000 Hz 3F2R/LFE frame=1 samples/24 bytes
+[2018-08-21 14:23:07:406] [00007fa5f8002e18] core stream out debug: conversion: 'f32l'->'s16l' 48000 Hz->48000 Hz 3F2R/LFE->Stereo
+[2018-08-21 14:23:07:420] [00007fa5e8019d48] core audio converter debug: looking for audio converter module matching "any": 12 candidates
+[2018-08-21 14:23:07:430] [00007fa5e8019d48] core audio converter debug: using audio converter module "simple_channel_mixer"
+[2018-08-21 14:23:07:461] [00007fa5e8006a28] core audio converter debug: looking for audio converter module matching "any": 12 candidates
+[2018-08-21 14:23:07:492] [00007fa5e8006a28] audio_format audio converter debug: f32l->s16l, bits per sample: 32->16
+[2018-08-21 14:23:07:526] [00007fa5e8006a28] core audio converter debug: using audio converter module "audio_format"
+[2018-08-21 14:23:07:550] [00007fa5f8002e18] core stream out debug: conversion pipeline complete
+[2018-08-21 14:23:07:556] [00007fa5e8006e28] core audio resampler debug: looking for audio resampler module matching "any": 3 candidates
+[2018-08-21 14:23:07:590] [00007fa5e8006e28] core audio resampler debug: using audio resampler module "ugly_resampler"
+[2018-08-21 14:23:07:610] [00007fa5fc000ab8] avcodec generic debug: enabling direct rendering
+[2018-08-21 14:23:07:614] [00007fa5fc000ab8] avcodec generic warning: plane 0 not aligned
+[2018-08-21 14:23:07:636] [00007fa5fc000ab8] avcodec generic warning: disabling direct rendering
+[2018-08-21 14:23:07:666] [00007fa5fc000ab8] avcodec generic debug: enabling direct rendering
+[2018-08-21 14:23:07:673] [00007fa5fc000ab8] avcodec generic warning: plane 0 not aligned
+[2018-08-21 14:23:07:695] [00007fa5fc000ab8] avcodec generic warning: disabling direct rendering
+[2018-08-21 14:23:07:706] [00007fa5fc000ab8] avcodec generic debug: enabling direct rendering
+[2018-08-21 14:23:13:432] [00007fa5f8002e18] stream_out_transcode stream out warning: Reseting video sync
+[2018-08-21 14:23:13:466] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441206, last: 441280)
+[2018-08-21 14:23:13:481] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441207, last: 441280)
+[2018-08-21 14:23:13:502] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441208, last: 441280)
+[2018-08-21 14:23:13:534] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441209, last: 441280)
+[2018-08-21 14:23:13:542] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441210, last: 441280)
+[2018-08-21 14:23:13:586] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441211, last: 441280)
+[2018-08-21 14:23:13:620] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441212, last: 441280)
+[2018-08-21 14:23:13:655] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441213, last: 441280)
+[2018-08-21 14:23:13:674] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441214, last: 441280)
+[2018-08-21 14:23:13:710] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441215, last: 441280)
+[2018-08-21 14:23:13:754] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441216, last: 441280)
+[2018-08-21 14:23:13:821] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441217, last: 441280)
+[2018-08-21 14:23:13:832] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441218, last: 441280)
+[2018-08-21 14:23:13:891] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441219, last: 441280)
+[2018-08-21 14:23:13:932] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441220, last: 441280)
+[2018-08-21 14:23:13:962] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441221, last: 441280)
+[2018-08-21 14:23:14:018] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441222, last: 441280)
+[2018-08-21 14:23:14:038] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441223, last: 441280)
+[2018-08-21 14:23:14:074] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441224, last: 441280)
+[2018-08-21 14:23:14:098] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441225, last: 441280)
+[2018-08-21 14:23:14:127] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441226, last: 441280)
+[2018-08-21 14:23:14:147] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441227, last: 441280)
+[2018-08-21 14:23:14:175] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441228, last: 441280)
+[2018-08-21 14:23:14:221] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441229, last: 441280)
+[2018-08-21 14:23:14:235] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441230, last: 441280)
+[2018-08-21 14:23:14:263] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441231, last: 441280)
+[2018-08-21 14:23:14:302] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441232, last: 441280)
+[2018-08-21 14:23:14:327] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441233, last: 441280)
+[2018-08-21 14:23:14:363] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441234, last: 441280)
+[2018-08-21 14:23:14:387] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441235, last: 441280)
+[2018-08-21 14:23:14:426] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441236, last: 441280)
+[2018-08-21 14:23:14:445] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441237, last: 441280)
+[2018-08-21 14:23:14:462] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441238, last: 441280)
+[2018-08-21 14:23:14:492] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441239, last: 441280)
+[2018-08-21 14:23:14:535] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441240, last: 441280)
+[2018-08-21 14:23:14:567] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441241, last: 441280)
+[2018-08-21 14:23:14:584] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441242, last: 441280)
+[2018-08-21 14:23:14:607] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441243, last: 441280)
+[2018-08-21 14:23:14:647] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441244, last: 441280)
+[2018-08-21 14:23:14:678] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441245, last: 441280)
+[2018-08-21 14:23:14:693] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441246, last: 441280)
+[2018-08-21 14:23:14:715] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441247, last: 441280)
+[2018-08-21 14:23:14:754] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441248, last: 441280)
+[2018-08-21 14:23:14:787] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441249, last: 441280)
+[2018-08-21 14:23:14:816] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441250, last: 441280)
+[2018-08-21 14:23:14:842] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441251, last: 441280)
+[2018-08-21 14:23:14:873] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441252, last: 441280)
+[2018-08-21 14:23:14:935] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441253, last: 441280)
+[2018-08-21 14:23:14:975] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441254, last: 441280)
+[2018-08-21 14:23:14:994] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441255, last: 441280)
+[2018-08-21 14:23:15:042] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441256, last: 441280)
+[2018-08-21 14:23:15:056] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441257, last: 441280)
+[2018-08-21 14:23:15:095] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441258, last: 441280)
+[2018-08-21 14:23:15:120] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441259, last: 441280)
+[2018-08-21 14:23:15:138] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441260, last: 441280)
+[2018-08-21 14:23:15:198] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441261, last: 441280)
+[2018-08-21 14:23:15:229] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441262, last: 441280)
+[2018-08-21 14:23:15:251] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441263, last: 441280)
+[2018-08-21 14:23:15:278] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441264, last: 441280)
+[2018-08-21 14:23:15:320] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441265, last: 441280)
+[2018-08-21 14:23:15:346] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441266, last: 441280)
+[2018-08-21 14:23:15:379] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441267, last: 441280)
+[2018-08-21 14:23:15:410] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441268, last: 441280)
+[2018-08-21 14:23:15:450] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441269, last: 441280)
+[2018-08-21 14:23:15:499] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441270, last: 441280)
+[2018-08-21 14:23:15:531] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441271, last: 441280)
+[2018-08-21 14:23:15:560] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441272, last: 441280)
+[2018-08-21 14:23:15:634] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441273, last: 441280)
+[2018-08-21 14:23:15:670] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441274, last: 441280)
+[2018-08-21 14:23:15:694] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441275, last: 441280)
+[2018-08-21 14:23:15:705] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441276, last: 441280)
+[2018-08-21 14:23:15:736] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441277, last: 441280)
+[2018-08-21 14:23:15:770] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441278, last: 441280)
+[2018-08-21 14:23:15:810] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with a frame in the past (current: 441279, last: 441280)
+[2018-08-21 14:23:15:822] [00007fa5fc000f18] avcodec encoder warning: almost fed libavcodec with two frames with the same PTS (441280)

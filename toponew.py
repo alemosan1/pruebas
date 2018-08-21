@@ -63,31 +63,21 @@ def simpleTest():
     
     #Server side
     cmdServer=""
-
-    print type
-    if type == '0' :
-
+    if type == '0' : # No errors
         cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=22050}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"
-    
-    elif type == 1 :
-        # low fps rate and binary bit rate
+    elif type == 1 : # Low fps rate and binary bit rate
         cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout '#transcode{vcodec=h264,vb=120,vfilter=freeze,fps=10,scale=Automático,acodec=mpga,ab=256,channels=3,samplerate=22050,scodec=t140,soverlay}:rtp{dst=10.0.0.2,port=5004,mux=ts}'"
-    elif type == 2 :
+    elif type == 2 : #TO DO: incompatible video format
         print ""
-        #cmdServer = 
-        # incompatible video format
+
     #Client side
-    
     #TODO: tenemos que poner que la IP se saque programaticamente
     cmdClient = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente"
-
-    print cmdServer
     
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
-    time.sleep(1)
+    time.sleep(5)
     termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
-    #src.cmd('./net/vlc_send.sh &')
-    
+
     time.sleep(5)
     
     # logfile = open("logs/clientVLC-log.txt","r") 

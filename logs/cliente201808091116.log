@@ -1,0 +1,847 @@
+[2018-08-09 11:16:40:010] [0000000001d82148] core libvlc debug: VLC media player - 2.2.2 Weatherwax
+[2018-08-09 11:16:40:024] [0000000001d82148] core libvlc debug: Copyright © 1996-2016 the VideoLAN team
+[2018-08-09 11:16:40:025] [0000000001d82148] core libvlc debug: revision 2.2.2-0-g6259d80
+[2018-08-09 11:16:40:035] [0000000001d82148] core libvlc debug: configured with ./configure '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--libexecdir=${prefix}/lib/x86_64-linux-gnu' '--disable-maintainer-mode' '--disable-dependency-tracking' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc-data' '--libdir=/usr/lib' '--with-binary-version=2.2.2-5ubuntu0.16.04.4' '--enable-a52' '--enable-aa' '--enable-bluray' '--enable-bonjour' '--enable-caca' '--enable-chromaprint' '--enable-dbus' '--enable-dca' '--enable-directfb' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freerdp' '--enable-freetype' '--enable-fribidi' '--disable-gles1' '--enable-gles2' '--enable-gnutls' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-mkv' '--enable-mod' '--enable-mpc' '--enable-mtp' '--enable-mux_ogg' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-schroedinger' '--enable-sdl' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vcdx' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/kde4/apps/solid/actions/' '--disable-decklink' '--disable-dxva2' '--disable-fdkaac' '--disable-gnomevfs' '--disable-goom' '--disable-libtar' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-sndio' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-atmo' '--enable-dc1394' '--enable-dv1394' '--enable-linsys' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security'
+[2018-08-09 11:16:40:043] [0000000001d82148] core libvlc debug: searching plug-in modules
+[2018-08-09 11:16:40:061] [0000000001d82148] core libvlc debug: loading plugins cache file /usr/lib/vlc/plugins/plugins.dat
+[2018-08-09 11:16:40:071] [0000000001d82148] core libvlc debug: recursively browsing `/usr/lib/vlc/plugins'
+[2018-08-09 11:16:40:100] [0000000001d82148] core libvlc debug: saving plugins cache /usr/lib/vlc/plugins/plugins.dat
+[2018-08-09 11:16:40:102] [0000000001d82148] core libvlc debug: plug-ins loaded: 459 modules
+[2018-08-09 11:16:40:108] [0000000001d82148] core libvlc debug: opening config file (/home/bayes/.config/vlc/vlcrc)
+[2018-08-09 11:16:40:109] [0000000001d82148] core libvlc debug: translation test: code is "es"
+[2018-08-09 11:16:40:133] [0000000001d82148] core libvlc debug: CPU has capabilities MMX MMXEXT SSE SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 AVX AVX FPU
+[2018-08-09 11:16:40:138] [0000000001dad688] core input debug: Creating an input for 'Biblioteca multimedia'
+[2018-08-09 11:16:40:152] [0000000001dad688] core input debug: Input is a meta file: disabling unneeded options
+[2018-08-09 11:16:40:181] [0000000001dad688] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-08-09 11:16:40:190] [0000000001dad688] core input debug: `file/xspf-open:///home/bayes/.local/share/vlc/ml.xspf' gives access `file' demux `xspf-open' path `/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-09 11:16:40:192] [0000000001dad688] core input debug: creating demux: access='file' demux='xspf-open' location='/home/bayes/.local/share/vlc/ml.xspf' file='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-09 11:16:40:210] [0000000001e5df08] core demux debug: looking for access_demux module matching "file": 20 candidates
+[2018-08-09 11:16:40:219] [0000000001e5df08] core demux debug: no access_demux modules matched
+[2018-08-09 11:16:40:253] [0000000001dad688] core input debug: creating access 'file' location='/home/bayes/.local/share/vlc/ml.xspf', path='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-09 11:16:40:263] [0000000001e5df08] core access debug: looking for access module matching "file": 25 candidates
+[2018-08-09 11:16:40:264] [0000000001e5df08] filesystem access debug: opening file `/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-09 11:16:40:272] [0000000001e5df08] core access debug: using access module "filesystem"
+[2018-08-09 11:16:40:279] [0000000001e852f8] core stream debug: Using stream method for AStream*
+[2018-08-09 11:16:40:287] [0000000001e852f8] core stream debug: starting pre-buffering
+[2018-08-09 11:16:40:289] [0000000001e852f8] core stream debug: received first data after 0 ms
+[2018-08-09 11:16:40:301] [0000000001e852f8] core stream debug: pre-buffering done 304 bytes in 0s - 49479 KiB/s
+[2018-08-09 11:16:40:311] [0000000001e85558] core stream debug: looking for stream_filter module matching "any": 9 candidates
+[2018-08-09 11:16:40:332] [0000000001e85558] core stream debug: no stream_filter modules matched
+[2018-08-09 11:16:40:333] [0000000001e85558] core stream debug: looking for stream_filter module matching "record": 9 candidates
+[2018-08-09 11:16:40:335] [0000000001e85558] core stream debug: using stream_filter module "record"
+[2018-08-09 11:16:40:337] [0000000001dad688] core input debug: creating demux: access='file' demux='xspf-open' location='/home/bayes/.local/share/vlc/ml.xspf' file='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-09 11:16:40:353] [0000000001e884f8] core demux debug: looking for demux module matching "xspf-open": 66 candidates
+[2018-08-09 11:16:40:353] [0000000001e884f8] xspf demux debug: using XSPF playlist reader
+[2018-08-09 11:16:40:386] [0000000001e884f8] core demux debug: using demux module "playlist"
+[2018-08-09 11:16:40:388] [0000000001e88ef8] core demux meta debug: looking for meta reader module matching "any": 2 candidates
+[2018-08-09 11:16:40:390] [0000000001e88ef8] lua demux meta debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/reader
+[2018-08-09 11:16:40:396] [0000000001e88ef8] lua demux meta debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/reader
+[2018-08-09 11:16:40:400] [0000000001e88ef8] lua demux meta debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/reader/filename.luac
+[2018-08-09 11:16:40:402] [0000000001e88ef8] lua demux meta debug: Trying Lua scripts in /usr/share/vlc/lua/meta/reader
+[2018-08-09 11:16:40:404] [0000000001e88ef8] core demux meta debug: no meta reader modules matched
+[2018-08-09 11:16:40:418] [0000000001dad688] core input debug: `file/xspf-open:///home/bayes/.local/share/vlc/ml.xspf' successfully opened
+[2018-08-09 11:16:40:429] [0000000001e9c5c8] core xml reader debug: looking for xml reader module matching "any": 1 candidates
+[2018-08-09 11:16:40:433] [0000000001e9c5c8] core xml reader debug: using xml reader module "xml"
+[2018-08-09 11:16:40:439] [0000000001e884f8] xspf demux debug: parsed 0 tracks successfully
+[2018-08-09 11:16:40:463] [0000000001dad688] core input debug: EOF reached
+[2018-08-09 11:16:40:468] [0000000001e884f8] core demux debug: removing module "playlist"
+[2018-08-09 11:16:40:469] [0000000001e85558] core stream debug: removing module "record"
+[2018-08-09 11:16:40:479] [0000000001e5df08] core access debug: removing module "filesystem"
+[2018-08-09 11:16:40:480] [0000000001e6ad48] core playlist debug: creating audio output
+[2018-08-09 11:16:40:489] [0000000001e852f8] core audio output debug: looking for audio output module matching "any": 5 candidates
+[2018-08-09 11:16:40:494] [0000000001e852f8] pulse audio output debug: using library version 8.0.0
+[2018-08-09 11:16:40:503] [0000000001e852f8] pulse audio output debug: (compiled with version 8.0.0, protocol 30)
+[2018-08-09 11:16:40:513] [0000000001e852f8] pulse audio output debug: connected locally to unix:/run/user/1000/pulse/native as client #37
+[2018-08-09 11:16:40:535] [0000000001e852f8] pulse audio output debug: using protocol 30, server protocol 30
+[2018-08-09 11:16:40:541] [0000000001e852f8] pulse audio output debug: adding sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:40:550] [0000000001e852f8] core audio output debug: using audio output module "pulse"
+[2018-08-09 11:16:40:568] [0000000001e6ad48] core playlist debug: keeping audio output
+[2018-08-09 11:16:40:568] [0000000001e6ad48] core playlist debug: adding item `rtp://10.0.0.2:5004' ( rtp://10.0.0.2:5004 )
+[2018-08-09 11:16:40:569] [0000000001e98a08] core interface debug: looking for interface module matching "hotkeys,none": 19 candidates
+[2018-08-09 11:16:40:580] [0000000001e98a08] core interface debug: using interface module "hotkeys"
+[2018-08-09 11:16:40:610] [0000000001e9d808] core interface debug: looking for interface module matching "globalhotkeys,none": 19 candidates
+[2018-08-09 11:16:40:611] [0000000001e6ad48] core playlist debug: meta ok for (null), need to fetch art
+[2018-08-09 11:16:40:612] [00007f8a48000bb8] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-09 11:16:40:620] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-09 11:16:40:621] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-09 11:16:40:624] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-09 11:16:40:631] [00007f8a48000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-09 11:16:40:651] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-08-09 11:16:40:653] [00007f8a48000bb8] core art finder debug: no meta fetcher modules matched
+[2018-08-09 11:16:40:660] [0000000001e6ad48] core playlist debug: searching art for rtp://10.0.0.2:5004
+[2018-08-09 11:16:40:675] [00007f8a48000bb8] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-09 11:16:40:707] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-09 11:16:40:713] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-09 11:16:40:715] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-09 11:16:40:730] [00007f8a48000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-09 11:16:40:733] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-09 11:16:40:743] [00007f8a48000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-09 11:16:40:744] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-09 11:16:40:760] [0000000001e9d808] core interface debug: using interface module "xcb_hotkeys"
+[2018-08-09 11:16:40:765] [0000000001e9e738] core interface debug: looking for interface module matching "dbus,none": 19 candidates
+[2018-08-09 11:16:40:775] [0000000001e9e738] dbus interface error: Failed to connect to the D-Bus session daemon: Failed to connect to socket /tmp/dbus-TKXPlFu8q4: Conexión rehusada
+[2018-08-09 11:16:40:848] [0000000001e9e738] core interface debug: no interface modules matched
+[2018-08-09 11:16:40:853] [0000000001e9e738] core interface error: no suitable interface module
+[2018-08-09 11:16:40:864] [0000000001d82148] core libvlc error: interface "dbus,none" initialization failed
+[2018-08-09 11:16:40:866] [0000000001d82148] core libvlc: Ejecutar vlc con la interfaz predeterminada. Use «cvlc» para usar vlc sin interfaz.
+[2018-08-09 11:16:40:900] [0000000001e9f378] core interface debug: looking for interface module matching "any": 19 candidates
+[2018-08-09 11:16:40:910] [00007f8a48000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-09 11:16:40:916] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-09 11:16:40:937] [00007f8a48000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-09 11:16:40:961] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-09 11:16:40:970] [00007f8a48000bb8] core art finder debug: no art finder modules matched
+[2018-08-09 11:16:41:002] [00007f8a48000bb8] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-09 11:16:41:010] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-09 11:16:41:011] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-09 11:16:41:012] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-09 11:16:41:013] [00007f8a48000bb8] core art finder debug: using meta fetcher module "lua"
+[2018-08-09 11:16:41:020] [00007f8a48000bb8] core art finder debug: removing module "lua"
+[2018-08-09 11:16:41:020] [0000000001e6ad48] core playlist debug: searching art for rtp://10.0.0.2:5004
+[2018-08-09 11:16:41:049] [00007f8a48000bb8] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-09 11:16:41:050] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-09 11:16:41:051] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-09 11:16:41:052] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-09 11:16:41:055] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-09 11:16:41:056] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-09 11:16:41:059] [00007f8a48000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-09 11:16:41:061] [00007f8a48000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-09 11:16:41:062] [00007f8a48000bb8] core art finder debug: no art finder modules matched
+[2018-08-09 11:16:41:064] [0000000001e6ad48] core playlist debug: art not found for rtp://10.0.0.2:5004
+[2018-08-09 11:16:41:064] [00007f8a400a4758] core generic debug: looking for extension module matching "any": 1 candidates
+[2018-08-09 11:16:41:070] [00007f8a400a4758] lua generic debug: Opening Lua Extension module
+[2018-08-09 11:16:41:088] [00007f8a400a4758] lua generic debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/extensions
+[2018-08-09 11:16:41:089] [00007f8a400a4758] lua generic debug: Trying Lua scripts in /usr/lib/vlc/lua/extensions
+[2018-08-09 11:16:41:090] [00007f8a400a4758] lua generic debug: Trying Lua playlist script /usr/lib/vlc/lua/extensions/VLSub.luac
+[2018-08-09 11:16:41:090] [00007f8a400a4758] lua generic debug: Scanning Lua script /usr/lib/vlc/lua/extensions/VLSub.luac
+[2018-08-09 11:16:41:095] [00007f8a400a4758] lua generic debug: Script /usr/lib/vlc/lua/extensions/VLSub.luac has the following capability flags: 0x5
+[2018-08-09 11:16:41:096] [00007f8a400a4758] lua generic debug: Trying Lua scripts in /usr/share/vlc/lua/extensions
+[2018-08-09 11:16:41:096] [00007f8a400a4758] core generic debug: using extension module "lua"
+[2018-08-09 11:16:41:097] [0000000001e9f378] core interface debug: using interface module "qt4"
+[2018-08-09 11:16:41:097] [0000000001e6ad48] core playlist debug: processing request item: null, node: Lista de reproducción, skip: 0
+[2018-08-09 11:16:41:098] [0000000001e6ad48] core playlist debug: rebuilding array of current - root Lista de reproducción
+[2018-08-09 11:16:41:100] [0000000001e6ad48] core playlist debug: rebuild done - 1 items, index -1
+[2018-08-09 11:16:41:103] [0000000001e6ad48] core playlist debug: starting playback of the new playlist item
+[2018-08-09 11:16:41:127] [0000000001e6ad48] core playlist debug: resyncing on rtp://10.0.0.2:5004
+[2018-08-09 11:16:41:133] [0000000001e6ad48] core playlist debug: rtp://10.0.0.2:5004 is at 0
+[2018-08-09 11:16:41:136] [0000000001e6ad48] core playlist debug: creating new input thread
+[2018-08-09 11:16:41:138] [00007f8a380009b8] core input debug: Creating an input for 'rtp://10.0.0.2:5004'
+[2018-08-09 11:16:41:146] [0000000001e6ad48] core playlist debug: requesting art for rtp://10.0.0.2:5004
+[2018-08-09 11:16:41:150] [0000000001e9f378] qt4 interface debug: IM: Setting an input
+[2018-08-09 11:16:41:157] [00007f8a30000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-09 11:16:41:162] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-09 11:16:41:165] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-09 11:16:41:169] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-09 11:16:41:171] [00007f8a30000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-09 11:16:41:172] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-08-09 11:16:41:174] [00007f8a30000958] core art finder debug: no meta fetcher modules matched
+[2018-08-09 11:16:41:181] [0000000001d82148] core libvlc debug: searching art for rtp://10.0.0.2:5004
+[2018-08-09 11:16:41:201] [00007f8a30000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-09 11:16:41:201] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-09 11:16:41:202] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-09 11:16:41:203] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-09 11:16:41:203] [00007f8a30000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-09 11:16:41:205] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-09 11:16:41:206] [00007f8a380009b8] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-08-09 11:16:41:207] [00007f8a380009b8] core input debug: `rtp://10.0.0.2:5004' gives access `rtp' demux `' path `10.0.0.2:5004'
+[2018-08-09 11:16:41:209] [00007f8a380009b8] core input debug: specified demux `any'
+[2018-08-09 11:16:41:210] [00007f8a380009b8] core input debug: creating demux: access='rtp' demux='any' location='10.0.0.2:5004' file='(null)'
+[2018-08-09 11:16:41:214] [00007f8a34000e88] core demux debug: looking for access_demux module matching "rtp": 20 candidates
+[2018-08-09 11:16:41:218] [00007f8a34000e88] core demux debug: net: opening 10.0.0.2 datagram port 5004
+[2018-08-09 11:16:41:221] [00007f8a34000e88] core demux debug: using access_demux module "rtp"
+[2018-08-09 11:16:41:223] [00007f8a34001d88] core demux meta debug: looking for meta reader module matching "any": 2 candidates
+[2018-08-09 11:16:41:236] [00007f8a34001d88] lua demux meta debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/reader
+[2018-08-09 11:16:41:236] [00007f8a34001d88] lua demux meta debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/reader
+[2018-08-09 11:16:41:241] [00007f8a34001d88] lua demux meta debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/reader/filename.luac
+[2018-08-09 11:16:41:241] [00007f8a34001d88] lua demux meta debug: Trying Lua scripts in /usr/share/vlc/lua/meta/reader
+[2018-08-09 11:16:41:242] [00007f8a34001d88] core demux meta debug: no meta reader modules matched
+[2018-08-09 11:16:41:243] [00007f8a380009b8] core input debug: `rtp://10.0.0.2:5004' successfully opened
+[2018-08-09 11:16:41:246] [00007f8a30000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-09 11:16:41:247] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-09 11:16:41:255] [00007f8a30000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-09 11:16:41:256] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-09 11:16:41:257] [00007f8a30000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-09 11:16:41:258] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-09 11:16:41:260] [00007f8a30000958] core art finder debug: no art finder modules matched
+[2018-08-09 11:16:41:263] [00007f8a30000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-09 11:16:41:265] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-09 11:16:41:276] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-09 11:16:41:277] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-09 11:16:41:278] [00007f8a30000958] core art finder debug: using meta fetcher module "lua"
+[2018-08-09 11:16:41:280] [00007f8a30000958] core art finder debug: removing module "lua"
+[2018-08-09 11:16:41:281] [0000000001d82148] core libvlc debug: searching art for rtp://10.0.0.2:5004
+[2018-08-09 11:16:41:284] [00007f8a30000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-09 11:16:41:285] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-09 11:16:41:290] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-09 11:16:41:295] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-09 11:16:41:297] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-09 11:16:41:298] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-09 11:16:41:299] [00007f8a30000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-09 11:16:41:303] [00007f8a30000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-09 11:16:41:304] [00007f8a30000958] core art finder debug: no art finder modules matched
+[2018-08-09 11:16:41:305] [0000000001d82148] core libvlc debug: art not found for rtp://10.0.0.2:5004
+[2018-08-09 11:16:41:770] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:41:787] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:41:836] [00007f8a34000e88] rtp demux debug: detected MPEG2 TS
+[2018-08-09 11:16:41:837] [00007f8a34000e88] rtp demux debug: added payload type 33 (f = 90000 Hz)
+[2018-08-09 11:16:41:838] [00007f8a34000e88] rtp demux debug: added RTP source (f011ceb0)
+[2018-08-09 11:16:41:839] [00007f8a30010aa8] core stream debug: creating demux: access='' demux='any' location='' file='(null)'
+[2018-08-09 11:16:41:844] [00007f8a28000958] core demux debug: looking for demux module matching "any": 66 candidates
+[2018-08-09 11:16:41:915] [00007f8a28000958] mod demux debug: MOD validation failed (ext=)
+[2018-08-09 11:16:41:956] [00007f8a28000958] ts demux debug: Force Seek Per Percent: PCR's not found,
+[2018-08-09 11:16:41:960] [00007f8a28000958] ts demux debug: PATCallBack called
+[2018-08-09 11:16:41:961] [00007f8a28000958] ts demux debug: new PAT ts_id=20162 version=28 current_next=1
+[2018-08-09 11:16:41:983] [00007f8a28000958] ts demux debug: filebeat.template.json logs net README.md sampleVideo.mkv timestamp.sh toponew.py number=1 pid=66
+[2018-08-09 11:16:41:993] [00007f8a28000958] ts demux debug: PMTCallBack called
+[2018-08-09 11:16:42:004] [00007f8a28000958] ts demux debug: new PMT program number=1 version=17 pid_pcr=68
+[2018-08-09 11:16:42:026] [00007f8a28000958] ts demux debug: filebeat.template.json logs net README.md sampleVideo.mkv timestamp.sh toponew.py es pid=68 type=16 dr->i_tag=0xa
+[2018-08-09 11:16:42:028] [00007f8a28000958] ts demux error: MPEG-4 descriptor not found for pid 0x44 type 0x10
+[2018-08-09 11:16:42:036] [00007f8a28000958] ts demux debug: filebeat.template.json logs net README.md sampleVideo.mkv timestamp.sh toponew.py es pid=68 type=16 fcc=mp4v
+[2018-08-09 11:16:42:044] [00007f8a380009b8] core input debug: selecting program id=1
+[2018-08-09 11:16:42:046] [00007f8a28093f48] core decoder debug: looking for decoder module matching "any": 42 candidates
+[2018-08-09 11:16:42:059] [00007f8a28093f48] avcodec decoder debug: CPU flags: 0x0100d3db
+[2018-08-09 11:16:42:067] [00007f8a28093f48] avcodec decoder debug: trying to use direct rendering
+[2018-08-09 11:16:42:083] [00007f8a28093f48] avcodec decoder debug: allowing 1 thread(s) for decoding
+[2018-08-09 11:16:42:091] [00007f8a28093f48] avcodec decoder debug: avcodec codec (MPEG-4 Video) started
+[2018-08-09 11:16:42:095] [00007f8a28093f48] core decoder debug: using decoder module "avcodec"
+[2018-08-09 11:16:42:100] [00007f8a280b7a28] core packetizer debug: looking for packetizer module matching "any": 23 candidates
+[2018-08-09 11:16:42:102] [00007f8a280b7a28] core packetizer debug: using packetizer module "packetizer_mpeg4video"
+[2018-08-09 11:16:42:109] [00007f8a28000958] ts demux debug: filebeat.template.json logs net README.md sampleVideo.mkv timestamp.sh toponew.py es pid=69 type=15 dr->i_tag=0xa
+[2018-08-09 11:16:42:116] [00007f8a28000958] ts demux: MPEG-4 descriptor not found for pid 0x45 type 0xf
+[2018-08-09 11:16:42:118] [00007f8a28000958] ts demux debug: found language: net
+[2018-08-09 11:16:42:123] [00007f8a28000958] ts demux debug: filebeat.template.json logs net README.md sampleVideo.mkv timestamp.sh toponew.py es pid=69 type=15 fcc=mp4a
+[2018-08-09 11:16:42:128] [00007f8a280bd958] core decoder debug: looking for decoder module matching "any": 42 candidates
+[2018-08-09 11:16:42:148] [00007f8a280bd958] core decoder debug: using decoder module "faad"
+[2018-08-09 11:16:42:164] [00007f8a280bf3d8] core packetizer debug: looking for packetizer module matching "any": 23 candidates
+[2018-08-09 11:16:42:174] [00007f8a280bf3d8] packetizer_mpeg4audio packetizer debug: running MPEG4 audio packetizer
+[2018-08-09 11:16:42:184] [00007f8a280bf3d8] packetizer_mpeg4audio packetizer debug: no decoder specific info, must be an ADTS or LOAS stream
+[2018-08-09 11:16:42:195] [00007f8a280bf3d8] core packetizer debug: using packetizer module "packetizer_mpeg4audio"
+[2018-08-09 11:16:42:204] [00007f8a28000958] core demux debug: using demux module "ts"
+[2018-08-09 11:16:42:214] [00007f8a28000958] ts demux debug: DEMUX_SET_GROUP -1 (nil)
+[2018-08-09 11:16:42:226] [00007f8a380009b8] core input debug: Buffering 0%
+[2018-08-09 11:16:42:227] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:237] [00007f8a380009b8] core input debug: Buffering 17%
+[2018-08-09 11:16:42:238] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:239] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:240] [00007f8a280bf3d8] packetizer_mpeg4audio packetizer debug: detected ADTS format
+[2018-08-09 11:16:42:248] [00007f8a280bf3d8] packetizer_mpeg4audio packetizer: AAC channels: 6 samplerate: 48000
+[2018-08-09 11:16:42:249] [00007f8a280bd958] faad decoder warning: decoded zero sample
+[2018-08-09 11:16:42:254] [0000000001e6ad48] core playlist debug: reusing audio output
+[2018-08-09 11:16:42:255] [0000000001e852f8] pulse audio output debug: using surround-51 channel map
+[2018-08-09 11:16:42:265] [0000000001e852f8] pulse audio output debug: changed buffer metrics: maxlength=4194312, tlength=207288, prebuf=0, minreq=46080
+[2018-08-09 11:16:42:271] [0000000001e852f8] pulse audio output debug: connected to sink alsa_output.pci-0000_00_05.0.analog-stereo
+[2018-08-09 11:16:42:274] [0000000001e852f8] core audio output debug: output 'f32l' 48000 Hz 3F2R/LFE frame=1 samples/24 bytes
+[2018-08-09 11:16:42:281] [0000000001e71b98] core volume debug: looking for audio volume module matching "any": 2 candidates
+[2018-08-09 11:16:42:286] [0000000001e71b98] core volume debug: using audio volume module "float_mixer"
+[2018-08-09 11:16:42:297] [0000000001e852f8] core audio output debug: input 'f32l' 48000 Hz 3F2R/LFE frame=1 samples/24 bytes
+[2018-08-09 11:16:42:298] [0000000001ed6108] core audio filter debug: looking for audio filter module matching "scaletempo": 14 candidates
+[2018-08-09 11:16:42:299] [0000000001ed6108] scaletempo audio filter debug: format: 48000 rate, 6 nch, 4 bps, fl32
+[2018-08-09 11:16:42:304] [0000000001ed6108] scaletempo audio filter debug: params: 30 stride, 0,200 overlap, 14 search
+[2018-08-09 11:16:42:311] [0000000001ed6108] scaletempo audio filter debug: 1,000 scale, 1440,000 stride_in, 1440 stride_out, 1152 standing, 288 overlap, 672 search, 2400 queue, fl32 mode
+[2018-08-09 11:16:42:312] [0000000001ed6108] core audio filter debug: using audio filter module "scaletempo"
+[2018-08-09 11:16:42:316] [0000000001e852f8] core audio output debug: conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz 3F2R/LFE->3F2R/LFE
+[2018-08-09 11:16:42:326] [0000000001e852f8] core audio output debug: conversion pipeline complete
+[2018-08-09 11:16:42:327] [0000000001e852f8] core audio output debug: conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz 3F2R/LFE->3F2R/LFE
+[2018-08-09 11:16:42:333] [0000000001e852f8] core audio output debug: conversion pipeline complete
+[2018-08-09 11:16:42:333] [0000000001eeb7e8] core audio resampler debug: looking for audio resampler module matching "any": 3 candidates
+[2018-08-09 11:16:42:337] [0000000001eeb7e8] core audio resampler debug: using audio resampler module "samplerate"
+[2018-08-09 11:16:42:337] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:339] [00007f8a280bd958] core decoder debug: End of audio preroll
+[2018-08-09 11:16:42:346] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:351] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:362] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:379] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:390] [00007f8a380009b8] core input warning: clock gap, unexpected stream discontinuity
+[2018-08-09 11:16:42:404] [00007f8a380009b8] core input warning: feeding synchro with a new reference point trying to recover from clock gap
+[2018-08-09 11:16:42:406] [00007f8a380009b8] core input debug: Buffering 0%
+[2018-08-09 11:16:42:410] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:412] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:422] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:430] [00007f8a380009b8] core input debug: Buffering 7%
+[2018-08-09 11:16:42:434] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:439] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:441] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:442] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:446] [00007f8a380009b8] core input debug: Buffering 14%
+[2018-08-09 11:16:42:452] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:453] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:456] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:459] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:459] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:467] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:472] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:487] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:493] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:496] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:503] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:506] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:511] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:513] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:520] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:536] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:537] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:541] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:545] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:557] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:559] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:562] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:568] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:574] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:582] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:587] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:590] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:590] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:599] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:610] [0000000001e852f8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-09 11:16:42:616] [00007f8a380009b8] core input debug: Buffering 21%
+[2018-08-09 11:16:42:619] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:621] [00007f8a380009b8] core input debug: Buffering 28%
+[2018-08-09 11:16:42:626] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:627] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:628] [00007f8a380009b8] core input debug: Buffering 35%
+[2018-08-09 11:16:42:632] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:634] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:640] [00007f8a380009b8] core input debug: Buffering 42%
+[2018-08-09 11:16:42:642] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:646] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:650] [00007f8a380009b8] core input debug: Buffering 49%
+[2018-08-09 11:16:42:651] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:657] [00007f8a380009b8] core input debug: Buffering 57%
+[2018-08-09 11:16:42:658] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:766] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:773] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:775] [00007f8a380009b8] core input debug: Buffering 63%
+[2018-08-09 11:16:42:786] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:796] [00007f8a380009b8] core input debug: Buffering 70%
+[2018-08-09 11:16:42:797] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:808] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:813] [00007f8a380009b8] core input debug: Buffering 78%
+[2018-08-09 11:16:42:815] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:843] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:858] [00007f8a380009b8] core input debug: Buffering 84%
+[2018-08-09 11:16:42:862] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:876] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:42:883] [00007f8a380009b8] core input debug: Buffering 92%
+[2018-08-09 11:16:42:886] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:102] [00007f8a380009b8] core input debug: Buffering 99%
+[2018-08-09 11:16:43:103] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:119] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:152] [00007f8a380009b8] core input debug: Stream buffering done (1070 ms in 990 ms)
+[2018-08-09 11:16:43:159] [00007f8a380009b8] core input debug: Decoder wait done in 0 ms
+[2018-08-09 11:16:43:175] [0000000001e852f8] pulse audio output debug: cannot synchronize start
+[2018-08-09 11:16:43:188] [0000000001e852f8] pulse audio output warning: starting late (-43647 us)
+[2018-08-09 11:16:43:194] [0000000001e852f8] pulse audio output debug: started
+[2018-08-09 11:16:43:205] [0000000001e852f8] pulse audio output debug: underflow
+[2018-08-09 11:16:43:211] [0000000001e852f8] pulse audio output debug: underflow
+[2018-08-09 11:16:43:224] [0000000001e852f8] pulse audio output debug: underflow
+[2018-08-09 11:16:43:225] [0000000001e852f8] pulse audio output debug: underflow
+[2018-08-09 11:16:43:234] [0000000001e852f8] pulse audio output debug: underflow
+[2018-08-09 11:16:43:250] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:257] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:260] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:261] [0000000001e852f8] core audio output warning: playback too late (152463): up-sampling
+[2018-08-09 11:16:43:410] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:428] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:450] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:461] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:475] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:490] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:500] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:518] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:527] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:535] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:728] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:744] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:756] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:767] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:43:783] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:041] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:061] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:091] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:092] [0000000001e852f8] core audio output warning: playback too early (-40296): down-sampling
+[2018-08-09 11:16:44:110] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:133] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:153] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:162] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:170] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:182] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:188] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:373] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:385] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:393] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:402] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:419] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:433] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:447] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:457] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:476] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:481] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:701] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:714] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:719] [0000000001e852f8] core audio output warning: playback too late (127628): up-sampling
+[2018-08-09 11:16:44:732] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:744] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:44:752] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:015] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:020] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:037] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:047] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:055] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:060] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:071] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:083] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:087] [0000000001e852f8] core audio output debug: resampling stopped (drift: 38972 us)
+[2018-08-09 11:16:45:097] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:104] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:331] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:337] [0000000001e852f8] core audio output warning: playback too late (85538): up-sampling
+[2018-08-09 11:16:45:343] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:360] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:368] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:377] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:646] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:665] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:681] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:694] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:704] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:714] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:724] [0000000001e852f8] core audio output debug: resampling stopped (drift: 3366 us)
+[2018-08-09 11:16:45:728] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:741] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:757] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:774] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:968] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:977] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:984] [0000000001e852f8] core audio output warning: playback too late (91003): up-sampling
+[2018-08-09 11:16:45:987] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:45:999] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:019] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:028] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:043] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:065] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:079] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:100] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:289] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:300] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:322] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:336] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:353] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:608] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:626] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:634] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:644] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:660] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:676] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:694] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:696] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:700] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:715] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:939] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:945] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:962] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:46:970] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:47:018] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:47:019] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:47:020] [00007f8a280b7a28] packetizer_mpeg4video packetizer warning: waiting for VOL
+[2018-08-09 11:16:47:258] [00007f8a28093f48] avcodec decoder debug: available hardware decoder output format 53 (vaapi_vld)
+[2018-08-09 11:16:47:282] [00007f8a28093f48] avcodec decoder debug: available hardware decoder output format 109 (vdpau)
+[2018-08-09 11:16:47:301] [00007f8a28093f48] avcodec decoder debug: available software decoder output format 0 (yuv420p)
+[2018-08-09 11:16:47:346] [00007f8a14000b08] core generic debug: looking for hw decoder module matching "any": 4 candidates
+[2018-08-09 11:16:47:352] [00007f8a14000b08] core generic debug: no hw decoder modules matched
+[2018-08-09 11:16:47:374] [00007f8a28093f48] avcodec decoder debug: available hardware decoder output format 53 (vaapi_vld)
+[2018-08-09 11:16:47:386] [00007f8a28093f48] avcodec decoder debug: available hardware decoder output format 109 (vdpau)
+[2018-08-09 11:16:47:400] [00007f8a28093f48] avcodec decoder debug: available software decoder output format 0 (yuv420p)
+[2018-08-09 11:16:47:423] [00007f8a14000b08] core generic debug: looking for hw decoder module matching "any": 4 candidates
+[2018-08-09 11:16:47:448] [00007f8a14000b08] core generic debug: no hw decoder modules matched
+[2018-08-09 11:16:47:454] [00007f8a14114678] core spu text debug: looking for text renderer module matching "any": 2 candidates
+[2018-08-09 11:16:47:473] [00007f8a14114678] freetype spu text debug: Building font databases.
+[2018-08-09 11:16:47:488] [00007f8a14114678] freetype spu text debug: Took 0 microseconds
+[2018-08-09 11:16:47:497] [00007f8a14114678] freetype spu text debug: Using Serif Bold as font from file /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+[2018-08-09 11:16:47:507] [00007f8a14114678] freetype spu text debug: Using Monospace as mono-font from file /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+[2018-08-09 11:16:47:522] [00007f8a14114678] freetype spu text debug: using fontsize: 2
+[2018-08-09 11:16:47:534] [00007f8a14114678] core spu text debug: using text renderer module "freetype"
+[2018-08-09 11:16:47:536] [00007f8a14116948] core scale debug: looking for video filter2 module matching "any": 63 candidates
+[2018-08-09 11:16:47:544] [00007f8a14116948] swscale scale debug: 32x32 (32x32) chroma: YUVA -> 16x16 (16x16) chroma: RGBA with scaling using Bicubic (good quality)
+[2018-08-09 11:16:47:551] [00007f8a14116948] core scale debug: using video filter2 module "swscale"
+[2018-08-09 11:16:47:574] [00007f8a14148f58] core scale debug: looking for video filter2 module matching "any": 63 candidates
+[2018-08-09 11:16:47:581] [00007f8a14148f58] yuvp scale debug: YUVP to YUVA converter
+[2018-08-09 11:16:47:625] [00007f8a14148f58] core scale debug: using video filter2 module "yuvp"
+[2018-08-09 11:16:47:635] [00007f8a14113368] core video output debug: Deinterlacing available
+[2018-08-09 11:16:47:662] [00007f8a14113368] core video output debug: deinterlace 0, mode blend, is_needed 0
+[2018-08-09 11:16:47:666] [00007f8a14113368] core video output debug: Opening vout display wrapper
+[2018-08-09 11:16:47:675] [00007f8a14151218] core vout display debug: looking for vout display module matching "any": 14 candidates
+[2018-08-09 11:16:47:685] [00007f8a14151b58] core window debug: looking for vout window xid module matching "qt4,any": 4 candidates
+[2018-08-09 11:16:47:695] [00007f8a14151b58] qt4 window debug: requesting video window...
+[2018-08-09 11:16:47:706] [0000000001e9f378] qt4 interface debug: Video was requested 0, 0
+[2018-08-09 11:16:47:725] [00007f8a14151b58] core window debug: using vout window xid module "qt4"
+[2018-08-09 11:16:47:730] [00007f8a14151d28] core inhibit debug: looking for inhibit module matching "any": 2 candidates
+[2018-08-09 11:16:47:734] [0000000001e852f8] core audio output debug: resampling stopped (drift: 27256 us)
+[2018-08-09 11:16:47:740] [00007f8a14151d28] dbus_screensaver inhibit error: cannot connect to session bus: Failed to connect to socket /tmp/dbus-TKXPlFu8q4: Conexión rehusada
+[2018-08-09 11:16:47:751] [00007f8a14151d28] core inhibit debug: using inhibit module "xdg"
+[2018-08-09 11:16:47:756] [00007f8a14151218] xcb vout display debug: connected to X11.0 server
+[2018-08-09 11:16:47:774] [00007f8a14151218] xcb vout display debug: vendor : The X.Org Foundation
+[2018-08-09 11:16:47:782] [00007f8a14151218] xcb vout display debug: version: 11903000
+[2018-08-09 11:16:47:784] [00007f8a14151218] xcb vout display debug: using screen 0x281
+[2018-08-09 11:16:47:797] [00007f8a14151218] vdpau_display vout display debug: device creation failure: error 1
+[2018-08-09 11:16:47:798] [00007f8a14113368] core video output debug: Reusing previous vout window
+[2018-08-09 11:16:47:811] [00007f8a14151218] xcb vout display debug: connected to X11.0 server
+[2018-08-09 11:16:47:813] [00007f8a14151218] xcb vout display debug: vendor : The X.Org Foundation
+[2018-08-09 11:16:47:818] [00007f8a14151218] xcb vout display debug: version: 11903000
+[2018-08-09 11:16:47:829] [00007f8a14151218] xcb vout display debug: using screen 0x281
+[2018-08-09 11:16:47:830] [00007f8a14151218] xcb_xv vout display debug: using XVideo extension v2.2
+[2018-08-09 11:16:47:840] [00007f8a14151218] xcb_xv vout display error: no available XVideo adaptor
+[2018-08-09 11:16:47:842] [00007f8a14113368] core video output debug: Reusing previous vout window
+[2018-08-09 11:16:47:860] [00007f8a14151218] xcb vout display debug: connected to X11.0 server
+[2018-08-09 11:16:47:863] [00007f8a14151218] xcb vout display debug: vendor : The X.Org Foundation
+[2018-08-09 11:16:47:864] [00007f8a14151218] xcb vout display debug: version: 11903000
+[2018-08-09 11:16:47:874] [00007f8a14151218] xcb vout display debug: using screen 0x281
+[2018-08-09 11:16:47:877] [00007f8a141538a8] core gl debug: looking for opengl module matching "glx": 2 candidates
+[2018-08-09 11:16:47:878] [00007f8a141538a8] glx gl debug: using GLX extension version 1.4
+[2018-08-09 11:16:47:893] [00007f8a141538a8] core gl debug: using opengl module "glx"
+[2018-08-09 11:16:47:898] [00007f8a14151218] core vout display debug: VoutDisplayEvent 'fullscreen' 0
+[2018-08-09 11:16:47:916] [00007f8a14151218] core vout display debug: VoutDisplayEvent 'resize' 1280x720 window
+[2018-08-09 11:16:47:927] [00007f8a14151218] core vout display debug: using vout display module "xcb_glx"
+[2018-08-09 11:16:47:939] [00007f8a14113368] core video output debug: original format sz 1280x736, of (0,0), vsz 1280x720, 4cc I420, sar 1:1, msk r0x0 g0x0 b0x0
+[2018-08-09 11:16:47:946] [00007f8a14114678] core spu text debug: removing module "freetype"
+[2018-08-09 11:16:47:956] [00007f8a14114678] core spu text debug: looking for text renderer module matching "any": 2 candidates
+[2018-08-09 11:16:47:972] [00007f8a14114678] freetype spu text debug: Building font databases.
+[2018-08-09 11:16:47:980] [00007f8a14114678] freetype spu text debug: Took 0 microseconds
+[2018-08-09 11:16:47:984] [00007f8a14114678] freetype spu text debug: Using Serif Bold as font from file /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+[2018-08-09 11:16:48:000] [00007f8a14114678] freetype spu text debug: Using Monospace as mono-font from file /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+[2018-08-09 11:16:48:001] [00007f8a14114678] freetype spu text debug: using fontsize: 2
+[2018-08-09 11:16:48:003] [00007f8a14114678] core spu text debug: using text renderer module "freetype"
+[2018-08-09 11:16:48:013] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:48:019] [00007f8a28093f48] core decoder debug: End of video preroll
+[2018-08-09 11:16:48:029] [0000000001e852f8] core audio output warning: playback too late (109273): up-sampling
+[2018-08-09 11:16:48:276] [0000000001e852f8] core audio output debug: resampling stopped (drift: 32706 us)
+[2018-08-09 11:16:48:607] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:48:622] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:48:632] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:48:643] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:48:647] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:48:658] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:48:659] [00007f8a14151218] core vout display debug: auto hiding mouse cursor
+[2018-08-09 11:16:48:670] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 97 ms)
+[2018-08-09 11:16:48:674] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 57 ms)
+[2018-08-09 11:16:48:675] [00007f8a14113368] core video output debug: picture might be displayed late (missing 17 ms)
+[2018-08-09 11:16:48:839] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:48:869] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:48:891] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:48:903] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:48:916] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:48:947] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:48:961] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:48:965] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:48:986] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 209 ms)
+[2018-08-09 11:16:48:990] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 169 ms)
+[2018-08-09 11:16:49:012] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 129 ms)
+[2018-08-09 11:16:49:015] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 89 ms)
+[2018-08-09 11:16:49:022] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 49 ms)
+[2018-08-09 11:16:49:028] [00007f8a14113368] core video output debug: picture might be displayed late (missing 9 ms)
+[2018-08-09 11:16:49:032] [0000000001e852f8] core audio output warning: playback too late (64980): up-sampling
+[2018-08-09 11:16:49:046] [0000000001e852f8] core audio output debug: resampling stopped (drift: -14248 us)
+[2018-08-09 11:16:49:284] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:293] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:298] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:302] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:315] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:335] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:338] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:339] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 254 ms)
+[2018-08-09 11:16:49:342] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 287 ms)
+[2018-08-09 11:16:49:352] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 247 ms)
+[2018-08-09 11:16:49:360] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 207 ms)
+[2018-08-09 11:16:49:369] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 167 ms)
+[2018-08-09 11:16:49:434] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:438] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:450] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:453] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:464] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:465] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:474] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:485] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:490] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:505] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:49:506] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:515] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:527] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:551] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 312 ms)
+[2018-08-09 11:16:49:631] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:634] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:635] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:646] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:678] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:679] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:681] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:687] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:690] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:49:693] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:49:717] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:49:719] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 143 ms)
+[2018-08-09 11:16:49:720] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 104 ms)
+[2018-08-09 11:16:49:722] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 64 ms)
+[2018-08-09 11:16:49:725] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 24 ms)
+[2018-08-09 11:16:49:773] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 79 ms)
+[2018-08-09 11:16:49:785] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 39 ms)
+[2018-08-09 11:16:50:094] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:099] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:114] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:119] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:127] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:129] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:142] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 275 ms)
+[2018-08-09 11:16:50:150] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 175 ms)
+[2018-08-09 11:16:50:177] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 135 ms)
+[2018-08-09 11:16:50:207] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 95 ms)
+[2018-08-09 11:16:50:290] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:292] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:304] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:306] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:314] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:340] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:340] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:342] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:349] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:366] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 313 ms)
+[2018-08-09 11:16:50:369] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 273 ms)
+[2018-08-09 11:16:50:436] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:455] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:50:466] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:494] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:516] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:50:524] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:551] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:554] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:559] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:639] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:642] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:648] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:667] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:669] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:679] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:50:689] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:50:696] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:50:823] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 271 ms)
+[2018-08-09 11:16:50:838] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 159 ms)
+[2018-08-09 11:16:50:851] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 119 ms)
+[2018-08-09 11:16:50:862] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 79 ms)
+[2018-08-09 11:16:50:874] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 39 ms)
+[2018-08-09 11:16:51:064] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:068] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:078] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:079] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:098] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:117] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:127] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 252 ms)
+[2018-08-09 11:16:51:140] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 212 ms)
+[2018-08-09 11:16:51:163] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 172 ms)
+[2018-08-09 11:16:51:168] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 132 ms)
+[2018-08-09 11:16:51:169] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 92 ms)
+[2018-08-09 11:16:51:171] [0000000001e852f8] core audio output warning: playback too late (98311): up-sampling
+[2018-08-09 11:16:51:239] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 308 ms)
+[2018-08-09 11:16:51:341] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:354] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:356] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:367] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:51:389] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:392] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:51:393] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:394] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:409] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:474] [0000000001e852f8] core audio output debug: resampling stopped (drift: 26977 us)
+[2018-08-09 11:16:51:548] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:577] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:580] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:594] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:599] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:603] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:611] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:637] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:648] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 77 ms)
+[2018-08-09 11:16:51:650] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 37 ms)
+[2018-08-09 11:16:51:713] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 108 ms)
+[2018-08-09 11:16:51:714] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 68 ms)
+[2018-08-09 11:16:51:722] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 28 ms)
+[2018-08-09 11:16:51:904] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:923] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:925] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:929] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:51:944] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:51:946] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:51:966] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 210 ms)
+[2018-08-09 11:16:51:967] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 170 ms)
+[2018-08-09 11:16:51:968] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 130 ms)
+[2018-08-09 11:16:51:982] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 90 ms)
+[2018-08-09 11:16:51:991] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 50 ms)
+[2018-08-09 11:16:52:017] [00007f8a14113368] core video output debug: picture might be displayed late (missing 10 ms)
+[2018-08-09 11:16:52:316] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:52:321] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:52:321] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:52:338] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:52:342] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:52:350] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:52:352] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:52:366] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:52:375] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:52:377] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:52:383] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:52:406] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:52:415] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:52:457] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 296 ms)
+[2018-08-09 11:16:52:461] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 256 ms)
+[2018-08-09 11:16:52:484] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 216 ms)
+[2018-08-09 11:16:52:510] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 176 ms)
+[2018-08-09 11:16:52:514] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 136 ms)
+[2018-08-09 11:16:52:538] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 96 ms)
+[2018-08-09 11:16:52:603] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:52:619] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:52:630] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:52:638] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:52:651] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:52:654] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:52:792] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 413 ms)
+[2018-08-09 11:16:52:811] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 373 ms)
+[2018-08-09 11:16:52:812] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 333 ms)
+[2018-08-09 11:16:52:819] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 293 ms)
+[2018-08-09 11:16:52:830] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 283 ms)
+[2018-08-09 11:16:52:834] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 243 ms)
+[2018-08-09 11:16:52:838] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 203 ms)
+[2018-08-09 11:16:52:858] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 163 ms)
+[2018-08-09 11:16:52:859] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 123 ms)
+[2018-08-09 11:16:52:970] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:52:972] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:52:980] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:53:006] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:53:010] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:53:013] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:53:033] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 319 ms)
+[2018-08-09 11:16:53:034] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 279 ms)
+[2018-08-09 11:16:53:057] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 239 ms)
+[2018-08-09 11:16:53:076] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 199 ms)
+[2018-08-09 11:16:53:081] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 159 ms)
+[2018-08-09 11:16:53:115] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 119 ms)
+[2018-08-09 11:16:53:242] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:53:244] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:53:250] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:53:275] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:53:300] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:53:306] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:53:310] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:53:314] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:53:327] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:53:334] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 150 ms)
+[2018-08-09 11:16:53:351] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 110 ms)
+[2018-08-09 11:16:53:360] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 70 ms)
+[2018-08-09 11:16:53:375] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 30 ms)
+[2018-08-09 11:16:53:467] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 169 ms)
+[2018-08-09 11:16:53:469] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 130 ms)
+[2018-08-09 11:16:53:594] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:53:623] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:53:624] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:53:625] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 284 ms)
+[2018-08-09 11:16:53:633] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 244 ms)
+[2018-08-09 11:16:53:655] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 204 ms)
+[2018-08-09 11:16:53:660] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 164 ms)
+[2018-08-09 11:16:53:856] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:53:889] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:53:899] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 328 ms)
+[2018-08-09 11:16:53:900] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 288 ms)
+[2018-08-09 11:16:54:039] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:54:064] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:54:075] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:54:100] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:54:109] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:54:122] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:54:128] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:54:146] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:54:162] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:54:264] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:54:270] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:54:279] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:54:311] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:54:314] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:54:322] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:54:333] [00007f8a28093f48] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-08-09 11:16:54:356] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:54:399] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:54:404] [0000000001e852f8] core audio output warning: playback too late (66229): up-sampling
+[2018-08-09 11:16:54:569] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:54:692] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:54:701] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:54:711] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:54:718] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:54:732] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:54:746] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:54:790] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:54:795] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:54:798] [00007f8a28093f48] avcodec decoder debug: enabling direct rendering
+[2018-08-09 11:16:54:841] [00007f8a28093f48] avcodec decoder warning: plane 0 not aligned
+[2018-08-09 11:16:54:847] [00007f8a28093f48] avcodec decoder warning: disabling direct rendering
+[2018-08-09 11:16:54:861] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 292 ms)
+[2018-08-09 11:16:54:863] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 252 ms)
+[2018-08-09 11:16:54:884] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 212 ms)
+[2018-08-09 11:16:54:887] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 172 ms)
+[2018-08-09 11:16:54:915] [00007f8a14113368] core video output warning: picture is too late to be displayed (missing 132 ms)
+[2018-08-09 11:16:54:916] [0000000001d82148] core libvlc debug: removing all interfaces
+[2018-08-09 11:16:54:917] [0000000001d82148] core libvlc debug: exiting
+[2018-08-09 11:16:54:926] [0000000001e9f378] core interface debug: removing module "qt4"
+[2018-08-09 11:16:54:947] [0000000001e6ad48] core playlist debug: deactivating the playlist
+[2018-08-09 11:16:54:947] [0000000001e6ad48] core playlist debug: incoming request - stopping current input
+[2018-08-09 11:16:54:949] [00007f8a380009b8] core input debug: control: stopping input
+[2018-08-09 11:16:54:968] [0000000001e6ad48] core playlist debug: incoming request - stopping current input
+[2018-08-09 11:16:54:970] [0000000001e6ad48] core playlist debug: finished input
+[2018-08-09 11:16:55:004] [00007f8a28093f48] core decoder debug: removing module "avcodec"
+[2018-08-09 11:16:55:011] [00007f8a28093f48] avcodec decoder debug: ffmpeg codec (MPEG-4 Video) stopped
+[2018-08-09 11:16:55:037] [00007f8a28093f48] core decoder debug: killing decoder fourcc `mp4v', 30 PES in FIFO
+[2018-08-09 11:16:55:042] [0000000001e6ad48] core playlist debug: saving a free vout
+[2018-08-09 11:16:55:058] [0000000001e6ad48] core playlist debug: reusing provided vout
+[2018-08-09 11:16:55:116] [00007f8a14113368] qt4 video output debug: Qt: Fullscreen state changed
+[2018-08-09 11:16:55:127] [00007f8a280b7a28] core packetizer debug: removing module "packetizer_mpeg4video"
+[2018-08-09 11:16:55:132] [00007f8a280bd958] core decoder debug: removing module "faad"
+[2018-08-09 11:16:55:141] [00007f8a280bd958] core decoder debug: killing decoder fourcc `mp4a', 0 PES in FIFO
+[2018-08-09 11:16:55:146] [0000000001eeb7e8] core audio resampler debug: removing module "samplerate"
+[2018-08-09 11:16:55:152] [0000000001ed6108] core audio filter debug: removing module "scaletempo"
+[2018-08-09 11:16:55:152] [0000000001e71b98] core volume debug: removing module "float_mixer"
+[2018-08-09 11:16:55:156] [0000000001e6ad48] core playlist debug: keeping audio output
+[2018-08-09 11:16:55:158] [00007f8a280bf3d8] core packetizer debug: removing module "packetizer_mpeg4audio"
+[2018-08-09 11:16:55:162] [00007f8a34000e88] core demux debug: removing module "rtp"
+[2018-08-09 11:16:55:163] [00007f8a34000e88] rtp demux debug: removing RTP source (f011ceb0)
+[2018-08-09 11:16:55:174] [00007f8a28000958] ts demux debug: eof ?
+[2018-08-09 11:16:55:180] [00007f8a28000958] core demux debug: removing module "ts"
+[2018-08-09 11:16:55:182] [00007f8a28000958] ts demux debug: pid list:
+[2018-08-09 11:16:55:191] [00007f8a28000958] ts demux debug: - pid[0] seen
+[2018-08-09 11:16:55:201] [00007f8a28000958] ts demux debug: - pid[66] seen
+[2018-08-09 11:16:55:203] [00007f8a28000958] ts demux debug: - pid[68] seen
+[2018-08-09 11:16:55:205] [00007f8a380009b8] core input debug: Program doesn't contain anymore ES
+[2018-08-09 11:16:55:209] [00007f8a28000958] ts demux debug: - pid[69] seen
+[2018-08-09 11:16:55:218] [00007f8a28000958] ts demux debug: - pid[8191] seen
+[2018-08-09 11:16:55:221] [0000000001e6ad48] core playlist debug: incoming request - stopping current input
+[2018-08-09 11:16:55:223] [0000000001e6ad48] core playlist debug: dead input
+[2018-08-09 11:16:55:225] [0000000001e852f8] core audio output debug: removing module "pulse"
+[2018-08-09 11:16:55:226] [0000000001e9f378] qt4 interface debug: IM: Deleting the input
+[2018-08-09 11:16:55:233] [00007f8a14113368] core video output debug: destroying useless vout
+[2018-08-09 11:16:55:234] [00007f8a14151218] core vout display debug: removing module "xcb_glx"
+[2018-08-09 11:16:55:246] [00007f8a141538a8] core gl debug: removing module "glx"
+[2018-08-09 11:16:55:246] [00007f8a14151d28] core inhibit debug: removing module "xdg"
+[2018-08-09 11:16:55:248] [00007f8a14151b58] qt4 window debug: releasing video...
+[2018-08-09 11:16:55:249] [0000000001e9f378] qt4 interface debug: Video is not needed anymore
+[2018-08-09 11:16:55:251] [00007f8a14114678] core spu text debug: removing module "freetype"
+[2018-08-09 11:16:55:258] [00007f8a14148f58] core scale debug: removing module "yuvp"
+[2018-08-09 11:16:55:259] [00007f8a14116948] core scale debug: removing module "swscale"
+[2018-08-09 11:16:55:260] [0000000001e9f378] qt4 interface debug: requesting exit...
+[2018-08-09 11:16:55:263] [0000000001e9f378] qt4 interface debug: waiting for UI thread...
+[2018-08-09 11:16:55:265] [0000000001d82148] core libvlc debug: exiting
+[2018-08-09 11:16:55:268] [0000000001e9f378] qt4 interface debug: QApp exec() finished
+[2018-08-09 11:16:55:270] [0000000001e9f378] qt4 interface debug: Video is not needed anymore
+[2018-08-09 11:16:55:275] [0000000001e9f378] qt4 interface debug: Killing extension dialog provider
+[2018-08-09 11:16:55:278] [0000000001e9f378] qt4 interface debug: ExtensionsDialogProvider is quitting...
+[2018-08-09 11:16:55:284] [00007f8a400a4758] core generic debug: removing module "lua"
+[2018-08-09 11:16:55:285] [00007f8a400a4758] lua generic debug: Deactivating all loaded extensions
+[2018-08-09 11:16:55:288] [00007f8a400a4758] lua generic debug: All extensions are now deactivated
+[2018-08-09 11:16:55:288] [0000000001e9d808] core interface debug: removing module "xcb_hotkeys"
+[2018-08-09 11:16:55:296] [0000000001e98a08] core interface debug: removing module "hotkeys"
+[2018-08-09 11:16:55:298] [0000000001e6ad48] core playlist debug: destroying
+[2018-08-09 11:16:55:299] [0000000001ebff28] core playlist export debug: saving Biblioteca multimedia to file /home/bayes/.local/share/vlc/ml.xspf.tmp25523
+[2018-08-09 11:16:55:302] [0000000001ebff28] core playlist export debug: looking for playlist export module matching "export-xspf": 4 candidates
+[2018-08-09 11:16:55:304] [0000000001ebff28] core playlist export debug: using playlist export module "export"
+[2018-08-09 11:16:55:307] [0000000001ebff28] core playlist export debug: removing module "export"
+[2018-08-09 11:16:55:310] QObject::~QObject: Timers cannot be stopped from another thread

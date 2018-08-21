@@ -1,0 +1,697 @@
+[2018-08-21 14:26:40:656] [00000000020da148] core libvlc debug: VLC media player - 2.2.2 Weatherwax
+[2018-08-21 14:26:40:676] [00000000020da148] core libvlc debug: Copyright © 1996-2016 the VideoLAN team
+[2018-08-21 14:26:40:703] [00000000020da148] core libvlc debug: revision 2.2.2-0-g6259d80
+[2018-08-21 14:26:40:769] [00000000020da148] core libvlc debug: configured with ./configure '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--libexecdir=${prefix}/lib/x86_64-linux-gnu' '--disable-maintainer-mode' '--disable-dependency-tracking' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc-data' '--libdir=/usr/lib' '--with-binary-version=2.2.2-5ubuntu0.16.04.4' '--enable-a52' '--enable-aa' '--enable-bluray' '--enable-bonjour' '--enable-caca' '--enable-chromaprint' '--enable-dbus' '--enable-dca' '--enable-directfb' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freerdp' '--enable-freetype' '--enable-fribidi' '--disable-gles1' '--enable-gles2' '--enable-gnutls' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-mkv' '--enable-mod' '--enable-mpc' '--enable-mtp' '--enable-mux_ogg' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-schroedinger' '--enable-sdl' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vcdx' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/kde4/apps/solid/actions/' '--disable-decklink' '--disable-dxva2' '--disable-fdkaac' '--disable-gnomevfs' '--disable-goom' '--disable-libtar' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-sndio' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-atmo' '--enable-dc1394' '--enable-dv1394' '--enable-linsys' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security'
+[2018-08-21 14:26:40:814] [00000000020da148] core libvlc debug: searching plug-in modules
+[2018-08-21 14:26:40:823] [00000000020da148] core libvlc debug: loading plugins cache file /usr/lib/vlc/plugins/plugins.dat
+[2018-08-21 14:26:40:858] [00000000020da148] core libvlc debug: recursively browsing `/usr/lib/vlc/plugins'
+[2018-08-21 14:26:40:865] [00000000020da148] core libvlc debug: saving plugins cache /usr/lib/vlc/plugins/plugins.dat
+[2018-08-21 14:26:40:903] [00000000020da148] core libvlc debug: plug-ins loaded: 459 modules
+[2018-08-21 14:26:40:910] [00000000020da148] core libvlc debug: opening config file (/home/bayes/.config/vlc/vlcrc)
+[2018-08-21 14:26:40:931] [00000000020da148] core libvlc debug: translation test: code is "es"
+[2018-08-21 14:26:40:948] [00000000020da148] core libvlc debug: CPU has capabilities MMX MMXEXT SSE SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 AVX AVX FPU
+[2018-08-21 14:26:40:966] [0000000002105688] core input debug: Creating an input for 'Biblioteca multimedia'
+[2018-08-21 14:26:40:979] [0000000002105688] core input debug: Input is a meta file: disabling unneeded options
+[2018-08-21 14:26:41:006] [0000000002105688] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-08-21 14:26:41:008] [0000000002105688] core input debug: `file/xspf-open:///home/bayes/.local/share/vlc/ml.xspf' gives access `file' demux `xspf-open' path `/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:26:41:035] [0000000002105688] core input debug: creating demux: access='file' demux='xspf-open' location='/home/bayes/.local/share/vlc/ml.xspf' file='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:26:41:042] [00000000021b60d8] core demux debug: looking for access_demux module matching "file": 20 candidates
+[2018-08-21 14:26:41:062] [00000000021b60d8] core demux debug: no access_demux modules matched
+[2018-08-21 14:26:41:075] [0000000002105688] core input debug: creating access 'file' location='/home/bayes/.local/share/vlc/ml.xspf', path='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:26:41:102] [00000000021b60d8] core access debug: looking for access module matching "file": 25 candidates
+[2018-08-21 14:26:41:126] [00000000021b60d8] filesystem access debug: opening file `/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:26:41:146] [00000000021b60d8] core access debug: using access module "filesystem"
+[2018-08-21 14:26:41:164] [00000000021dd4c8] core stream debug: Using stream method for AStream*
+[2018-08-21 14:26:41:186] [00000000021dd4c8] core stream debug: starting pre-buffering
+[2018-08-21 14:26:41:227] [00000000021dd4c8] core stream debug: received first data after 0 ms
+[2018-08-21 14:26:41:266] [00000000021dd4c8] core stream debug: pre-buffering done 304 bytes in 0s - 18554 KiB/s
+[2018-08-21 14:26:41:290] [00000000021dd728] core stream debug: looking for stream_filter module matching "any": 9 candidates
+[2018-08-21 14:26:41:318] [00000000021dd728] core stream debug: no stream_filter modules matched
+[2018-08-21 14:26:41:335] [00000000021dd728] core stream debug: looking for stream_filter module matching "record": 9 candidates
+[2018-08-21 14:26:41:355] [00000000021dd728] core stream debug: using stream_filter module "record"
+[2018-08-21 14:26:41:379] [0000000002105688] core input debug: creating demux: access='file' demux='xspf-open' location='/home/bayes/.local/share/vlc/ml.xspf' file='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-08-21 14:26:41:395] [00000000021e06c8] core demux debug: looking for demux module matching "xspf-open": 66 candidates
+[2018-08-21 14:26:41:415] [00000000021e06c8] xspf demux debug: using XSPF playlist reader
+[2018-08-21 14:26:41:451] [00000000021e06c8] core demux debug: using demux module "playlist"
+[2018-08-21 14:26:41:485] [00000000021e10c8] core demux meta debug: looking for meta reader module matching "any": 2 candidates
+[2018-08-21 14:26:41:488] [00000000021e10c8] lua demux meta debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/reader
+[2018-08-21 14:26:41:527] [00000000021e10c8] lua demux meta debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/reader
+[2018-08-21 14:26:41:538] [00000000021e10c8] lua demux meta debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/reader/filename.luac
+[2018-08-21 14:26:41:563] [00000000021e10c8] lua demux meta debug: Trying Lua scripts in /usr/share/vlc/lua/meta/reader
+[2018-08-21 14:26:41:595] [00000000021e10c8] core demux meta debug: no meta reader modules matched
+[2018-08-21 14:26:41:620] [0000000002105688] core input debug: `file/xspf-open:///home/bayes/.local/share/vlc/ml.xspf' successfully opened
+[2018-08-21 14:26:41:646] [00000000021f4798] core xml reader debug: looking for xml reader module matching "any": 1 candidates
+[2018-08-21 14:26:41:678] [00000000021f4798] core xml reader debug: using xml reader module "xml"
+[2018-08-21 14:26:41:691] [00000000021e06c8] xspf demux debug: parsed 0 tracks successfully
+[2018-08-21 14:26:41:726] [0000000002105688] core input debug: EOF reached
+[2018-08-21 14:26:41:739] [00000000021e06c8] core demux debug: removing module "playlist"
+[2018-08-21 14:26:41:767] [00000000021dd728] core stream debug: removing module "record"
+[2018-08-21 14:26:41:799] [00000000021b60d8] core access debug: removing module "filesystem"
+[2018-08-21 14:26:41:807] [00000000021c2f18] core playlist debug: creating audio output
+[2018-08-21 14:26:41:839] [00000000021dd4c8] core audio output debug: looking for audio output module matching "any": 5 candidates
+[2018-08-21 14:26:41:854] [00000000021dd4c8] pulse audio output debug: using library version 8.0.0
+[2018-08-21 14:26:41:864] [00000000021dd4c8] pulse audio output debug: (compiled with version 8.0.0, protocol 30)
+[2018-08-21 14:26:41:886] [00000000021dd4c8] pulse audio output debug: connected locally to unix:/run/user/1000/pulse/native as client #25
+[2018-08-21 14:26:41:907] [00000000021dd4c8] pulse audio output debug: using protocol 30, server protocol 30
+[2018-08-21 14:26:41:936] [00000000021dd4c8] pulse audio output debug: adding sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-21 14:26:41:953] [00000000021dd4c8] core audio output debug: using audio output module "pulse"
+[2018-08-21 14:26:41:956] [00000000021c2f18] core playlist debug: keeping audio output
+[2018-08-21 14:26:41:978] [00000000021c2f18] core playlist debug: adding item `rtsp://10.0.0.1:5004/' ( rtsp://10.0.0.1:5004/ )
+[2018-08-21 14:26:41:983] [00000000021f0bd8] core interface debug: looking for interface module matching "hotkeys,none": 19 candidates
+[2018-08-21 14:26:42:006] [00000000021f0bd8] core interface debug: using interface module "hotkeys"
+[2018-08-21 14:26:42:018] [00000000021f59d8] core interface debug: looking for interface module matching "globalhotkeys,none": 19 candidates
+[2018-08-21 14:26:42:035] [00000000021c2f18] core playlist debug: meta ok for (null), need to fetch art
+[2018-08-21 14:26:42:050] [00007f1a20000bb8] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:26:42:067] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:42:075] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:26:42:103] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:42:145] [00000000021f59d8] core interface debug: using interface module "xcb_hotkeys"
+[2018-08-21 14:26:42:162] [00000000021f68b8] core interface debug: looking for interface module matching "dbus,none": 19 candidates
+[2018-08-21 14:26:42:167] [00007f1a20000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:42:190] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:42:206] [00007f1a20000bb8] core art finder debug: no meta fetcher modules matched
+[2018-08-21 14:26:42:222] [00000000021c2f18] core playlist debug: searching art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:42:239] [00007f1a20000bb8] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:26:42:251] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:26:42:276] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:26:42:279] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:42:304] [00000000021f68b8] dbus interface error: Failed to connect to the D-Bus session daemon: Failed to connect to socket /tmp/dbus-CPKwYbdXbK: Conexión rehusada
+[2018-08-21 14:26:42:328] [00000000021f68b8] core interface debug: no interface modules matched
+[2018-08-21 14:26:42:343] [00000000021f68b8] core interface error: no suitable interface module
+[2018-08-21 14:26:42:370] [00000000020da148] core libvlc error: interface "dbus,none" initialization failed
+[2018-08-21 14:26:42:390] [00000000020da148] core libvlc: Ejecutar vlc con la interfaz predeterminada. Use «cvlc» para usar vlc sin interfaz.
+[2018-08-21 14:26:42:402] [00000000021f7538] core interface debug: looking for interface module matching "any": 19 candidates
+[2018-08-21 14:26:42:426] [00007f1a20000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:42:439] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:42:462] [00007f1a20000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:42:471] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:42:488] [00007f1a20000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:42:521] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:42:544] [00007f1a20000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:42:584] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:26:42:604] [00007f1a20000bb8] core art finder debug: no art finder modules matched
+[2018-08-21 14:26:42:663] [00007f1a20000bb8] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:26:42:674] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:42:692] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:26:42:737] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:42:751] [00007f1a20000bb8] core art finder debug: using meta fetcher module "lua"
+[2018-08-21 14:26:42:783] [00007f1a20000bb8] core art finder debug: removing module "lua"
+[2018-08-21 14:26:42:809] [00000000021c2f18] core playlist debug: searching art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:42:822] [00007f1a20000bb8] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:26:42:842] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:26:42:847] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:26:42:863] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:42:885] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:42:905] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:42:911] [00007f1a20000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:42:928] [00007f1a20000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:26:42:954] [00007f1a20000bb8] core art finder debug: no art finder modules matched
+[2018-08-21 14:26:42:982] [00000000021c2f18] core playlist debug: art not found for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:42:988] [00007f1a180cec08] core generic debug: looking for extension module matching "any": 1 candidates
+[2018-08-21 14:26:43:014] [00007f1a180cec08] lua generic debug: Opening Lua Extension module
+[2018-08-21 14:26:43:027] [00007f1a180cec08] lua generic debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/extensions
+[2018-08-21 14:26:43:047] [00007f1a180cec08] lua generic debug: Trying Lua scripts in /usr/lib/vlc/lua/extensions
+[2018-08-21 14:26:43:073] [00007f1a180cec08] lua generic debug: Trying Lua playlist script /usr/lib/vlc/lua/extensions/VLSub.luac
+[2018-08-21 14:26:43:076] [00007f1a180cec08] lua generic debug: Scanning Lua script /usr/lib/vlc/lua/extensions/VLSub.luac
+[2018-08-21 14:26:43:098] [00007f1a180cec08] lua generic debug: Script /usr/lib/vlc/lua/extensions/VLSub.luac has the following capability flags: 0x5
+[2018-08-21 14:26:43:105] [00007f1a180cec08] lua generic debug: Trying Lua scripts in /usr/share/vlc/lua/extensions
+[2018-08-21 14:26:43:132] [00007f1a180cec08] core generic debug: using extension module "lua"
+[2018-08-21 14:26:43:339] [00000000021f7538] core interface debug: using interface module "qt4"
+[2018-08-21 14:26:43:390] [00000000021c2f18] core playlist debug: processing request item: null, node: Lista de reproducción, skip: 0
+[2018-08-21 14:26:43:423] [00000000021c2f18] core playlist debug: rebuilding array of current - root Lista de reproducción
+[2018-08-21 14:26:43:448] [00000000021c2f18] core playlist debug: rebuild done - 1 items, index -1
+[2018-08-21 14:26:43:487] [00000000021c2f18] core playlist debug: starting playback of the new playlist item
+[2018-08-21 14:26:43:510] [00000000021c2f18] core playlist debug: resyncing on rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:43:527] [00000000021c2f18] core playlist debug: rtsp://10.0.0.1:5004/ is at 0
+[2018-08-21 14:26:43:547] [00000000021c2f18] core playlist debug: creating new input thread
+[2018-08-21 14:26:43:564] [00007f1a20000bb8] core input debug: Creating an input for 'rtsp://10.0.0.1:5004/'
+[2018-08-21 14:26:43:596] [00000000021c2f18] core playlist debug: requesting art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:43:646] [00000000021f7538] qt4 interface debug: IM: Setting an input
+[2018-08-21 14:26:43:654] [00007f1a0c000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:26:43:691] [00007f1a20000bb8] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-08-21 14:26:43:742] [00007f1a20000bb8] core input debug: `rtsp://10.0.0.1:5004/' gives access `rtsp' demux `' path `10.0.0.1:5004/'
+[2018-08-21 14:26:43:792] [00007f1a20000bb8] core input debug: specified demux `any'
+[2018-08-21 14:26:43:832] [00007f1a20000bb8] core input debug: creating demux: access='rtsp' demux='any' location='10.0.0.1:5004/' file='(null)'
+[2018-08-21 14:26:43:899] [00007f1a04000e88] core demux debug: looking for access_demux module matching "rtsp": 20 candidates
+[2018-08-21 14:26:43:964] [00007f1a04000e88] live555 demux debug: version 2016.02.09
+[2018-08-21 14:26:44:003] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:44:058] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:26:44:150] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:44:196] Opening connection to 10.0.0.1, port 5004...
+[2018-08-21 14:26:44:274] ...remote connection opened
+[2018-08-21 14:26:44:291] Sending request: OPTIONS rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:44:371] CSeq: 2
+[2018-08-21 14:26:44:418] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:44:442] 
+[2018-08-21 14:26:44:462]
+[2018-08-21 14:26:44:499] Received 124 new bytes of response data.
+[2018-08-21 14:26:44:515] Received a complete OPTIONS response:
+[2018-08-21 14:26:44:569] RTSP/1.0 200 OK
+[2018-08-21 14:26:44:576] Server: VLC/2.2.2
+[2018-08-21 14:26:44:594] Content-Length: 0
+[2018-08-21 14:26:44:623] Cseq: 2
+[2018-08-21 14:26:44:635] Public: DESCRIBE,SETUP,TEARDOWN,PLAY,PAUSE,GET_PARAMETER
+[2018-08-21 14:26:44:659] 
+[2018-08-21 14:26:44:705]
+[2018-08-21 14:26:44:711] Sending request: DESCRIBE rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:44:734] CSeq: 3
+[2018-08-21 14:26:44:770] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:44:772] Accept: application/sdp
+[2018-08-21 14:26:44:819] 
+[2018-08-21 14:26:44:847]
+[2018-08-21 14:26:44:887] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:44:895] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:44:926] [00007f1a0c000958] core art finder debug: no meta fetcher modules matched
+[2018-08-21 14:26:44:944] [00000000020da148] core libvlc debug: searching art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:44:964] [00007f1a0c000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:26:44:988] Received 206 new bytes of response data.
+[2018-08-21 14:26:45:100] Received a complete DESCRIBE response:
+[2018-08-21 14:26:45:133] RTSP/1.0 500 Server error
+[2018-08-21 14:26:45:164] Server: VLC/2.2.2
+[2018-08-21 14:26:45:205] Date: Tue, 21 Aug 2018 12:26:43 GMT
+[2018-08-21 14:26:45:222] Content-Type: application/sdp
+[2018-08-21 14:26:45:266] Content-Base: rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:45:278] Content-Length: 0
+[2018-08-21 14:26:45:302] Cache-Control: no-cache
+[2018-08-21 14:26:45:310] Cseq: 3
+[2018-08-21 14:26:45:327] 
+[2018-08-21 14:26:45:357]
+[2018-08-21 14:26:45:371] [00007f1a04000e88] live555 demux debug: we will now try HTTP tunneling mode
+[2018-08-21 14:26:45:394] Opening connection to 10.0.0.1, port 80...
+[2018-08-21 14:26:45:399] ...Connection to server failed: Conexión rehusada
+[2018-08-21 14:26:45:425] Opening connection to 10.0.0.1, port 80...
+[2018-08-21 14:26:45:442] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:26:45:454] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:26:45:477] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:45:483] ...Connection to server failed: Conexión rehusada
+[2018-08-21 14:26:45:499] [00007f1a04000e88] live555 demux debug: connection error -115
+[2018-08-21 14:26:45:512] [00007f1a04000e88] live555 demux error: Failed to connect with rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:45:550] [00007f1a04000e88] core demux debug: no access_demux modules matched
+[2018-08-21 14:26:45:572] [00007f1a20000bb8] core input debug: creating access 'rtsp' location='10.0.0.1:5004/', path='(null)'
+[2018-08-21 14:26:45:615] [00007f1a04000e88] core access debug: looking for access module matching "rtsp": 25 candidates
+[2018-08-21 14:26:45:645] [00007f1a04000e88] core access debug: net: connecting to 10.0.0.1 port 5004
+[2018-08-21 14:26:45:672] [00007f1a04000e88] core access debug: connection succeeded (socket = 28)
+[2018-08-21 14:26:45:697] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:45:708] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:45:731] [00007f1a04000e88] access_realrtsp access debug: rtsp connected
+[2018-08-21 14:26:45:738] [00007f1a04000e88] access_realrtsp access warning: only real/helix rtsp servers supported for now
+[2018-08-21 14:26:45:756] [00007f1a04000e88] core access debug: no access modules matched
+[2018-08-21 14:26:45:778] [00007f1a20000bb8] core input error: open of `rtsp://10.0.0.1:5004/' failed
+[2018-08-21 14:26:45:793] [00000000021c2f18] core playlist debug: dead input
+[2018-08-21 14:26:45:804] [00000000021c2f18] core playlist debug: repeating item
+[2018-08-21 14:26:45:823] [00000000021c2f18] core playlist debug: starting playback of the new playlist item
+[2018-08-21 14:26:45:856] [00000000021c2f18] core playlist debug: resyncing on rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:45:886] [00000000021c2f18] core playlist debug: rtsp://10.0.0.1:5004/ is at 0
+[2018-08-21 14:26:45:895] [00000000021c2f18] core playlist debug: creating new input thread
+[2018-08-21 14:26:45:912] [00007f1a20006b58] core input debug: Creating an input for 'rtsp://10.0.0.1:5004/'
+[2018-08-21 14:26:45:922] [00000000021c2f18] core playlist debug: requesting art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:45:941] [00007f1a20006b58] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-08-21 14:26:45:957] [00007f1a20006b58] core input debug: `rtsp://10.0.0.1:5004/' gives access `rtsp' demux `' path `10.0.0.1:5004/'
+[2018-08-21 14:26:46:000] [00007f1a20006b58] core input debug: specified demux `any'
+[2018-08-21 14:26:46:003] [00007f1a20006b58] core input debug: creating demux: access='rtsp' demux='any' location='10.0.0.1:5004/' file='(null)'
+[2018-08-21 14:26:46:028] [00007f1a04004178] core demux debug: looking for access_demux module matching "rtsp": 20 candidates
+[2018-08-21 14:26:46:042] [00007f1a04004178] live555 demux debug: version 2016.02.09
+[2018-08-21 14:26:46:067] Opening connection to 10.0.0.1, port 5004...
+[2018-08-21 14:26:46:071] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:46:096] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:46:136] ...remote connection opened
+[2018-08-21 14:26:46:139] Sending request: OPTIONS rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:46:154] CSeq: 2
+[2018-08-21 14:26:46:177] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:46:198] 
+[2018-08-21 14:26:46:207]
+[2018-08-21 14:26:46:232] [00000000021f7538] qt4 interface debug: IM: Deleting the input
+[2018-08-21 14:26:46:255] Received 124 new bytes of response data.
+[2018-08-21 14:26:46:263] Received a complete OPTIONS response:
+[2018-08-21 14:26:46:286] RTSP/1.0 200 OK
+[2018-08-21 14:26:46:291] Server: VLC/2.2.2
+[2018-08-21 14:26:46:319] Content-Length: 0
+[2018-08-21 14:26:46:330] Cseq: 2
+[2018-08-21 14:26:46:344] Public: DESCRIBE,SETUP,TEARDOWN,PLAY,PAUSE,GET_PARAMETER
+[2018-08-21 14:26:46:376] 
+[2018-08-21 14:26:46:415]
+[2018-08-21 14:26:46:434] Sending request: DESCRIBE rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:46:440] CSeq: 3
+[2018-08-21 14:26:46:455] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:46:478] Accept: application/sdp
+[2018-08-21 14:26:46:502] 
+[2018-08-21 14:26:46:510]
+[2018-08-21 14:26:46:534] [00000000021f7538] qt4 interface debug: IM: Setting an input
+[2018-08-21 14:26:46:539] Received 206 new bytes of response data.
+[2018-08-21 14:26:46:563] Received a complete DESCRIBE response:
+[2018-08-21 14:26:46:575] RTSP/1.0 500 Server error
+[2018-08-21 14:26:46:601] Server: VLC/2.2.2
+[2018-08-21 14:26:46:608] Date: Tue, 21 Aug 2018 12:26:43 GMT
+[2018-08-21 14:26:46:619] Content-Type: application/sdp
+[2018-08-21 14:26:46:633] Content-Base: rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:46:674] Content-Length: 0
+[2018-08-21 14:26:46:691] Cache-Control: no-cache
+[2018-08-21 14:26:46:704] Cseq: 3
+[2018-08-21 14:26:46:748] 
+[2018-08-21 14:26:46:754]
+[2018-08-21 14:26:46:770] [00007f1a04004178] live555 demux debug: we will now try HTTP tunneling mode
+[2018-08-21 14:26:46:783] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:46:795] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:46:833] Opening connection to 10.0.0.1, port 80...
+[2018-08-21 14:26:46:854] ...Connection to server failed: Conexión rehusada
+[2018-08-21 14:26:46:858] Opening connection to 10.0.0.1, port 80...
+[2018-08-21 14:26:46:864] ...Connection to server failed: Conexión rehusada
+[2018-08-21 14:26:46:869] [00007f1a04004178] live555 demux debug: connection error -115
+[2018-08-21 14:26:46:879] [00007f1a04004178] live555 demux error: Failed to connect with rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:46:891] [00007f1a04004178] core demux debug: no access_demux modules matched
+[2018-08-21 14:26:46:895] [00007f1a20006b58] core input debug: creating access 'rtsp' location='10.0.0.1:5004/', path='(null)'
+[2018-08-21 14:26:46:906] [00007f1a040044c8] core access debug: looking for access module matching "rtsp": 25 candidates
+[2018-08-21 14:26:46:912] [00007f1a040044c8] core access debug: net: connecting to 10.0.0.1 port 5004
+[2018-08-21 14:26:46:939] [00007f1a040044c8] core access debug: connection succeeded (socket = 28)
+[2018-08-21 14:26:46:967] [00007f1a040044c8] access_realrtsp access debug: rtsp connected
+[2018-08-21 14:26:46:972] [00007f1a040044c8] access_realrtsp access warning: only real/helix rtsp servers supported for now
+[2018-08-21 14:26:46:984] [00007f1a040044c8] core access debug: no access modules matched
+[2018-08-21 14:26:47:001] [00007f1a20006b58] core input error: open of `rtsp://10.0.0.1:5004/' failed
+[2018-08-21 14:26:47:004] [00000000021c2f18] core playlist debug: dead input
+[2018-08-21 14:26:47:014] [00000000021c2f18] core playlist debug: repeating item
+[2018-08-21 14:26:47:021] [00000000021c2f18] core playlist debug: starting playback of the new playlist item
+[2018-08-21 14:26:47:034] [00000000021c2f18] core playlist debug: resyncing on rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:47:039] [00000000021c2f18] core playlist debug: rtsp://10.0.0.1:5004/ is at 0
+[2018-08-21 14:26:47:048] [00000000021c2f18] core playlist debug: creating new input thread
+[2018-08-21 14:26:47:051] [00007f1a20000bb8] core input debug: Creating an input for 'rtsp://10.0.0.1:5004/'
+[2018-08-21 14:26:47:064] [00000000021c2f18] core playlist debug: requesting art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:47:075] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:47:090] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:26:47:096] [00007f1a0c000958] core art finder debug: no art finder modules matched
+[2018-08-21 14:26:47:100] [00000000021f7538] qt4 interface debug: IM: Deleting the input
+[2018-08-21 14:26:47:108] [00007f1a20000bb8] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-08-21 14:26:47:117] [00007f1a20000bb8] core input debug: `rtsp://10.0.0.1:5004/' gives access `rtsp' demux `' path `10.0.0.1:5004/'
+[2018-08-21 14:26:47:120] [00007f1a20000bb8] core input debug: specified demux `any'
+[2018-08-21 14:26:47:129] [00007f1a20000bb8] core input debug: creating demux: access='rtsp' demux='any' location='10.0.0.1:5004/' file='(null)'
+[2018-08-21 14:26:47:132] [00007f1a04004178] core demux debug: looking for access_demux module matching "rtsp": 20 candidates
+[2018-08-21 14:26:47:140] [00007f1a04004178] live555 demux debug: version 2016.02.09
+[2018-08-21 14:26:47:143] Opening connection to 10.0.0.1, port 5004...
+[2018-08-21 14:26:47:151] [00007f1a0c000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:26:47:157] ...remote connection opened
+[2018-08-21 14:26:47:159] Sending request: OPTIONS rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:47:184] CSeq: 2
+[2018-08-21 14:26:47:192] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:47:200] 
+[2018-08-21 14:26:47:228]
+[2018-08-21 14:26:47:231] Received 124 new bytes of response data.
+[2018-08-21 14:26:47:241] Received a complete OPTIONS response:
+[2018-08-21 14:26:47:253] RTSP/1.0 200 OK
+[2018-08-21 14:26:47:259] Server: VLC/2.2.2
+[2018-08-21 14:26:47:263] Content-Length: 0
+[2018-08-21 14:26:47:271] Cseq: 2
+[2018-08-21 14:26:47:279] Public: DESCRIBE,SETUP,TEARDOWN,PLAY,PAUSE,GET_PARAMETER
+[2018-08-21 14:26:47:284] 
+[2018-08-21 14:26:47:298]
+[2018-08-21 14:26:47:303] Sending request: DESCRIBE rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:47:310] CSeq: 3
+[2018-08-21 14:26:47:316] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:47:335] Accept: application/sdp
+[2018-08-21 14:26:47:344] 
+[2018-08-21 14:26:47:351]
+[2018-08-21 14:26:47:359] Received 198 new bytes of response data.
+[2018-08-21 14:26:47:368] Have received 198 total bytes of a DESCRIBE RTSP response; awaiting 324 bytes more.
+[2018-08-21 14:26:47:378] [00000000021f7538] qt4 interface debug: IM: Setting an input
+[2018-08-21 14:26:47:387] Received 324 new bytes of response data.
+[2018-08-21 14:26:47:392] Received a complete DESCRIBE response:
+[2018-08-21 14:26:47:403] RTSP/1.0 200 OK
+[2018-08-21 14:26:47:410] Server: VLC/2.2.2
+[2018-08-21 14:26:47:415] Date: Tue, 21 Aug 2018 12:26:44 GMT
+[2018-08-21 14:26:47:426] Content-Type: application/sdp
+[2018-08-21 14:26:47:431] Content-Base: rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:47:440] Content-Length: 324
+[2018-08-21 14:26:47:448] Cache-Control: no-cache
+[2018-08-21 14:26:47:465] Cseq: 3
+[2018-08-21 14:26:47:471] 
+[2018-08-21 14:26:47:479] v=0
+[2018-08-21 14:26:47:509] o=- 16079684123209515379 16079684123209515379 IN IP4 bayes-VirtualBox
+[2018-08-21 14:26:47:526] s=Unnamed
+[2018-08-21 14:26:47:538] i=N/A
+[2018-08-21 14:26:47:542] c=IN IP4 0.0.0.0
+[2018-08-21 14:26:47:551] t=0 0
+[2018-08-21 14:26:47:557] a=tool:vlc 2.2.2
+[2018-08-21 14:26:47:568] a=recvonly
+[2018-08-21 14:26:47:576] a=type:broadcast
+[2018-08-21 14:26:47:584] a=charset:UTF-8
+[2018-08-21 14:26:47:592] a=control:rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:47:600] m=audio 0 RTP/AVP 14
+[2018-08-21 14:26:47:610] b=AS:128
+[2018-08-21 14:26:47:621] b=RR:0
+[2018-08-21 14:26:47:623] a=rtpmap:14 MPA/90000/2
+[2018-08-21 14:26:47:636] a=control:rtsp://10.0.0.1:5004/trackID=0
+[2018-08-21 14:26:47:639]
+[2018-08-21 14:26:47:650] [00007f1a04004178] live555 demux debug: RTP subsession 'audio/MPA'
+[2018-08-21 14:26:47:655] Sending request: SETUP rtsp://10.0.0.1:5004/trackID=0 RTSP/1.0
+[2018-08-21 14:26:47:672] CSeq: 4
+[2018-08-21 14:26:47:698] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:47:703] Transport: RTP/AVP;unicast;client_port=35622-35623
+[2018-08-21 14:26:47:710] 
+[2018-08-21 14:26:47:713]
+[2018-08-21 14:26:47:720] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:47:727] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:26:47:732] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:47:750] Received 270 new bytes of response data.
+[2018-08-21 14:26:47:756] Received a complete SETUP response:
+[2018-08-21 14:26:47:764] RTSP/1.0 200 OK
+[2018-08-21 14:26:47:800] Server: VLC/2.2.2
+[2018-08-21 14:26:47:813] Date: Tue, 21 Aug 2018 12:26:44 GMT
+[2018-08-21 14:26:47:820] Transport: RTP/AVP/UDP;unicast;client_port=35622-35623;server_port=35988-35989;ssrc=1CBCBDAA;mode=play
+[2018-08-21 14:26:47:836] Session: bb931480442fa676;timeout=60
+[2018-08-21 14:26:47:843] Content-Length: 0
+[2018-08-21 14:26:47:855] Cache-Control: no-cache
+[2018-08-21 14:26:47:859] Cseq: 4
+[2018-08-21 14:26:47:875] 
+[2018-08-21 14:26:47:879]
+[2018-08-21 14:26:47:889] [00007f1a20000bb8] core input debug: selecting program id=0
+[2018-08-21 14:26:47:895] [00007f1a04004178] live555 demux debug: setup start: 0,000000 stop:0,000000
+[2018-08-21 14:26:47:903] Sending request: PLAY rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:47:908] CSeq: 5
+[2018-08-21 14:26:47:920] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:47:923] Session: bb931480442fa676
+[2018-08-21 14:26:47:939] Range: npt=0.000-
+[2018-08-21 14:26:47:944] 
+[2018-08-21 14:26:47:957]
+[2018-08-21 14:26:47:968] Received 263 new bytes of response data.
+[2018-08-21 14:26:47:978] Received a complete PLAY response:
+[2018-08-21 14:26:47:980] RTSP/1.0 200 OK
+[2018-08-21 14:26:47:987] Server: VLC/2.2.2
+[2018-08-21 14:26:47:993] Date: Tue, 21 Aug 2018 12:26:44 GMT
+[2018-08-21 14:26:48:012] RTP-Info: url=rtsp://10.0.0.1:5004/trackID=0;seq=45596;rtptime=1608108756
+[2018-08-21 14:26:48:034] Range: npt=0.000000-
+[2018-08-21 14:26:48:039] Session: bb931480442fa676;timeout=60
+[2018-08-21 14:26:48:045] Content-Length: 0
+[2018-08-21 14:26:48:051] Cache-Control: no-cache
+[2018-08-21 14:26:48:057] Cseq: 5
+[2018-08-21 14:26:48:064] 
+[2018-08-21 14:26:48:068]
+[2018-08-21 14:26:48:074] [00007f1a04004178] live555 demux debug: We have a timeout of 60 seconds
+[2018-08-21 14:26:48:080] [00007f1a04004178] live555 demux debug: spawned timeout thread
+[2018-08-21 14:26:48:089] [00007f1a04004178] live555 demux debug: play start: 0,000000 stop:0,000000
+[2018-08-21 14:26:48:093] [00007f1a04004178] core demux debug: using access_demux module "live555"
+[2018-08-21 14:26:48:102] [00007f1a04009208] core decoder debug: looking for decoder module matching "any": 42 candidates
+[2018-08-21 14:26:48:108] [00007f1a04009208] core decoder debug: using decoder module "mpeg_audio"
+[2018-08-21 14:26:48:130] [00007f1a0402b1c8] core demux meta debug: looking for meta reader module matching "any": 2 candidates
+[2018-08-21 14:26:48:136] [00000000021f7538] qt4 interface debug: IM: Deleting the input
+[2018-08-21 14:26:48:142] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:48:155] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:48:164] [00007f1a0c000958] core art finder debug: no meta fetcher modules matched
+[2018-08-21 14:26:48:173] [00000000020da148] core libvlc debug: searching art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:48:184] [00007f1a0c000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:26:48:200] [00007f1a0402b1c8] lua demux meta debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/reader
+[2018-08-21 14:26:48:208] [00007f1a0402b1c8] lua demux meta debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/reader
+[2018-08-21 14:26:48:232] [00007f1a0402b1c8] lua demux meta debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/reader/filename.luac
+[2018-08-21 14:26:48:240] [00000000021f7538] qt4 interface debug: IM: Setting an input
+[2018-08-21 14:26:48:243] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:26:48:258] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:26:48:275] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:48:292] [00007f1a0402b1c8] lua demux meta debug: Trying Lua scripts in /usr/share/vlc/lua/meta/reader
+[2018-08-21 14:26:48:300] [00007f1a0402b1c8] core demux meta debug: no meta reader modules matched
+[2018-08-21 14:26:48:306] [00007f1a20000bb8] core input debug: `rtsp://10.0.0.1:5004/' successfully opened
+[2018-08-21 14:26:48:317] Sending request: GET_PARAMETER rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:48:322] CSeq: 6
+[2018-08-21 14:26:48:332] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:48:338] Session: bb931480442fa676
+[2018-08-21 14:26:48:345] 
+[2018-08-21 14:26:48:352]
+[2018-08-21 14:26:48:356] [00000000021f7538] qt4 interface debug: IM: Deleting the input
+[2018-08-21 14:26:48:362] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:48:378] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:48:385] Received 166 new bytes of response data.
+[2018-08-21 14:26:48:392] Received a complete GET_PARAMETER response:
+[2018-08-21 14:26:48:396] RTSP/1.0 200 OK
+[2018-08-21 14:26:48:415] Server: VLC/2.2.2
+[2018-08-21 14:26:48:419] Date: Tue, 21 Aug 2018 12:26:44 GMT
+[2018-08-21 14:26:48:428] Session: bb931480442fa676;timeout=60
+[2018-08-21 14:26:48:440] Content-Length: 0
+[2018-08-21 14:26:48:450] Cache-Control: no-cache
+[2018-08-21 14:26:48:458] Cseq: 6
+[2018-08-21 14:26:48:476] 
+[2018-08-21 14:26:48:488]
+[2018-08-21 14:26:48:504] [00000000021f7538] qt4 interface debug: IM: Setting an input
+[2018-08-21 14:26:48:524] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:48:540] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:48:562] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:48:571] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:48:578] [00007f1a20000bb8] core input debug: Buffering 0%
+[2018-08-21 14:26:48:586] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:48:595] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:26:48:605] [00007f1a0c000958] core art finder debug: no art finder modules matched
+[2018-08-21 14:26:48:621] [00007f1a0c000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:26:48:667] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:48:675] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:26:48:699] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:48:708] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:48:711] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:48:722] [00007f1a0c000958] core art finder debug: no meta fetcher modules matched
+[2018-08-21 14:26:48:727] [00000000020da148] core libvlc debug: searching art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:48:740] [00007f1a0c000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:26:48:749] [00007f1a04009208] mpeg_audio decoder debug: MPGA channels:2 samplerate:22050 bitrate:128
+[2018-08-21 14:26:48:755] [00000000021c2f18] core playlist debug: reusing audio output
+[2018-08-21 14:26:48:768] [00000000021dd4c8] pulse audio output debug: using stereo channel map
+[2018-08-21 14:26:48:777] [00007f1a20000bb8] core input debug: Buffering 26%
+[2018-08-21 14:26:48:780] [00000000021dd4c8] pulse audio output debug: changed buffer metrics: maxlength=4194304, tlength=31744, prebuf=0, minreq=7056
+[2018-08-21 14:26:48:787] [00000000021dd4c8] pulse audio output debug: connected to sink alsa_output.pci-0000_00_05.0.analog-stereo
+[2018-08-21 14:26:48:801] [00000000021dd4c8] core audio output debug: output 'f32l' 22050 Hz Stereo frame=1 samples/8 bytes
+[2018-08-21 14:26:48:810] [00007f1a08000958] core volume debug: looking for audio volume module matching "any": 2 candidates
+[2018-08-21 14:26:48:817] [00007f1a08000958] core volume debug: using audio volume module "float_mixer"
+[2018-08-21 14:26:48:824] [00000000021dd4c8] core audio output debug: input 'mpga' 22050 Hz Stereo frame=1152 samples/1053 bytes
+[2018-08-21 14:26:48:836] [00007f1a08002cb8] core audio filter debug: looking for audio filter module matching "scaletempo": 14 candidates
+[2018-08-21 14:26:48:840] [00007f1a08002cb8] scaletempo audio filter debug: format: 22050 rate, 2 nch, 4 bps, fl32
+[2018-08-21 14:26:48:850] [00007f1a08002cb8] scaletempo audio filter debug: params: 30 stride, 0,200 overlap, 14 search
+[2018-08-21 14:26:48:864] [00007f1a08002cb8] scaletempo audio filter debug: 1,000 scale, 661,000 stride_in, 661 stride_out, 529 standing, 132 overlap, 308 search, 1101 queue, fl32 mode
+[2018-08-21 14:26:48:868] [00007f1a08002cb8] core audio filter debug: using audio filter module "scaletempo"
+[2018-08-21 14:26:48:875] [00000000021dd4c8] core audio output debug: conversion: 'mpga'->'f32l' 22050 Hz->22050 Hz Stereo->Stereo
+[2018-08-21 14:26:48:891] [00007f1a08006cf8] core audio converter debug: looking for audio converter module matching "any": 12 candidates
+[2018-08-21 14:26:48:909] [00000000021dd4c8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-21 14:26:48:913] [00007f1a20000bb8] core input debug: Buffering 52%
+[2018-08-21 14:26:48:923] [00007f1a08006cf8] core audio converter debug: no audio converter modules matched
+[2018-08-21 14:26:48:940] [00007f1a08006cf8] core audio converter debug: looking for audio converter module matching "any": 12 candidates
+[2018-08-21 14:26:48:955] [00007f1a08006cf8] mpgatofixed32 audio converter debug: mpga->f32l, bits per sample: 32
+[2018-08-21 14:26:49:004] [00007f1a08006cf8] core audio converter debug: using audio converter module "mpgatofixed32"
+[2018-08-21 14:26:49:016] [00000000021dd4c8] core audio output debug: conversion pipeline complete
+[2018-08-21 14:26:49:024] [00000000021dd4c8] core audio output debug: conversion: 'f32l'->'f32l' 22050 Hz->22050 Hz Stereo->Stereo
+[2018-08-21 14:26:49:039] [00000000021dd4c8] core audio output debug: conversion pipeline complete
+[2018-08-21 14:26:49:050] [00007f1a08012f38] core audio resampler debug: looking for audio resampler module matching "any": 3 candidates
+[2018-08-21 14:26:49:063] [00007f1a08012f38] core audio resampler debug: using audio resampler module "samplerate"
+[2018-08-21 14:26:49:069] [00007f1a04009208] core decoder debug: End of audio preroll
+[2018-08-21 14:26:49:076] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:26:49:139] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:26:49:148] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:49:158] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:49:173] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:49:178] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:49:195] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:49:211] [00007f1a20000bb8] core input debug: Buffering 78%
+[2018-08-21 14:26:49:280] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:49:313] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:49:316] [00007f1a0c000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:49:329] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:26:49:337] [00007f1a0c000958] core art finder debug: no art finder modules matched
+[2018-08-21 14:26:49:339] [00007f1a0c000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:26:49:348] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:49:367] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:26:49:379] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:49:393] [00007f1a20000bb8] core input debug: Stream buffering done (209 ms in 807 ms)
+[2018-08-21 14:26:49:396] [00007f1a20000bb8] core input debug: Decoder wait done in 0 ms
+[2018-08-21 14:26:49:409] [00000000021dd4c8] pulse audio output debug: cannot synchronize start
+[2018-08-21 14:26:49:418] [00000000021dd4c8] pulse audio output debug: deferring start (2882 us)
+[2018-08-21 14:26:49:427] [00000000021dd4c8] pulse audio output debug: starting deferred
+[2018-08-21 14:26:49:444] [00000000021dd4c8] pulse audio output debug: started
+[2018-08-21 14:26:49:451] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:49:462] [00000000021dd4c8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-21 14:26:49:473] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:49:484] [00007f1a0c000958] core art finder debug: using meta fetcher module "lua"
+[2018-08-21 14:26:49:491] [00007f1a0c000958] core art finder debug: removing module "lua"
+[2018-08-21 14:26:49:499] [00000000020da148] core libvlc debug: searching art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:49:513] [00007f1a0c000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:26:49:523] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:49:538] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:26:49:555] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:26:49:567] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:49:571] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:49:586] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:49:596] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:49:624] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:49:634] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:49:661] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:26:49:671] [00007f1a0c000958] core art finder debug: no art finder modules matched
+[2018-08-21 14:26:49:721] [00000000020da148] core libvlc debug: art not found for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:49:724] [00007f1a0c000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:26:49:745] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:49:755] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:26:49:774] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:49:785] [00000000021dd4c8] core audio output warning: buffer too late (-65665 us): dropped
+[2018-08-21 14:26:49:788] [00007f1a0c000958] core art finder debug: using meta fetcher module "lua"
+[2018-08-21 14:26:49:801] [00007f1a0c000958] core art finder debug: removing module "lua"
+[2018-08-21 14:26:49:814] [00000000020da148] core libvlc debug: searching art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:49:825] [00007f1a0c000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:26:49:833] [00000000021dd4c8] core audio output debug: inserting 10602 zeroes
+[2018-08-21 14:26:49:843] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:26:49:851] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:26:49:871] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:49:884] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:49:892] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:49:905] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:49:914] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:49:919] [00000000021dd4c8] core audio output warning: playback too early (-49778): down-sampling
+[2018-08-21 14:26:49:927] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:49:941] [00000000021dd4c8] core audio output warning: playback way too early (-213041): playing silence
+[2018-08-21 14:26:49:970] [00000000021dd4c8] core audio output debug: inserting 4697 zeroes
+[2018-08-21 14:26:49:985] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:26:49:988] [00007f1a0c000958] core art finder debug: no art finder modules matched
+[2018-08-21 14:26:50:003] [00000000020da148] core libvlc debug: art not found for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:50:011] [00007f1a0c000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-08-21 14:26:50:030] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-08-21 14:26:50:035] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-08-21 14:26:50:055] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-08-21 14:26:50:071] [00007f1a0c000958] core art finder debug: using meta fetcher module "lua"
+[2018-08-21 14:26:50:078] [00007f1a0c000958] core art finder debug: removing module "lua"
+[2018-08-21 14:26:50:090] [00000000020da148] core libvlc debug: searching art for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:50:098] [00007f1a0c000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-08-21 14:26:50:110] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-08-21 14:26:50:116] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-08-21 14:26:50:185] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-08-21 14:26:50:211] [00000000021dd4c8] core audio output warning: playback way too early (-177537): playing silence
+[2018-08-21 14:26:50:237] [00000000021dd4c8] core audio output debug: inserting 3914 zeroes
+[2018-08-21 14:26:50:246] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-08-21 14:26:50:255] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-08-21 14:26:50:288] [00007f1a0c000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-08-21 14:26:50:295] [00007f1a0c000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-08-21 14:26:50:314] [00007f1a0c000958] core art finder debug: no art finder modules matched
+[2018-08-21 14:26:50:346] [00000000020da148] core libvlc debug: art not found for rtsp://10.0.0.1:5004/
+[2018-08-21 14:26:50:358] [00000000021dd4c8] core audio output warning: playback way too early (-151307): playing silence
+[2018-08-21 14:26:50:371] [00000000021dd4c8] core audio output debug: inserting 3336 zeroes
+[2018-08-21 14:26:50:383] [00000000021dd4c8] core audio output warning: playback too early (-111963): down-sampling
+[2018-08-21 14:26:50:396] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:418] [00000000021dd4c8] core audio output warning: playback way too early (-262853): playing silence
+[2018-08-21 14:26:50:436] [00000000021dd4c8] core audio output debug: inserting 5795 zeroes
+[2018-08-21 14:26:50:449] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:459] [00000000021dd4c8] core audio output warning: buffer too late (-103446 us): dropped
+[2018-08-21 14:26:50:471] [00000000021dd4c8] core audio output debug: inserting 4140 zeroes
+[2018-08-21 14:26:50:489] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:499] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:511] [00000000021dd4c8] core audio output warning: playback too early (-106673): down-sampling
+[2018-08-21 14:26:50:531] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:566] [00000000021dd4c8] core audio output warning: buffer too late (-105187 us): dropped
+[2018-08-21 14:26:50:577] [00000000021dd4c8] core audio output debug: inserting 11204 zeroes
+[2018-08-21 14:26:50:587] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:623] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:644] [00000000021dd4c8] core audio output warning: buffer too late (-208808 us): dropped
+[2018-08-21 14:26:50:665] [00000000021dd4c8] core audio output debug: inserting 5211 zeroes
+[2018-08-21 14:26:50:674] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:685] [00000000021dd4c8] core audio output warning: buffer too late (-251522 us): dropped
+[2018-08-21 14:26:50:691] [00007f1a04004178] live555 demux debug: tk->rtpSource->hasBeenSynchronizedUsingRTCP()
+[2018-08-21 14:26:50:715] [00007f1a20000bb8] core input error: ES_OUT_RESET_PCR called
+[2018-08-21 14:26:50:731] [00000000021dd4c8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-21 14:26:50:738] [00007f1a20000bb8] core input debug: Buffering 0%
+[2018-08-21 14:26:50:771] [00007f1a04009208] core decoder debug: End of audio preroll
+[2018-08-21 14:26:50:799] [00007f1a20000bb8] core input debug: Buffering 26%
+[2018-08-21 14:26:50:839] [00007f1a20000bb8] core input debug: Buffering 51%
+[2018-08-21 14:26:50:852] [00007f1a20000bb8] core input debug: Buffering 78%
+[2018-08-21 14:26:50:863] [00007f1a20000bb8] core input debug: Stream buffering done (208 ms in 517 ms)
+[2018-08-21 14:26:50:877] [00007f1a20000bb8] core input debug: Decoder wait done in 0 ms
+[2018-08-21 14:26:50:891] [00000000021dd4c8] pulse audio output warning: starting late (-23281 us)
+[2018-08-21 14:26:50:900] [00000000021dd4c8] pulse audio output debug: started
+[2018-08-21 14:26:50:919] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:931] [00000000021dd4c8] pulse audio output debug: changing sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-08-21 14:26:50:968] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:50:972] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:001] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:017] [00000000021dd4c8] core audio output warning: buffer too late (-64111 us): dropped
+[2018-08-21 14:26:51:028] [00000000021dd4c8] core audio output debug: inserting 4266 zeroes
+[2018-08-21 14:26:51:042] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:062] [00000000021dd4c8] core audio output warning: playback too early (-113538): down-sampling
+[2018-08-21 14:26:51:075] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:084] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:134] [00000000021dd4c8] core audio output warning: playback way too early (-193904): playing silence
+[2018-08-21 14:26:51:173] [00000000021dd4c8] core audio output debug: inserting 4275 zeroes
+[2018-08-21 14:26:51:183] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:203] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:214] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:310] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:342] [00000000021dd4c8] core audio output warning: playback way too early (-138110): playing silence
+[2018-08-21 14:26:51:353] [00000000021dd4c8] core audio output debug: inserting 3045 zeroes
+[2018-08-21 14:26:51:446] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:486] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:515] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:608] [00000000021dd4c8] core audio output warning: playback too early (-61357): down-sampling
+[2018-08-21 14:26:51:632] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:642] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:51:863] [00000000021dd4c8] core audio output warning: buffer too late (-68368 us): dropped
+[2018-08-21 14:26:51:899] [00000000021dd4c8] core audio output debug: inserting 6339 zeroes
+[2018-08-21 14:26:51:962] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:022] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:061] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:156] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:180] [00000000021dd4c8] core audio output warning: playback too early (-101231): down-sampling
+[2018-08-21 14:26:52:192] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:288] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:420] [00000000021dd4c8] core audio output warning: playback way too early (-194151): playing silence
+[2018-08-21 14:26:52:430] [00000000021dd4c8] core audio output debug: inserting 4281 zeroes
+[2018-08-21 14:26:52:541] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:580] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:643] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:684] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:708] [00000000021dd4c8] core audio output warning: playback too early (-67826): down-sampling
+[2018-08-21 14:26:52:741] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:837] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:855] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:959] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:52:985] [00000000021dd4c8] core audio output warning: playback way too early (-127446): playing silence
+[2018-08-21 14:26:52:996] [00000000021dd4c8] core audio output debug: inserting 2810 zeroes
+[2018-08-21 14:26:53:062] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:119] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:194] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:243] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:254] [00000000021dd4c8] core audio output warning: playback too early (-55813): down-sampling
+[2018-08-21 14:26:53:302] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:371] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:392] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:517] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:542] [00000000021dd4c8] core audio output warning: playback way too early (-120853): playing silence
+[2018-08-21 14:26:53:555] [00000000021dd4c8] core audio output debug: inserting 2664 zeroes
+[2018-08-21 14:26:53:583] [00000000020da148] core libvlc debug: exiting
+[2018-08-21 14:26:53:590] [00000000020da148] core libvlc debug: removing all interfaces
+[2018-08-21 14:26:53:600] [00000000020da148] core libvlc debug: exiting
+[2018-08-21 14:26:53:615] [00000000021f7538] core interface debug: removing module "qt4"
+[2018-08-21 14:26:53:619] [00000000021c2f18] core playlist debug: deactivating the playlist
+[2018-08-21 14:26:53:631] [00000000021c2f18] core playlist debug: incoming request - stopping current input
+[2018-08-21 14:26:53:640] [00000000021dd4c8] pulse audio output debug: underflow
+[2018-08-21 14:26:53:716] [00007f1a20000bb8] core input debug: control: stopping input
+[2018-08-21 14:26:53:767] [00000000021c2f18] core playlist debug: incoming request - stopping current input
+[2018-08-21 14:26:53:787] [00000000021c2f18] core playlist debug: finished input
+[2018-08-21 14:26:53:823] [00007f1a04009208] core decoder debug: removing module "mpeg_audio"
+[2018-08-21 14:26:53:870] [00007f1a04009208] core decoder debug: killing decoder fourcc `mpga', 1 PES in FIFO
+[2018-08-21 14:26:53:887] [00007f1a08012f38] core audio resampler debug: removing module "samplerate"
+[2018-08-21 14:26:53:917] [00007f1a08006cf8] core audio converter debug: removing module "mpgatofixed32"
+[2018-08-21 14:26:53:946] [00007f1a08002cb8] core audio filter debug: removing module "scaletempo"
+[2018-08-21 14:26:53:963] [00007f1a08000958] core volume debug: removing module "float_mixer"
+[2018-08-21 14:26:53:986] [00000000021c2f18] core playlist debug: keeping audio output
+[2018-08-21 14:26:53:998] [00007f1a04004178] core demux debug: removing module "live555"
+[2018-08-21 14:26:54:006] Sending request: TEARDOWN rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-08-21 14:26:54:020] CSeq: 7
+[2018-08-21 14:26:54:023] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-08-21 14:26:54:031] Session: bb931480442fa676
+[2018-08-21 14:26:54:045] 
+[2018-08-21 14:26:54:047]
+[2018-08-21 14:26:54:060] [00007f1a20000bb8] core input debug: Program doesn't contain anymore ES
+[2018-08-21 14:26:54:074] [00000000021c2f18] core playlist debug: incoming request - stopping current input
+[2018-08-21 14:26:54:081] [00000000021c2f18] core playlist debug: dead input
+[2018-08-21 14:26:54:092] [00000000021dd4c8] core audio output debug: removing module "pulse"
+[2018-08-21 14:26:54:101] [00000000021f7538] qt4 interface debug: IM: Deleting the input
+[2018-08-21 14:26:54:113] [00000000021f7538] qt4 interface debug: requesting exit...
+[2018-08-21 14:26:54:118] [00000000021f7538] qt4 interface debug: waiting for UI thread...
+[2018-08-21 14:26:54:130] [00000000021f7538] qt4 interface debug: QApp exec() finished
+[2018-08-21 14:26:54:145] [00000000021f7538] qt4 interface debug: Video is not needed anymore
+[2018-08-21 14:26:54:150] [00000000021f7538] qt4 interface debug: Killing extension dialog provider
+[2018-08-21 14:26:54:162] [00000000021f7538] qt4 interface debug: ExtensionsDialogProvider is quitting...
+[2018-08-21 14:26:54:173] [00007f1a180cec08] core generic debug: removing module "lua"
+[2018-08-21 14:26:54:176] [00007f1a180cec08] lua generic debug: Deactivating all loaded extensions
+[2018-08-21 14:26:54:183] [00007f1a180cec08] lua generic debug: All extensions are now deactivated
+[2018-08-21 14:26:54:205] [00000000021f59d8] core interface debug: removing module "xcb_hotkeys"
+[2018-08-21 14:26:54:217] [00000000021f0bd8] core interface debug: removing module "hotkeys"
+[2018-08-21 14:26:54:227] [00000000021c2f18] core playlist debug: destroying
+[2018-08-21 14:26:54:238] [0000000002218758] core playlist export debug: saving Biblioteca multimedia to file /home/bayes/.local/share/vlc/ml.xspf.tmp12183
+[2018-08-21 14:26:54:244] [0000000002218758] core playlist export debug: looking for playlist export module matching "export-xspf": 4 candidates
+[2018-08-21 14:26:54:256] [0000000002218758] core playlist export debug: using playlist export module "export"
+[2018-08-21 14:26:54:259] [0000000002218758] core playlist export debug: removing module "export"
+[2018-08-21 14:26:54:271] QObject::~QObject: Timers cannot be stopped from another thread

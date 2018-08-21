@@ -1,0 +1,2 @@
+[errors]
+Type = 0
