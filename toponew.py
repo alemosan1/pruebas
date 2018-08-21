@@ -10,6 +10,7 @@ from mininet.node import RemoteController, Controller
 import os
 import time
 import datetime
+import ConfigParser
 
 
 class SingleSwitchTopo(Topo):
@@ -59,14 +60,32 @@ def simpleTest():
     src = net.get('h1') 
     dst = net.get('h2')
     
+    
     #Server side
-    #cmdServer = "su bayesiansdn ;"
-    cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout '#duplicate{dst=rtp{dst=10.0.0.2,port=5004,mux=ts},dst=display} --sout-keep --loop' 2>&1 | ./timestamp.sh server"
+    cmdServer=""
+
+    print type
+    if type == '0' :
+
+        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout '#transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=22050}:rtp{sdp=rtsp://:5004/} --sout-keep --loop' 2>&1 | ./timestamp.sh server"
+    
+    elif type == 1 :
+        # low fps rate and binary bit rate
+        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout '#transcode{vcodec=h264,vb=120,vfilter=freeze,fps=10,scale=Automático,acodec=mpga,ab=256,channels=3,samplerate=22050,scodec=t140,soverlay}:rtp{dst=10.0.0.2,port=5004,mux=ts}'"
+    elif type == 2 :
+        print "hoal"
+        #cmdServer = 
+        # incompatible video format
     #Client side
-    #cmdClient = "su bayesiansdn ;"
-    cmdClient = "vlc-wrapper -vvv rtp://10.0.0.2:5004 2>&1 | ./timestamp.sh cliente"
-    termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
+    
+    #TODO: tenemos que poner que la IP se saque programaticamente
+    cmdClient = "vlc-wrapper -vvv -R --network-caching 200 rtp://10.0.0.1:5004 2>&1 | ./timestamp.sh cliente"
+
+    print cmdServer
+    
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
+
+    termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
     #src.cmd('./net/vlc_send.sh &')
     
     time.sleep(5)
@@ -86,6 +105,10 @@ def simpleTest():
 
 if __name__ == '__main__':
     setLogLevel('info')
+    configerror= ConfigParser.ConfigParser()
+    configerror.read(['./config_vlc.py'])
+    type =configerror.get('errors','Type')
+
     #Vamos a renombrar los logs para cada vez que se ejecueten se guarden los previos.
     renameLog()
     simpleTest()
