@@ -70,7 +70,7 @@ def simpleTest():
     elif type == '2' : #  Low sample rate (Audio)
         cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=8000}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
     elif type == '3' : #TO DO: incompatible mux format 
-        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=theo,vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
+        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=avi,vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
         print ""
 
     #Client side
