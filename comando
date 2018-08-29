@@ -1,0 +1,58 @@
+:sout=#transcode{vcodec=h264,vb=240,vfilter=freeze,fps=20,scale=Automático,acodec=mpga,ab=256,channels=3,samplerate=22050,scodec=t140,soverlay}:rtp{dst=10.0.0.2,port=5004,mux=ts} :sout-keep
+
+comando -> vlc-wrapper -vvv sampleVideo.mkv --sout '#transcode{vcodec=h264,vb=240,vfilter=freeze,fps=20,scale=Automático,acodec=mpga,ab=256,channels=3,samplerate=22050,scodec=t140,soverlay}:rtp{dst=10.0.0.2,port=5004,mux=ts}'
+
+---------------------
+vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=22050}:rtp{sdp=rtsp://:8554/}' --sout-keep --loop
+---------------------------
+vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:8554/
+
+-----------------------------------------------------------
+TODO: Error de todo esto cuando se vuelve a reproducir el video da problemas, como cuando pasa con el archivo inicial
+
+Pasa de debug a warning, cuando la picture se retrasa más de 20 ms
+
+
+Type = '0' ---> No error
+
+
+Type = '1' ---> va a ser el fallo de video
+
+Se observa principalmente dos comportamientos que caracterizan este error
+ avcoded warning: More than 4 lates frames, dropping message.
+ core error: ES_OUT_RESET_PCR called
+ core warning: picture is too late to be displayed (missing 698 ms)
+ avcodec warning: More than 4 late frames, dropping frame
+ core warning: timing screwed (drift: 165045 us): stopping resampling
+ core warning: playback too late (165150): up-sampling
+ avcodec error: more than 5 seconds of late video -> dropping frame (computer too slow ?)
+
+
+
+Type = '2' ---> Va a ser el fallo de audio
+( el error lo he conseguiod cammbiando la frecuencia de muestreo (44100/22050/11025/8000) ponienod uno de 8000 da fallos)
+Se identifica con el mensaje pulse debug: underflow
+core audio output warning: playback too early (-55121): down-sampling
+core audio output warning: playback way too early (-153054): playing silence
+
+
+Type = '3' ---> Fallo en el formato del transcode de video
+
+--- En el lado de servidor ----
+stream_out_transcode stream out error: cannot find video encoder (module:any fourcc:avi ). Take a look few lines earlier to see possible reason.
+
+
+---En en el lado de cliente---
+[2018-08-27 12:39:44:464] [00007fb420000bb8] core input debug: creating access 'rtsp' location='10.0.0.1:5004/', path='(null)'
+
+
+IDEA---> que el streaming tenga audio/video pero no ambos
+	---> can't get out picture ( interesante tambien)
+
+Se utilia mediainfo-- instalar mediainfo
+
+He guardado la informacion con un diccionario --> https://www.pythonforbeginners.com/dictionary/how-to-use-dictionaries-in-python
+
+
+
+
