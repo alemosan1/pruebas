@@ -8,6 +8,8 @@ from mininet.cli import CLI
 from mininet.term import cleanUpScreens, makeTerm
 from mininet.node import RemoteController, Controller
 import os
+import subprocess
+import glob
 import time
 import datetime
 import ConfigParser
@@ -16,11 +18,19 @@ import ConfigParser
 class SingleSwitchTopo(Topo):
 
     def build(self, n=2):
-	    switch = self.addSwitch('s1')
+    	    switch = self.addSwitch('s1')
 
-	    for h in range(n):
-		    host = self.addHost('h%s' % (h + 1))
-  		    self.addLink(host, switch)
+    	    for h in range(n):
+    		    host = self.addHost('h%s' % (h + 1))
+      		    self.addLink(host, switch)
+
+# Get information about the vlc logs like the ID, video parameters
+def getInformation():
+    list_of_files_server = glob.glob('/home/bayes/Repositories/pruebas/logs/server*') # * means all if need specific format then *.csv
+    list_of_files_client = glob.glob('/home/bayes/Repositories/pruebas/logs/client*')
+    latest_file_server = max(list_of_files_server, key=os.path.getctime)
+    latest_file_client = max(list_of_files_client, key=os.path.getctime)
+
 
 # Reads the full file line per line
 def follow(thefile):
@@ -72,6 +82,9 @@ def simpleTest():
     elif type == '3' : #TO DO: incompatible mux format 
         cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=avi,vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
         print ""
+    elif type == '4' : #MP4 example
+        cmdServer = "vlc-wrapper -vvv small.mp4 --sout='#transcode{vcodec=mp4v,vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
+        print ""    
 
     #Client side
     #TODO: tenemos que poner que la IP se saque programaticamente
@@ -80,7 +93,6 @@ def simpleTest():
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
     time.sleep(5)
     termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
-
     time.sleep(5)
     
     # logfile = open("logs/clientVLC-log.txt","r") 
@@ -89,6 +101,8 @@ def simpleTest():
     #     st = datetime.datetime.now()
     #     print "["+str(st)+"]"+line,
 
+    #Method to obtain information in log Files
+    getInformation()
     CLI(net)
     cmdExit = "kill $(ps aux | grep 'vlc' | grep -v grep | awk '{print $2}')"
     os.system(cmdExit)
