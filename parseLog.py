@@ -24,15 +24,8 @@ print latest_file_server
 
 # Open the file that contains all information about sessions.
 file = fileExists()
-
-
-
 session=subprocess.check_output('grep -m1 "Session*" '+latest_file_client+' | cut -d " " -f4 | cut -d ";" -f1', shell=True)
-#print session
-
 file.write("Session = "+str(session))
-
-
 
 #variables to get only specific information.
 read = False
@@ -43,17 +36,12 @@ numberLines=30
 with open(latest_file_client, 'r') as filehandle:  
     for line in filehandle:
 
-    	
-
     	if "DESCRIBE response" in line :
     		read = True
-
-
-    	#if to get only the number of lines specified in the variable after the DESCRIBE response
-
+    	
+		# if to get only the number of lines specified in the variable after the DESCRIBE response
     	if read :
     		counter += 1
-
     		#if to get the date of the streaming session
     		if "Date" in line:
     			file.write("Date = "+ line.split(": ")[1])
@@ -87,3 +75,5 @@ with open(latest_file_server, 'r') as filehandle:
     	if "core stream output debug: usi" in line:
     		line=line.split("{")[1].split(',')
     		file.write(line[0]+'\n'+line[1]+'\n')
+
+# Linea para pillar la ip del source y del dest ---> core stream out debug: net: connecting to [10.0.0.2]:54809 from [10.0.0.1]:60072
