@@ -1,7 +1,7 @@
 import glob
 import os
 import subprocess
-
+import re
 
 def  fileExists():
 	fn = "infosession.txt"
@@ -35,13 +35,12 @@ numberLines=30
 
 with open(latest_file_client, 'r') as filehandle:  
     for line in filehandle:
-
-    	if "DESCRIBE response" in line :
-    		read = True
+		if "DESCRIBE response" in line :
+			read = True
     	
 		# if to get only the number of lines specified in the variable after the DESCRIBE response
-    	if read :
-    		counter += 1
+		if read :
+			counter += 1
     		#if to get the date of the streaming session
     		if "Date" in line:
     			file.write("Date = "+ line.split(": ")[1])
@@ -54,26 +53,31 @@ with open(latest_file_client, 'r') as filehandle:
     			read = False
 
     	#To get audio codification information
-    	if "samplerate:" in line :
-    		array=(line.split("] ")[2]).split("g:")[1].split(" ")
-    		print array
-    		file.write (20*'-'+"codificacion del audio"+20*'-'+"\r\n")
-    		for i in array :
-    			i=i.replace(':','=')
-    			file.write(i)
-    			file.write('\n')
+		if "samplerate:" in line :
+			array=(line.split("] ")[2]).split("g:")[1].split(" ")
+			file.write (20*'-'+"codificacion del audio"+20*'-'+"\r\n")
+			for i in array :
+				i=i.replace(':','=')
+				file.write(i)
+				file.write('\n')
     			print i
     		#Close the client log file to start parsing the server side
     		
 file.write (20*'-'+"codificacion del video"+20*'-'+"\r\n")
+existsIP=False
 with open(latest_file_server, 'r') as filehandle:  
     for line in filehandle:
-    	if "source fps " in line:
-    		line= line.split(": ")[1].split(", ")
-    		file.write(line[0]+'\r\n')
-    		file.write(line[1])
-    	if "core stream output debug: usi" in line:
-    		line=line.split("{")[1].split(',')
-    		file.write(line[0]+'\n'+line[1]+'\n')
+		# Linea para pillar la ip del source y del dest ---> core stream out debug: net: connecting to [10.0.0.2]:54809 from [10.0.0.1]:60072
+		if "debug: net: connecting to" in line and "from" in line and not existsIP: 
+			print line
+			ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line)
+			file.write("IP Client = " + ip[0]+'\r\n'+ "IP Server = " + ip[1]+'\r\n')
+			existsIP = True
+		if "source fps " in line:
+			line= line.split(": ")[1].split(", ")
+			file.write(line[0]+'\r\n')
+			file.write(line[1])
+		if "core stream output debug: usi" in line:
+			line=line.split("{")[1].split(',')
+			file.write(line[0]+'\n'+line[1]+'\n')
 
-# Linea para pillar la ip del source y del dest ---> core stream out debug: net: connecting to [10.0.0.2]:54809 from [10.0.0.1]:60072
