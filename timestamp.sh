@@ -21,6 +21,8 @@ elif [[ "$1" == "server4" ]]; then
 	namefile="server$(date +%Y%m%d%H%M)error4.log"	
 fi
 
+#Line to get the host IP
+echo " IP : " $(hostname -I) > logs/$namefile
 while read -r line
 do
   newline="[$(date +%Y-%m-%d\ %H:%M:%S:%3N)] $line"
