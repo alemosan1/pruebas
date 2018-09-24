@@ -34,23 +34,32 @@ counter = 0
 numberLines=30
 
 with open(latest_file_client, 'r') as filehandle:  
-    for line in filehandle:
+	# Pillamos la primera linea que contiene la IP del cliente
+	line = filehandle.readline()
+	ip = line.split("=")
+	file.write("IP Client =" + ip[1])
+
+	for line in filehandle:
+
 		if "DESCRIBE response" in line :
 			read = True
     	
 		# if to get only the number of lines specified in the variable after the DESCRIBE response
 		if read :
 			counter += 1
+			if "Content-Base:" in line :
+				ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line)
+				file.write("IP Server = " + ip[0]+'\r\n')
+				file.write(date)
     		#if to get the date of the streaming session
-    		if "Date" in line:
-    			file.write("Date = "+ line.split(": ")[1])
+			if "Date" in line:
+				date = "Date = "+ line.split(": ")[1]
+			if "=" in line:
+				line = line.split("] ")[1]
+				file.write(line)
 
-    		if "=" in line:
-    			line = line.split("] ")[1]
-    			file.write(line)
-
-    		if counter > numberLines :
-    			read = False
+			if counter > numberLines :
+				read = False
 
     	#To get audio codification information
 		if "samplerate:" in line :
@@ -64,15 +73,8 @@ with open(latest_file_client, 'r') as filehandle:
     		#Close the client log file to start parsing the server side
     		
 file.write (20*'-'+"codificacion del video"+20*'-'+"\r\n")
-existsIP=False
 with open(latest_file_server, 'r') as filehandle:  
     for line in filehandle:
-		# Linea para pillar la ip del source y del dest ---> core stream out debug: net: connecting to [10.0.0.2]:54809 from [10.0.0.1]:60072
-		if "debug: net: connecting to" in line and "from" in line and not existsIP: 
-			print line
-			ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line)
-			file.write("IP Client = " + ip[0]+'\r\n'+ "IP Server = " + ip[1]+'\r\n')
-			existsIP = True
 		if "source fps " in line:
 			line= line.split(": ")[1].split(", ")
 			file.write(line[0]+'\r\n')
