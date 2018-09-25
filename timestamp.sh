@@ -22,7 +22,7 @@ elif [[ "$1" == "server4" ]]; then
 fi
 
 #Line to get the host IP
-echo " IP : " $(hostname -I) > logs/$namefile
+echo " IP = " $(hostname -I) > logs/$namefile
 while read -r line
 do
   newline="[$(date +%Y-%m-%d\ %H:%M:%S:%3N)] $line"
