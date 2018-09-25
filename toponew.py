@@ -74,21 +74,21 @@ def simpleTest():
     #Server side
     cmdServer=""
     if type == '0' : # No errors
-        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=22050}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
+        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=22050}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server "+type
     elif type == '1' : # Low fps rate and binary bit rate (video)
-        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=h264,vb=60,vfilter=freeze,fps=5,scale=Automático,acodec=mpga,ab=256,channels=3,samplerate=22050,scodec=t140,soverlay}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
+        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=h264,vb=60,vfilter=freeze,fps=5,scale=Automático,acodec=mpga,ab=256,channels=3,samplerate=22050,scodec=t140,soverlay}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server "+type
     elif type == '2' : #  Low sample rate (Audio)
-        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=8000}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
+        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=mp4v,scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=8000}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server "+type
     elif type == '3' : #TO DO: incompatible mux format 
-        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=avi,vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
+        cmdServer = "vlc-wrapper -vvv sampleVideo.mkv --sout='#transcode{vcodec=avi,vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server "+type
         print ""
     elif type == '4' : #MP4 example
-        cmdServer = "vlc-wrapper -vvv small.mp4 --sout='#transcode{vcodec=mp4v,vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server"+type
+        cmdServer = "vlc-wrapper -vvv small.mp4 --sout='#transcode{vcodec=mp4v,vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./timestamp.sh server "+type
         print ""    
 
     #Client side
     #TODO: tenemos que poner que la IP se saque programaticamente
-    cmdClient = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente"+type
+    cmdClient = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type
     
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
     time.sleep(5)
