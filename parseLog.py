@@ -62,16 +62,26 @@ with open(latest_file_client, 'r') as filehandle:
 				read = False
 
     	#To get audio codification information
+
+		if "RTP subsession 'audio" in line :
+			file.write (20*'-'+"codificacion del audio"+20*'-'+"\r\n")
+			line = line.split("/")[1].split("'")[0]
+			print line
+			file.write("Codec del audio ="+ line)		
+
+
+
 		if "samplerate:" in line :
 			array=(line.split("] ")[2]).split("g:")[1].split(" ")
-			file.write (20*'-'+"codificacion del audio"+20*'-'+"\r\n")
 			for i in array :
 				i=i.replace(':','=')
 				file.write(i)
 				file.write('\n')
     			print i
     		#Close the client log file to start parsing the server side
-    		
+    	
+
+
 file.write (20*'-'+"codificacion del video"+20*'-'+"\r\n")
 with open(latest_file_server, 'r') as filehandle:  
     for line in filehandle:
