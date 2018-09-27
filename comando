@@ -41,6 +41,10 @@ Type = '3' ---> Fallo en el formato del transcode de video
 --- En el lado de servidor ----
 stream_out_transcode stream out error: cannot find video encoder (module:any fourcc:avi ). Take a look few lines earlier to see possible reason.
 
+[2018-09-26 09:42:58:850] [00007f6ce0002e98] stream_out_transcode stream out error: cannot find video encoder (module:any fourcc:avi ). Take a look few lines earlier to see possible reason.
+[2018-09-26 09:42:58:851] [00007f6ce4001368] core generic debug: removing module "avcodec"
+[2018-09-26 09:42:58:852] [00007f6ce4001368] avcodec generic debug: ffmpeg codec (H264 - MPEG-4 AVC (part 10)) stopped
+
 
 ---En en el lado de cliente---
 [2018-08-27 12:39:44:464] [00007fb420000bb8] core input debug: creating access 'rtsp' location='10.0.0.1:5004/', path='(null)'
@@ -56,3 +60,6 @@ He guardado la informacion con un diccionario --> https://www.pythonforbeginners
 
 
 
+# Combinacion de codec
+
+Con el protocolo de STREAMING RTP solo pueden ir muxer TS (Transport Stream ) o PS (Program Stream)
