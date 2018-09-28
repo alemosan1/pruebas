@@ -3,27 +3,22 @@
 filebeat.prospectors:
 
 - input_type: log
+  enabled: true
   paths:
     - /home/bayes/Repositories/pruebas/logs/c*.log
-  #fields:
-    #vlc_client: true #adding a field called vlc_client to the messages
   document_type: vlc_client
 
 - input_type: log
+  enabled: true
   paths:
     - /home/bayes/Repositories/pruebas/logs/s*.log
   document_type: vlc_server
 
 - input_type: log
+  enabled: true
   paths:
-     - /home/bayes/Repositories/pruebas/infoSession/*.log
+    - /home/bayes/Repositories/pruebas/infoSession/info*.log
   document_type: info_session
-
-#================================ Outputs =====================================
-#-------------------------- Elasticsearch output ------------------------------
-# output.elasticsearch:
-  # Array of hosts to connect to.
-  # hosts: ["localhost:9200"]
 
 #----------------------------- Logstash output --------------------------------
 output.logstash:
