@@ -19,62 +19,50 @@ def  fileExists():
 	return file   
 
 file = fileExists()
-file.write(session + ", ")
-
-#variables to get only specific information.
-read = False
-# counter and numberlines I want to read.
-counter = 0
-numberLines=30
+file.write("Session=" + session + ", ")
 
 with open(latest_file_client, 'r') as filehandle:  
 	# Pillamos la primera linea que contiene la IP del cliente
 	line = filehandle.readline()
 	ip = line.split("=  ")
-	file.write(ip[1].rstrip('\n') + ", ")
+	file.write("IPClient=" + ip[1].rstrip('\n') + ", ")
 
 	for line in filehandle:
+		if "Content-Base:" in line :
+			ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line)
+			file.write("IPServer=" + ip[0] + ", ")
+			#file.write(date)
+		#if "Date" in line:
+			#date = "Quitar el dia de la semana" + line.split(": ")[1]
+		if "Transport:" in line :
+			if "client_port" and "server_port" in line :
+				line = line.split(";")
+				file.write(line[2] + " " + line [3] + ", ")
 
-		if "DESCRIBE response" in line :
-			read = True
-    	
-		# if to get only the number of lines specified in the variable after the DESCRIBE response
-		if read :
-			counter += 1
-			if "Content-Base:" in line :
-				ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line)
-				file.write(ip[0] + "\n")
-				#file.write(date)
-    		#if to get the date of the streaming session
-			if "Date" in line:
-				date = "Quitar el dia de la semana" + line.split(": ")[1]
-			if "=" in line:
-				line = line.split("] ")[1]
-				#file.write(line)
-
-			if counter > numberLines :
-				read = False
-
-    	#To get audio codification information
+		# Audio info
 		if "samplerate:" in line :
-			array=(line.split("] ")[2]).split("g:")[1].split(" ")
-			#file.write (20*'-'+"codificacion del audio"+20*'-'+"\r\n")
+			file.write ("AUDIO: ")
+			array=(line.split("] ")[2]).split("g: ")[1].split(" ")
+			array[3] = array[3].rstrip('\n')
 			for i in array :
+				if ":" not in i  :
+					file.write("acodec=")
 				i=i.replace(':','=')
-				# file.write(i)
-				#file.write('\n')
-    			#print i
-    		#Close the client log file to start parsing the server side
-    		
-#file.write (20*'-'+"codificacion del video"+20*'-'+"\r\n")
+				file.write(i)
+				file.write(", ")
+		
+#Server side
+file.write ("VIDEO: ")
 with open(latest_file_server, 'r') as filehandle:  
-    for line in filehandle:
-		if "source fps " in line:
+	fps = "fps=NotApplicable" # Ponemos esto para tener esta variable, aunque el video no se reproduzca
+	video2 = "vcodec=NotApplicable"
+	for line in filehandle:
+		if "source fps" in line:
 			line= line.split(": ")[1].split(", ")
-			#file.write(line[0]+'\r\n')
-			#file.write(line[1])
+			fps = line[0]+", " + line[1]
 		if "core stream output debug: usi" in line:
-			line=line.split("{")[1].split(',')
-			#file.write(line[0]+'\n'+line[1]+'\n')
- 
+			video=line.split("{")[1].split(',')
+			video2 = video[0]+", "+video[1]
+
+	file.write (fps + ", " + video2 + "\n")
 # NOTA: El ultimo parametro que se anada al fichero del este log, debe tener un salto de linea. Si no, el filebeat no lo coge.

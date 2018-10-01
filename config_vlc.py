@@ -1,2 +1,2 @@
 [errors]
-Type = 4
+Type = 0
