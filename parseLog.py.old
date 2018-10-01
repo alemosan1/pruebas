@@ -28,7 +28,10 @@ session=subprocess.check_output('grep -m1 "Session*" '+latest_file_client+' | cu
 file.write("Session = "+str(session))
 
 #variables to get only specific information.
-
+read = False
+# counter and numberlines I want to read.
+counter = 0
+numberLines=30
 
 with open(latest_file_client, 'r') as filehandle:  
 	# Pillamos la primera linea que contiene la IP del cliente
@@ -36,40 +39,41 @@ with open(latest_file_client, 'r') as filehandle:
 	ip = line.split("=")
 	file.write("IP Client =" + ip[1])
 
-	
 	for line in filehandle:
-		if "Content-Base:" in line :
+
+		if "DESCRIBE response" in line :
+			read = True
+    	
+		# if to get only the number of lines specified in the variable after the DESCRIBE response
+		if read :
+			counter += 1
+			if "Content-Base:" in line :
 				ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line)
-				file.write("IP Server = "+ip[0] + "\n")
-				file.write (20*'-'+"Informacion de los puertos"+20*'-'+"\r\n")
+				file.write("IP Server = " + ip[0]+'\r\n')
+				file.write(date)
+    		#if to get the date of the streaming session
+			if "Date" in line:
+				date = "Date = "+ line.split(": ")[1]
+			if "=" in line:
+				line = line.split("] ")[1]
+				file.write(line)
 
-		if "Transport:" in line :
-			if "client_port" and "server_port" in line :
-				
-				line = line.split(";")
-				#line[2]= client information
-				#line[3] = server information
-
-				file.write(line[2] + " " + line [3]+"\r\n")
+			if counter > numberLines :
+				read = False
 
     	#To get audio codification information
 
-		# if "RTP subsession 'audio" in line :
-		# 	file.write (20*'-'+"codificacion del audio"+20*'-'+"\r\n")
-		# 	line = line.split("/")[1].split("'")[0]
-		# 	print line
-		# 	file.write("Codec del audio ="+ line)		
+		if "RTP subsession 'audio" in line :
+			file.write (20*'-'+"codificacion del audio"+20*'-'+"\r\n")
+			line = line.split("/")[1].split("'")[0]
+			print line
+			file.write("Codec del audio ="+ line)		
 
 
 
 		if "samplerate:" in line :
-			file.write (20*'-'+"codificacion del audio"+20*'-'+"\r\n")
-			print line 
-			array=(line.split("] ")[2]).split("g: ")[1].split(" ")
-			print array
+			array=(line.split("] ")[2]).split("g:")[1].split(" ")
 			for i in array :
-				if ":" not in i  :
-					file.write("acodec=")
 				i=i.replace(':','=')
 				file.write(i)
 				file.write('\n')
