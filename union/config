@@ -1,0 +1,15 @@
+[main]
+Ip = 127.0.0.1
+Distribution = equal
+Seed = None
+MainSwitches = 10
+Datacenters = 1
+MinutesRunning = 90
+Batch = 1
+FailuresType = 0
+ErrorInterval = 60
+CollectorInterval = 15
+StreamingScenario = Yes
+Switch = s2
+[extra3]
+Number = 1
