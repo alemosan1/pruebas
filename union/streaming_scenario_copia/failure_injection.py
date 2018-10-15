@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import ConfigParser
 import httplib
 import base64
@@ -49,6 +48,7 @@ def config_push(node):
 
 
 def inject(sim_id, node, error_interval, logger):
+
 	logger.info(sim_id + ' pause')
 	time.sleep(4)
 	send_report(6, {'Switch': str(int(node.dpid, 16)), 'Timestamp': str(datetime.now())}, sim_id, logger)
@@ -171,21 +171,3 @@ def fix_node_table(node, old_xml):
 	headers2 = { 'Content-type' : 'application/yang.data+xml','Authorization' : 'Basic %s' %  str(base64.b64encode(b"admin:admin").decode("ascii")) }
 	odl_comm(params = ("PUT", "/restconf/config/opendaylight-inventory:nodes/node/openflow:"+str(node_dec)+"/table/0"), body = data, headers = headers2)
 	return
-
-def error_vlc (err_type):
-	cmdServer=""
-	codecVideoUsed = 'mp4v'
-	if err_type == '0' : # No errors
-		cmdServer = "vlc-wrapper -vvv ../../videos/sampleVideo.mkv --sout='#transcode{vcodec="+codecVideoUsed+",scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=22050}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./../../timestamp.sh server "+err_type
-	elif err_type == '1' : # Low fps rate and binary bit rate (video)
-		cmdServer = "vlc-wrapper -vvv videos/sampleVideo.mkv --sout='#transcode{vcodec="+codecVideoUsed+",vb=60,vfilter=freeze,fps=5,scale=Automático,acodec=mpga,ab=256,channels=3,samplerate=22050,scodec=t140,soverlay}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1"
-	elif err_type == '2' : #  Low sample rate (Audio)
-		cmdServer = "vlc-wrapper -vvv videos/sampleVideo.mkv --sout='#transcode{vcodec="+codecVideoUsed+",scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=8000}:rtp{sdp=rtsp://:5004/}' --sout-keep --loop 2>&1"
-	elif err_type == '3' : #TO DO: incompatible mux format 
-		cmdServer = "vlc-wrapper -vvv videos/sampleVideo.mkv --sout='#transcode{vcodec="+codecVideoUsed+",scale=Automático,acodec=mpga,ab=128,channels=2,samplerate=44100}:rtp{mux="+codecMuxerUsed+",sdp=rtsp://:5004/}' --sout-keep --loop  2>&1"
-	elif err_type == '4' : #MP4 example
-		cmdServer = "vlc-wrapper -vvv videos/sampleVideo.mkv --sout='#transcode{vcodec="+codecVideoUsed+",vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{mux=mpeg1,sdp=rtsp://:5004/}' --sout-keep --loop 2>&1 | ./../../timestamp.sh server "+err_type
-	
-	return cmdServer
-	
-	

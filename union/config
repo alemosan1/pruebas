@@ -11,5 +11,7 @@ ErrorInterval = 60
 CollectorInterval = 15
 StreamingScenario = Yes
 Switch = s2
+StreamingVLC = Yes
+VlcErr = 0
 [extra3]
 Number = 1
