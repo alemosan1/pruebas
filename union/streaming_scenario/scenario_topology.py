@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 import ConfigParser
+import parseLog
 from mininet.topo import Topo
 from mininet.net import Mininet
 from mininet.node import RemoteController
@@ -53,3 +54,5 @@ class ScenarioTopo( Topo ):
 		sleep(5)
 		termDst = makeTerm(h2, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
 		CLI(self.net)
+		sleep(10)
+		parseLog.parsea()

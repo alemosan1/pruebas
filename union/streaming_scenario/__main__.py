@@ -1,7 +1,3 @@
-"""
-The simulation is run here. 
-
-"""
 import scenario_topology
 import manageLogsAndOthers as man
 import failure_injection
@@ -25,15 +21,16 @@ def Main():
 	network = scenario_topology.ScenarioTopo() # Crea la red desde scenario_topo.py
 	network.run(ip)
 
-	if ifVlc == 'Yes' :	 
+	if ifVlc == 'Yes' :
 		cmdServer = failure_injection.error_vlc(vlc_error) # Pedimos a failure_injection que nos de el comando adecuado para provocar el error
 		cmdClient = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./../../timestamp.sh cliente "+vlc_error
 		network.ourStream(cmdServer, cmdClient) 
+		man.getInformation()
 		cmdExit = "kill $(ps aux | grep 'vlc' | grep -v grep | awk '{print $2}');kill $(ps aux | grep 'ifstat' | grep -v grep | awk '{print $2}')"
 		os.system(cmdExit)
 		network.remove()
 	
-	elif ifVlc == 'No' :
+	elif ifVlc == 'No' : 
 		network.stream()
 		orig_timestamp = datetime.now() 
 		sim_id = str(orig_timestamp.year) + str(orig_timestamp.month) + str(orig_timestamp.day) + str(orig_timestamp.hour) + str(orig_timestamp.minute)

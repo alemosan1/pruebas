@@ -6,9 +6,9 @@ elif [[ "$1" == "server" ]]; then
 fi
 
 #Line to get the host IP
-echo " IP = " $(hostname -I) > logs/$namefile
+echo " IP = " $(hostname -I) > /home/bayes/Repositories/pruebas/logs/$namefile
 while read -r line
 do
   newline="[$(date +%Y-%m-%d\ %H:%M:%S:%3N)] $line"
-  echo $newline >> logs/$namefile
+  echo $newline >> /home/bayes/Repositories/pruebas/logs/$namefile
 done
