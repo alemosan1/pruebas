@@ -9,7 +9,7 @@ latest_file_server = max(list_of_files_server, key=os.path.getctime)
 latest_file_client = max(list_of_files_client, key=os.path.getctime)
 id_logFile = re.findall(r'\d+', latest_file_client)[0]
 
-def  fileExists():
+def  parseLogs():
 	fn = "infoSession/infosession"+id_logFile+".log"
 	try:
 	    file = open(fn, 'a')
