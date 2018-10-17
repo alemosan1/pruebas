@@ -61,9 +61,14 @@ with open(latest_file_server, 'r') as filehandle:
 	fps_src = fps_dst = vcodec = scale = "NotApplicable" # Generamos estas variables aunque el video no se reproduzca
 	for line in filehandle:
 		if "source fps" in line:
+			print line 
 			line = line.split(": ")[1].split(", ")
-			fps_src = line[0].split("=")[1]
-			fps_dst = line[1].split("=")[1]
+			fps_src = line[0].split(' ')[2]
+			fps_dst = line[1].split(' ')[1].rstrip('\n')
+
+			# line= line.split(": ")[1].split(", ")
+			# file.write(line[0]+'\r\n')
+			# file.write(line[1])
 		if "core stream output debug: usi" in line:
 			videoParams=line.split("{")[1].split(',')
 			vcodec = videoParams[0].split("=")[1]

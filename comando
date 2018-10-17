@@ -63,3 +63,6 @@ He guardado la informacion con un diccionario --> https://www.pythonforbeginners
 # Combinacion de codec
 
 Con el protocolo de STREAMING RTP solo pueden ir muxer TS (Transport Stream ) o PS (Program Stream)
+
+#RECORDAR INSTALAR PROGRAMAS NECESARIOS
+---> ifstat
