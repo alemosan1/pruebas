@@ -9,7 +9,7 @@ latest_file_server = max(list_of_files_server, key=os.path.getctime)
 latest_file_client = max(list_of_files_client, key=os.path.getctime)
 id_logFile = re.findall(r'\d+', latest_file_client)[0]
 
-def  parseLogs():
+def  fileExists():
 	fn = "infoSession/infosession"+id_logFile+".log"
 	try:
 	    file = open(fn, 'a')
@@ -59,21 +59,45 @@ file.write("AUDIO: " + "acodec="+acodec+ ", channels="+channels+ ", samplerate="
 #### SERVER SIDE ####
 with open(latest_file_server, 'r') as filehandle:  
 	fps_src = fps_dst = vcodec = scale = "NotApplicable" # Generamos estas variables aunque el video no se reproduzca
+	demux_module=""
+	#aux var to read transcode information if is read
+	disabler=False
 	for line in filehandle:
 		if "source fps" in line:
-			print line 
 			line = line.split(": ")[1].split(", ")
 			fps_src = line[0].split(' ')[2]
 			fps_dst = line[1].split(' ')[1].rstrip('\n')
 
-			# line= line.split(": ")[1].split(", ")
-			# file.write(line[0]+'\r\n')
-			# file.write(line[1])
-		if "core stream output debug: usi" in line:
-			videoParams=line.split("{")[1].split(',')
-			vcodec = videoParams[0].split("=")[1]
-			scale = videoParams[1].split("=")[1]
+		if "sout chain=`transcode" in line :
+			disabler=True;
+			line = line.split("{")[1].split("}")[0].split(",")
 
-file.write ("VIDEO: " + "fps_src="+fps_src+ ", fps_dst="+fps_dst+ ", vcodec="+vcodec+ ", scale="+scale+ "\n")
+			for i in line:
+				if "=" in i:
+					i= i.split('=')
+					file.write(i[0]+ "=" + i[1]+" ,")
+			
+
+		#Error
+		if "looking for demux module matching \"" in line:
+			#Always the demux is in the second line so this way is correct
+			demux_module = line.split("\"")[1]
+
+		#I access to this part if information about transcode has not been sent
+		if not disabler:
+			if  demux_module+" demux debug: |" in line :
+				line=line.split("|")[-1].split("+")[-1].rstrip('\n')
+				
+				if "=" in line:
+					line = line.split("=")
+					file.write(line [0] +"="+ line [1]+" ,")
+
+
+
+			# videoParams=line.split("{")[1].split(',')
+			# vcodec = videoParams[0].split("=")[1]
+			# scale = videoParams[1].split("=")[1]
+
+#file.write ("VIDEO: " + "fps_src="+fps_src+ ", fps_dst="+fps_dst+ ", vcodec="+vcodec+ ", scale="+scale+ "\n")
 
 # NOTA: El ultimo parametro que se anada al fichero del este log, debe tener un salto de linea. Si no, el filebeat no lo coge.
