@@ -1,3 +1,6 @@
+"""
+Parseo "manual" de logs para coger información de la sesión de streaming
+"""
 import glob
 import os
 import subprocess
@@ -76,8 +79,6 @@ with open(latest_file_server, 'r') as filehandle:
 				if "=" in i:
 					i= i.split('=')
 					file.write(i[0]+ "=" + i[1]+" ,")
-			
-
 		#Error
 		if "looking for demux module matching \"" in line:
 			#Always the demux is in the second line so this way is correct
@@ -91,8 +92,6 @@ with open(latest_file_server, 'r') as filehandle:
 				if "=" in line:
 					line = line.split("=")
 					file.write(line [0] +"="+ line [1]+" ,")
-
-
 
 			# videoParams=line.split("{")[1].split(',')
 			# vcodec = videoParams[0].split("=")[1]

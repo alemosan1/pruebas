@@ -1,0 +1,49 @@
+**** CONTAINER CODEC FORMAT
+# mpeg1   MPEG-1 multiplexing - recommended for portability. Only works with mp1v video and mpga audio, but works on all known players
+# ts  MPEG Transport Stream, primarily used for streaming MPEG. Also used in DVDs
+# ps  MPEG Program Stream, primarily used for saving MPEG data to disk.
+# mp4 MPEG-4 mux format, used only for MPEG-4 video and MPEG audio.
+# avi AVI
+# asf ASF
+# dummy   dummy output, can be used in creation of MP3 files.
+# ogg
+
+**** VIDEO CODEC FORMAT
+# mp1v    MPEG-1 Video - recommended for portability ---> funciona con mux = ts
+# mp2v    MPEG-2 Video - used in DVDs ----> funciona con mux = ts
+# mp4v    MPEG-4 Video  ---> Funciona tanto con mux como sin mux
+# SVQ1    Sorenson Video v1 --> No funciona
+# SVQ3    Sorenson Video v3 --> No esta instalada la biblioteca necesario
+# DVDv    VOB Video - used in DVDs --> no funciona
+# WMV1    Windows Media Video v1 ---> funciona con ts
+# WMV2    Windows Media Video v2 -- funciona con ts
+# WMV3    Windows Media Video v3, also called Windows Media 9 (unsupported)
+# DVSD    Digital Video ---> no funciona
+# MJPG    MJPEG ----> funciona con ts (linea verde cunado hay error interesante)
+# H263    H263 ----> no esta instalado el codec
+# h264    H264 ---> funciona 
+# theo    Theora ---> no funciona con ts
+# IV20    Indeo Video --> Su instalación Libav/FFmpeg (libavcodec) no tiene el siguiente codificador:
+# IV40    Indeo Video version 4 or later (unsupported) ---> no funciona con ts
+# RV10    Real Media Video ---> no funciona ts
+# cvid    Cinepak ---> no funciona 
+# VP31    On2 VP ---> no esta instalado el codec
+# FLV1    Flash Video ---> no funciona con ts
+# CYUV    Creative YUV --> no esta instalada
+# HFYU    Huffman YUV ---> no funciona  con ts
+# MSVC    Microsoft Video v1 --> no funciona con ts
+# MRLE    Microsoft RLE Video --> no funciona con ts
+# AASC    Autodesc RLE Video --> no instalado 
+# FLIC    FLIC video ---> no instalado
+# QPEG    QPEG Video ----> no esta instalado
+# VP8 VP8 Video ---> no funciona con ts
+
+***AUDIO CODEC FORMAT 
+# mpga    MPEG audio (recommended for portability)
+# mp3     MPEG Layer 3 audio
+# mp4a    MP4 audio
+# a52     Dolby Digital (A52 or AC3)
+# vorb    Vorbis
+# spx     Speex
+# flac    FLAC
+
