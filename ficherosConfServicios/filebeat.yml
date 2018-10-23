@@ -14,11 +14,11 @@ filebeat.prospectors:
     - /home/bayes/Repositories/pruebas/logs/s*.log
   document_type: vlc_server
 
-- input_type: log
+- input_type: log # comentar esto si no vamos a usar el parseInfoSession
   enabled: true
   paths:
     - /home/bayes/Repositories/pruebas/infoSession/info*.log
-  document_type: info_session
+  document_type: info_session 
 
 #----------------------------- Logstash output --------------------------------
 output.logstash:
