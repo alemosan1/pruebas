@@ -60,6 +60,7 @@ def simpleTest():
     net.pingAll()
     src = net.get('h1') 
     dst = net.get('h2')
+    dst2 = net.get('h3')
 	
 	# Check the file codecsInfo.txt for more info about codecs
 	# CONTAINER CODEC FORMAT
@@ -101,10 +102,13 @@ def simpleTest():
 	# CLIENT SIDE
     #TODO: tenemos que poner que la IP se saque programaticamente
     cmdClient = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type+CPUlimit
+    cmdClient2 = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type+CPUlimit
     
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
     time.sleep(3)
     termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
+    time.sleep(3)
+    termDst2 = makeTerm(dst2, title='VLC Client', term='xterm', display=None, cmd=cmdClient2)
     time.sleep(3)
 	
 	# TODO: Check

@@ -1,6 +1,6 @@
 	
 if [[ "$1" == "cliente" ]]; then
-	namefile="cliente$(date +%Y%m%d%H%M)error$2.log"
+	namefile="cliente$(date +%Y%m%d%H%M%S)error$2.log"
 elif [[ "$1" == "server" ]]; then
 	namefile="server$(date +%Y%m%d%H%M)error$2.log"
 fi
