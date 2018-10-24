@@ -29,7 +29,7 @@ session = subprocess.check_output('grep -m1 "Session*" '+latest_file_client+' | 
 #Hemos observado que si le metemos transcodificacion de audio mpeg_audio decoder va a tener la siguiente linea
 
 with open(latest_file_client, 'r') as filehandle:  
-	channels = samplerate = bitrate = acodec = "NotApplicable" # Generamos estas variables aunque el audio no se reproduzca
+	channels = samplerate = bitrate = acodec = "NotApplicable" # Generamos estas variables aunque el audio no se reproduzca | TODO: Al final no metemos nada de esto
 	
 	# IP CLIENT
 	line = filehandle.readline()
@@ -44,7 +44,7 @@ with open(latest_file_client, 'r') as filehandle:
 		if "Transport:" in line : # PORTS
 			if "client_port" and "server_port" in line :
 				line = line.split(";")
-				ports = line[2] + ", " + line [3]
+				ports = line[2] + " " + line [3]
 
 		
-file.write("Session=" + session + ", " + ip_client + ", " + ip_server + ", " + ports + ", ")
+file.write("HOLA Session=" + session + " " + ip_client + " " + ip_server + " " + ports + "\n")
