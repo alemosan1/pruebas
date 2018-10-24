@@ -30,6 +30,7 @@ file = fileExists()
 
 #### SERVER SIDE ####
 with open(latest_file_server, 'r') as filehandle:  
+	file.write("VIDEO_VLC")
 	fps_src = fps_dst = vcodec = scale = "NotApplicable" # Generamos estas variables aunque el video no se reproduzca
 	demux_module=""
 	#aux var to read transcode information if is read
@@ -86,15 +87,25 @@ with open(path+".json") as f:
     		audio=i
     	else:
     		otros=i
-    		
-if fps_src =="NotApplicable":
-	fps_src=video["avg_frame_rate"]
-if fps_dst =="NotApplicable":
-	fps_dst=video["avg_frame_rate"]
-if vcodec =="NotApplicable":
-	vcodec=video["codec_name"]
-if scale =="NotApplicable":
-	scale=str(video["coded_width"])+":"+str(video["coded_height"])
-file.write ("VIDEO: " + "fps_src="+fps_src+ ", fps_dst="+fps_dst+ ", vcodec="+vcodec+ ", scale="+scale+ "\n")
+#Obtain all data from video
+file.write ("VIDEO_ORIGINAL: ")
+for i in video:
+  	if not type(video[i]) is dict :
+  		file.write( i +"="+str(video[i])+" ,")
+  	# If the data is a dictionary, I will go through to obtain values
+  	else :
+  		for j in video[i] :
+ 			file.write( j +"="+str(video[i][j])+" ,")
 
+  	  	#Obtain all data from audio
+file.write ("AUDIO_ORIGINAL: ")
+for i in audio:
+  	if not type(audio[i]) is dict :
+  		file.write( i +"="+str(audio[i])+" ,")
+  	# If the data is a dictionary, I will go through to obtain values
+  	else :
+  		for j in audio[i] :
+  			file.write( j +"="+str(audio[i][j])+" ,")
+	
+#We can obtain antoher information such as data,menu,and so on"
 # NOTA: El ultimo parametro que se anada al fichero del este log, debe tener un salto de linea. Si no, el filebeat no lo coge.
