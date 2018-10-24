@@ -81,35 +81,53 @@ def simpleTest():
     codecMuxerUsed=muxerCodecVlan[2]
     enableMuxRTP="--sout-rtp-rtcp-mux"
     CPUlimit = ""
+
+    #Naming server client to give unique identifier(UUID)
     get_id=str(uuid.uuid4())
 
     # SERVER SIDE
     cmdServer=""
     if type == '0' : # No errors
-        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv --sout='#rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
+        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv \
+         --sout='#rtp{sdp=rtsp://:5004/}'\
+          --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
     elif type == '1' : # Low fps rate and binary bit rate (video)
-        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv --sout='#transcode{vcodec="+codecVideoUsed+",vb=60,vfilter=freeze,fps=5,scale=Automático,acodec=mpga,ab=256,channels=3,samplerate=22050,scodec=t140,soverlay}:rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
+        cmdServer = "su bayes -c \"cvlc \-vvv videos/sampleVideo.mkv \
+        --sout='#transcode{vcodec="+codecVideoUsed+",vb=60,vfilter=freeze,fps=5,scale=Automático,samplerate=48000, acodec=audio}\
+        :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
     elif type == '2' : #  Low sample rate (Audio)
-        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv --sout='#transcode{vcodec="+codecVideoUsed+",scale=Auto,acodec=mpga,ab=128,channels=2,samplerate=8000}:rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
+        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv \
+        --sout='#transcode{vcodec="+codecVideoUsed+",scale=Auto,acodec=spx,ab=128,channels=2,samplerate=8000}\
+        :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+ \
+        " --loop 2>&1 | ./timestamp.sh server "+type+"\""
     elif type == '3' : # TODO: incompatible mux format 
-        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv --sout='#transcode{vcodec=avi,scale=Automático,acodec=mpga,ab=128,channels=2,samplerate=44100}:rtp{mux="+codecMuxerUsed+",sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop  2>&1 | ./timestamp.sh server "+type+"\""
+        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv \
+         --sout='#transcode{vcodec=avi,scale=Automático,acodec=mpga,ab=128,channels=2,samplerate=44100}\
+         :rtp{mux="+codecMuxerUsed+",sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop  2>&1 \
+         | ./timestamp.sh server "+type+"\""
     elif type == '4' : #MP4 example
-        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv --sout='#transcode{vcodec="+codecVideoUsed+",vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}:rtp{mux=mpeg1,sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
+        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv \
+        --sout='#transcode{vcodec="+codecVideoUsed+",vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}\
+        :rtp{mux=mpeg1,sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1 \
+        | ./timestamp.sh server "+type+"\""
     elif type == '5' : #Limitation of CPU limit
-        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv --sout='#rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
+        cmdServer = "su bayes -c \"cvlc -vvv videos/sampleVideo.mkv \
+        --sout='#rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+get_id+" --loop 2>&1\
+         | ./timestamp.sh server "+type+"\""
         CPUlimit = "& cpulimit -p `expr $! - 1` -l 15"
     
 	# CLIENT SIDE
     #TODO: tenemos que poner que la IP se saque programaticamente
     cmdClient = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type+CPUlimit
-    cmdClient2 = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type+CPUlimit
+    #cmdClient2 = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type+CPUlimit
     
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
     time.sleep(3)
-    termDst = makeTerm(dst, title='VLC Client', term='xterm', display=None, cmd=cmdClient)
-    time.sleep(3)
-    termDst2 = makeTerm(dst2, title='VLC Client', term='xterm', display=None, cmd=cmdClient2)
-    time.sleep(3)
+    for i in range(int(cli)):
+        termDst = makeTerm(dst, title='VLC Client '+str((i+1)), term='xterm', display=None, cmd=cmdClient)
+        time.sleep(3)
+    #termDst2 = makeTerm(dst2, title='VLC Client', term='xterm', display=None, cmd=cmdClient2)
+    #time.sleep(3)
 	
 	# TODO: Check
     #Ahora vamos a poner un terminal para sacar informacióm
@@ -125,7 +143,7 @@ def simpleTest():
 
     #Method to obtain information in log Files
     CLI(net)
-    cmdExit = "kill $(ps aux | grep 'vlc' | grep -v grep | awk '{print $2}');kill $(ps aux | grep 'ifstat' | grep -v grep | awk '{print $2}')"
+    cmdExit = "sudo kill  $(ps aux | grep 'vlc' | grep -v grep | awk '{print $2}');kill $(ps aux | grep 'ifstat' | grep -v grep | awk '{print $2}')"
     os.system(cmdExit)
     net.stop()
 
@@ -134,6 +152,8 @@ if __name__ == '__main__':
     configerror= ConfigParser.ConfigParser()
     configerror.read(['./config_vlc.py'])
     type =configerror.get('errors','Type')
+    cli = configerror.get('clients','client')
+    os.system('systemd-machine-id-setup')
 
     #Vamos a renombrar los logs para cada vez que se ejecueten se guarden los previos.
     renameLog()

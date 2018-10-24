@@ -26,6 +26,7 @@ file = fileExists()
 session = subprocess.check_output('grep -m1 "Session*" '+latest_file_client+' | cut -d " " -f4 | cut -d ";" -f1', shell=True).rstrip('\n')
 
 
+#Hemos observado que si le metemos transcodificacion de audio mpeg_audio decoder va a tener la siguiente linea
 
 with open(latest_file_client, 'r') as filehandle:  
 	channels = samplerate = bitrate = acodec = "NotApplicable" # Generamos estas variables aunque el audio no se reproduzca
@@ -39,26 +40,11 @@ with open(latest_file_client, 'r') as filehandle:
 		if "Content-Base:" in line : # IP SERVER
 			ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line)
 			ip_server = "IPServer=" + ip[0]
-			#file.write(date)
-		#if "Date" in line:
-			#date = "Quitar el dia de la semana" + line.split(": ")[1]
+
 		if "Transport:" in line : # PORTS
 			if "client_port" and "server_port" in line :
 				line = line.split(";")
 				ports = line[2] + ", " + line [3]
 
-		# AUDIO INFO
-		if "samplerate:" in line :
-			audioInfo = (line.split("] ")[2]).split("g: ")[1].split(" ")
-			audioInfo[3] = audioInfo[3].rstrip('\n')
-			aux = 1
-			for i in audioInfo :
-				if ":" in i :
-					audioInfo [aux] = i.split(":")[1]
-					aux += 1
-			acodec = audioInfo[0]
-			channels = audioInfo[1]
-			samplerate = audioInfo[2]
-			bitrate = audioInfo[3]
+		
 file.write("Session=" + session + ", " + ip_client + ", " + ip_server + ", " + ports + ", ")
-file.write("AUDIO: " + "acodec="+acodec+ ", channels="+channels+ ", samplerate="+samplerate+ ", bitrate="+bitrate+ ", ")
