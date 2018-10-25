@@ -26,30 +26,28 @@ file = fileExists()
 
 
 ###FUNCION PARA EXTRAER INFORMACION MULTIMEDIA"
-def getInformation(path,pathURL,command) :
+def getInformation(path,command) :
 	if command =='video':
-		cmdVideoInf = " ffprobe -v quiet -print_format json -show_format -show_streams "+path+"  > "+path+".json"
-		path=path+".json"
+		cmdVideoInf = " ffprobe -v quiet -print_format json -show_format -show_streams "+path
 	elif command=="streaming":
-		cmdVideoInf = "ffprobe -v quiet -print_format json -show_format -show_streams "+pathURL+"  > "+path+".stream.json"
-		path=path+".stream.json"
-		print path
+		cmdVideoInf = "ffprobe -v quiet -print_format json -show_format -show_streams "+path
+
 	data=""
 	audio=""
 	video=""
 	otros=""
-	os.system(cmdVideoInf)
-	with open(path) as f:
-	    data = json.load(f)
-	    mostrar = data["streams"]
+	data=subprocess.check_output(cmdVideoInf,shell=True)
+	datajson=json.loads(data)
+
+	mostrar = datajson["streams"]
 	    #Way of identifying different streams (audio,video,subtitles) in the video 
-	    for i in mostrar:
-	    	if i["codec_type"]=="video":
-	    		video=i
-	    	elif i["codec_type"]=="audio":
-	    		audio=i
-	    	else:
-	    		otros=i
+	for i in mostrar:
+		if i["codec_type"]=="video":
+			video=i
+	   	elif i["codec_type"]=="audio":
+	   		audio=i
+    	else:
+      		otros=i
 	#Obtain all data from video
 	file.write("\nVIDEO_ORIGINAL_"+command+",")
 	for i in video:
@@ -93,8 +91,8 @@ with open(latest_file_server, 'r') as filehandle:
 
 #CODIGO DE EJECUCION
 file.write("Fprobe en el VIDEO \n")
-getInformation(path,pathURL,"video")
+getInformation(path,"video")
 
 file.write("Fprobe en el  STREAMING \n")
-getInformation(path,pathURL,"streaming")
+getInformation(pathURL,"streaming")
 
