@@ -1,4 +1,4 @@
 [errors]
-Type = 2
+Type = 0
 [clients]
-client = 1
+ClientsNumber = 1
