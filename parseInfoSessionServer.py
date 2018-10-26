@@ -88,8 +88,17 @@ with open(latest_file_server, 'r') as filehandle:
 				if "=" in i:
 					i= i.split('=')
 					file.write(i[0]+ "=" + i[1]+",")
+		if "IP =" in line :
+			IP = line.split("IP =  ")[1].rstrip("\n")
 
 #CODIGO DE EJECUCION
+
+#Manipulate string to put IP
+cuenta =len( pathURL.split("/:")[0])
+pathURL=pathURL[:cuenta+1]+IP+pathURL[cuenta+1:]
+
+
+
 file.write("Fprobe en el VIDEO \n")
 getInformation(path,"video")
 

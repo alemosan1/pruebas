@@ -119,7 +119,7 @@ def simpleTest():
         CPUlimit = "& cpulimit -p `expr $! - 1` -l 15"
     
 	# CLIENT SIDE - TODO: tenemos que poner que la IP se saque programaticamente
-    cmdClient = "vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type+CPUlimit
+    cmdClient = "su bayes -c \" vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type+CPUlimit+"\""
     
 	# XTERMS
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
@@ -133,6 +133,10 @@ def simpleTest():
     cmdInfo = "ifstat 10.0.0.2 > codeccompresion/"+codecVideoUsed+codecMuxerUsed+".info"
     termGetInfo = makeTerm(dst,title= "Monitoring traffic", term='xterm', display=None, cmd=cmdInfo)
 
+    #Vamos a sacar la info dle vide
+    cmdParseo = "su bayes -c \"python parseInfoSessionServer.py\""
+    termParseo = makeTerm(src,title= "Monitoring traffic", term='xterm', display=None, cmd=cmdParseo)
+
 	# TODO: Para que es esto que esta comentado?
     # logfile = open("logs/clientVLC-log.txt","r") 
     # loglines = follow(logfile)
@@ -142,6 +146,7 @@ def simpleTest():
 
     #Method to obtain information in log Files
     CLI(net)
+
     cmdExit = "sudo kill $(ps aux | grep 'vlc' | grep -v grep | awk '{print $2}');kill $(ps aux | grep 'ifstat' | grep -v grep | awk '{print $2}')"
     os.system(cmdExit)
     net.stop()
