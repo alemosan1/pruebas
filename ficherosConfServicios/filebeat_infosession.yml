@@ -14,12 +14,6 @@ filebeat.prospectors:
     - /home/bayes/Repositories/pruebas/infoSession/infosessionS*.log
   document_type: infosession_server
 
-# - input_type: log
-#  enabled: true
-#  paths:
-#    - /home/bayes/Repositories/pruebas/infoSession/info*.log
-#  document_type: info_session
-
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   # The Logstash hosts

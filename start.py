@@ -84,58 +84,57 @@ def simpleTest():
     videoURL	   = selectVideoURL[1]
     enableMuxRTP   = "--sout-rtp-rtcp-mux"
     CPUlimit 	   = ""
-
-    # Generation of a unique id(UUID) to identify sessions
-    unique_id = str(uuid.uuid4())
+    unique_id      = str(uuid.uuid4()) # Generation of a unique id(UUID) to identify sessions
 
     # SERVER SIDE
     cmdServer = ""
-    if type == '0' : # No errors
+    if err_type == '0' : # No errors
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" --sout='#rtp{sdp=rtsp://:5004/}' \
-        --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
-    elif type == '1' : # Low fps rate and binary bit rate (video)
+        --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | ./timestamp.sh server "+err_type+"\""
+    elif err_type == '1' : # Low fps rate and binary bit rate (video)
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
 		--sout='#transcode{vcodec="+codecVideoUsed+",vb=60,vfilter=freeze,fps=5,scale=Automático,samplerate=48000, acodec=audio}\
-        :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | ./timestamp.sh server "+type+"\""
-    elif type == '2' : #  Low sample rate (Audio)
+        :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | ./timestamp.sh server "+err_type+"\""
+    elif err_type == '2' : #  Low sample rate (Audio)
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#transcode{vcodec="+codecVideoUsed+",scale=Auto,acodec=spx,ab=128,channels=2,samplerate=8000}\
         :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+ \
-        " --loop 2>&1 | ./timestamp.sh server "+type+"\""
-    elif type == '3' : # TODO: incompatible mux format 
+        " --loop 2>&1 | ./timestamp.sh server "+err_type+"\""
+    elif err_type == '3' : # TODO: incompatible mux format 
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
          --sout='#transcode{vcodec=avi,scale=Automático,acodec=mpga,ab=128,channels=2,samplerate=44100}\
          :rtp{mux="+codecMuxerUsed+",sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop  2>&1 \
-         | ./timestamp.sh server "+type+"\""
-    elif type == '4' : #MP4 example
+         | ./timestamp.sh server "+err_type+"\""
+    elif err_type == '4' : #MP4 example
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#transcode{vcodec="+codecVideoUsed+",vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}\
         :rtp{mux=mpeg1,sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 \
-        | ./timestamp.sh server "+type+"\""
-    elif type == '5' : #Limitation of CPU limit
+        | ./timestamp.sh server "+err_type+"\""
+    elif err_type == '5' : #Limitation of CPU limit
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1\
-         | ./timestamp.sh server "+type+"\""
+         | ./timestamp.sh server "+err_type+"\""
         CPUlimit = "& cpulimit -p `expr $! - 1` -l 15"
     
 	# CLIENT SIDE - TODO: tenemos que poner que la IP se saque programaticamente
-    cmdClient = "su bayes -c \" vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+type+CPUlimit+"\""
+    cmdClient = "su bayes -c \" vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+err_type+CPUlimit+"\""
     
 	# XTERMS
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
     time.sleep(3)
-    for i in range(int(cli_nr)):
+    for i in range(int(cli_nr)): #TODO: Esto funciona? Los creamos todos con la misma IP de cliente?
         termDst = makeTerm(dst, title='VLC Client '+str((i+1)), term='xterm', display=None, cmd=cmdClient)
         time.sleep(3)
 	
 	# TODO: Check
     #Ahora vamos a poner un terminal para sacar informacióm
     cmdInfo = "ifstat 10.0.0.2 > codeccompresion/"+codecVideoUsed+codecMuxerUsed+".info"
-    termGetInfo = makeTerm(dst,title= "Monitoring traffic", term='xterm', display=None, cmd=cmdInfo)
+    termGetInfo = makeTerm(dst, title= "Monitoring traffic", term='xterm', display=None, cmd=cmdInfo)
 
-    #Vamos a sacar la info dle vide
-    cmdParseo = "su bayes -c \"python parseInfoSessionServer.py\""
-    termParseo = makeTerm(src,title= "Monitoring traffic", term='xterm', display=None, cmd=cmdParseo)
+    # Cogemos la info del video desde el servidor
+    # Lo hacemos aquí por problemas con el acceso a esa IP
+    cmdParseInfoServer = "su bayes -c \"python parseInfoSessionServer.py\""
+    termParseInfo = makeTerm(src, title= "Parsing Server Info...", term='xterm', display=None, cmd=cmdParseInfoServer)
 
 	# TODO: Para que es esto que esta comentado?
     # logfile = open("logs/clientVLC-log.txt","r") 
@@ -144,19 +143,18 @@ def simpleTest():
     #     st = datetime.datetime.now()
     #     print "["+str(st)+"]"+line,
 
-    #Method to obtain information in log Files
     CLI(net)
-
-    cmdExit = "sudo kill $(ps aux | grep 'vlc' | grep -v grep | awk '{print $2}');kill $(ps aux | grep 'ifstat' | grep -v grep | awk '{print $2}')"
+    cmdExit = "sudo kill $(ps aux | grep 'vlc' | grep -v grep | awk '{print $2}'); \
+                kill $(ps aux | grep 'ifstat' | grep -v grep | awk '{print $2}')" # En esta segunda linea es donde se produce el error
     os.system(cmdExit)
     net.stop()
 
 if __name__ == '__main__':
     # setLogLevel('info')
-    configerror= ConfigParser.ConfigParser()
+    configerror = ConfigParser.ConfigParser()
     configerror.read(['./config_vlc.py'])
-    type =configerror.get('errors','Type')
-    cli_nr= configerror.get('clients','ClientsNumber')
+    err_type = configerror.get('errors','Type')
+    cli_nr = configerror.get('clients','ClientsNumber')
     os.system('systemd-machine-id-setup')
 
     #Vamos a renombrar los logs para cada vez que se ejecueten se guarden los previos.

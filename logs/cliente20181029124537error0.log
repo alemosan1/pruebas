@@ -1,0 +1,1800 @@
+ IP =  10.0.0.2
+[2018-10-29 12:45:37:702] [0000000001e44148] core libvlc debug: VLC media player - 2.2.2 Weatherwax
+[2018-10-29 12:45:37:721] [0000000001e44148] core libvlc debug: Copyright © 1996-2016 the VideoLAN team
+[2018-10-29 12:45:37:725] [0000000001e44148] core libvlc debug: revision 2.2.2-0-g6259d80
+[2018-10-29 12:45:37:730] [0000000001e44148] core libvlc debug: configured with ./configure '--build=x86_64-linux-gnu' '--prefix=/usr' '--includedir=${prefix}/include' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--sysconfdir=/etc' '--localstatedir=/var' '--disable-silent-rules' '--libdir=${prefix}/lib/x86_64-linux-gnu' '--libexecdir=${prefix}/lib/x86_64-linux-gnu' '--disable-maintainer-mode' '--disable-dependency-tracking' '--config-cache' '--disable-update-check' '--enable-fast-install' '--docdir=/usr/share/doc/vlc-data' '--libdir=/usr/lib' '--with-binary-version=2.2.2-5ubuntu0.16.04.4' '--enable-a52' '--enable-aa' '--enable-bluray' '--enable-bonjour' '--enable-caca' '--enable-chromaprint' '--enable-dbus' '--enable-dca' '--enable-directfb' '--enable-dvbpsi' '--enable-dvdnav' '--enable-faad' '--enable-flac' '--enable-fluidsynth' '--enable-freerdp' '--enable-freetype' '--enable-fribidi' '--disable-gles1' '--enable-gles2' '--enable-gnutls' '--enable-jack' '--enable-kate' '--enable-libass' '--enable-libmpeg2' '--enable-libxml2' '--enable-lirc' '--enable-live555' '--enable-mad' '--enable-mkv' '--enable-mod' '--enable-mpc' '--enable-mtp' '--enable-mux_ogg' '--enable-ncurses' '--enable-notify' '--enable-ogg' '--enable-opus' '--enable-pulse' '--enable-qt' '--enable-realrtsp' '--enable-samplerate' '--enable-schroedinger' '--enable-sdl' '--enable-sdl-image' '--enable-sftp' '--enable-shine' '--enable-shout' '--enable-skins2' '--enable-speex' '--enable-svg' '--enable-svgdec' '--enable-taglib' '--enable-theora' '--enable-twolame' '--enable-upnp' '--enable-vcdx' '--enable-vdpau' '--enable-vnc' '--enable-vorbis' '--enable-x264' '--enable-x265' '--enable-zvbi' '--with-kde-solid=/usr/share/kde4/apps/solid/actions/' '--disable-decklink' '--disable-dxva2' '--disable-fdkaac' '--disable-gnomevfs' '--disable-goom' '--disable-libtar' '--disable-mfx' '--disable-opencv' '--disable-projectm' '--disable-sndio' '--disable-telx' '--disable-vpx' '--disable-vsxu' '--disable-wasapi' '--enable-alsa' '--enable-atmo' '--enable-dc1394' '--enable-dv1394' '--enable-linsys' '--enable-omxil' '--enable-udev' '--enable-v4l2' '--enable-libva' '--enable-vcd' '--enable-smbclient' '--disable-oss' '--enable-crystalhd' '--enable-mmx' '--enable-sse' '--disable-neon' '--disable-altivec' 'build_alias=x86_64-linux-gnu' 'CFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' 'LDFLAGS=-Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed' 'CPPFLAGS=-Wdate-time -D_FORTIFY_SOURCE=2' 'CXXFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security ' 'OBJCFLAGS=-g -O2 -fstack-protector-strong -Wformat -Werror=format-security'
+[2018-10-29 12:45:37:736] [0000000001e44148] core libvlc debug: searching plug-in modules
+[2018-10-29 12:45:37:746] [0000000001e44148] core libvlc debug: loading plugins cache file /usr/lib/vlc/plugins/plugins.dat
+[2018-10-29 12:45:37:747] [0000000001e44148] core libvlc debug: recursively browsing `/usr/lib/vlc/plugins'
+[2018-10-29 12:45:37:748] [0000000001e44148] core libvlc debug: saving plugins cache /usr/lib/vlc/plugins/plugins.dat
+[2018-10-29 12:45:37:756] [0000000001e44148] core libvlc debug: plug-ins loaded: 459 modules
+[2018-10-29 12:45:37:761] [0000000001e44148] core libvlc debug: opening config file (/home/bayes/.config/vlc/vlcrc)
+[2018-10-29 12:45:37:769] [0000000001e44148] core libvlc debug: translation test: code is "es"
+[2018-10-29 12:45:37:785] [0000000001e44148] core libvlc debug: CPU has capabilities MMX MMXEXT SSE SSE2 SSE3 SSSE3 SSE4.1 SSE4.2 AVX AVX FPU
+[2018-10-29 12:45:37:793] [0000000001e6f688] core input debug: Creating an input for 'Biblioteca multimedia'
+[2018-10-29 12:45:37:800] [0000000001e6f688] core input debug: Input is a meta file: disabling unneeded options
+[2018-10-29 12:45:37:814] [0000000001e6f688] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-10-29 12:45:37:817] [0000000001e6f688] core input debug: `file/xspf-open:///home/bayes/.local/share/vlc/ml.xspf' gives access `file' demux `xspf-open' path `/home/bayes/.local/share/vlc/ml.xspf'
+[2018-10-29 12:45:37:825] [0000000001e6f688] core input debug: creating demux: access='file' demux='xspf-open' location='/home/bayes/.local/share/vlc/ml.xspf' file='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-10-29 12:45:37:840] [0000000001f200d8] core demux debug: looking for access_demux module matching "file": 20 candidates
+[2018-10-29 12:45:37:842] [0000000001f200d8] core demux debug: no access_demux modules matched
+[2018-10-29 12:45:37:853] [0000000001e6f688] core input debug: creating access 'file' location='/home/bayes/.local/share/vlc/ml.xspf', path='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-10-29 12:45:37:860] [0000000001f200d8] core access debug: looking for access module matching "file": 25 candidates
+[2018-10-29 12:45:37:870] [0000000001f200d8] filesystem access debug: opening file `/home/bayes/.local/share/vlc/ml.xspf'
+[2018-10-29 12:45:37:878] [0000000001f200d8] core access debug: using access module "filesystem"
+[2018-10-29 12:45:37:881] [0000000001f474c8] core stream debug: Using stream method for AStream*
+[2018-10-29 12:45:37:888] [0000000001f474c8] core stream debug: starting pre-buffering
+[2018-10-29 12:45:37:900] [0000000001f474c8] core stream debug: received first data after 0 ms
+[2018-10-29 12:45:37:902] [0000000001f474c8] core stream debug: pre-buffering done 304 bytes in 0s - 59375 KiB/s
+[2018-10-29 12:45:37:904] [0000000001f47728] core stream debug: looking for stream_filter module matching "any": 9 candidates
+[2018-10-29 12:45:37:916] [0000000001f47728] core stream debug: no stream_filter modules matched
+[2018-10-29 12:45:37:918] [0000000001f47728] core stream debug: looking for stream_filter module matching "record": 9 candidates
+[2018-10-29 12:45:37:929] [0000000001f47728] core stream debug: using stream_filter module "record"
+[2018-10-29 12:45:37:934] [0000000001e6f688] core input debug: creating demux: access='file' demux='xspf-open' location='/home/bayes/.local/share/vlc/ml.xspf' file='/home/bayes/.local/share/vlc/ml.xspf'
+[2018-10-29 12:45:37:941] [0000000001f4a6c8] core demux debug: looking for demux module matching "xspf-open": 66 candidates
+[2018-10-29 12:45:37:946] [0000000001f4a6c8] xspf demux debug: using XSPF playlist reader
+[2018-10-29 12:45:37:954] [0000000001f4a6c8] core demux debug: using demux module "playlist"
+[2018-10-29 12:45:37:955] [0000000001f4b0c8] core demux meta debug: looking for meta reader module matching "any": 2 candidates
+[2018-10-29 12:45:37:959] [0000000001f4b0c8] lua demux meta debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/reader
+[2018-10-29 12:45:37:967] [0000000001f4b0c8] lua demux meta debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/reader
+[2018-10-29 12:45:37:969] [0000000001f4b0c8] lua demux meta debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/reader/filename.luac
+[2018-10-29 12:45:37:982] [0000000001f4b0c8] lua demux meta debug: Trying Lua scripts in /usr/share/vlc/lua/meta/reader
+[2018-10-29 12:45:37:993] [0000000001f4b0c8] core demux meta debug: no meta reader modules matched
+[2018-10-29 12:45:37:994] [0000000001e6f688] core input debug: `file/xspf-open:///home/bayes/.local/share/vlc/ml.xspf' successfully opened
+[2018-10-29 12:45:37:999] [0000000001f5e798] core xml reader debug: looking for xml reader module matching "any": 1 candidates
+[2018-10-29 12:45:38:009] [0000000001f5e798] core xml reader debug: using xml reader module "xml"
+[2018-10-29 12:45:38:010] [0000000001f4a6c8] xspf demux debug: parsed 0 tracks successfully
+[2018-10-29 12:45:38:019] [0000000001e6f688] core input debug: EOF reached
+[2018-10-29 12:45:38:021] [0000000001f4a6c8] core demux debug: removing module "playlist"
+[2018-10-29 12:45:38:026] [0000000001f47728] core stream debug: removing module "record"
+[2018-10-29 12:45:38:033] [0000000001f200d8] core access debug: removing module "filesystem"
+[2018-10-29 12:45:38:038] [0000000001f2cf18] core playlist debug: creating audio output
+[2018-10-29 12:45:38:047] [0000000001f474c8] core audio output debug: looking for audio output module matching "any": 5 candidates
+[2018-10-29 12:45:38:050] [0000000001f474c8] pulse audio output debug: using library version 8.0.0
+[2018-10-29 12:45:38:061] [0000000001f474c8] pulse audio output debug: (compiled with version 8.0.0, protocol 30)
+[2018-10-29 12:45:38:066] [0000000001f474c8] pulse audio output debug: connected locally to unix:/run/user/1000/pulse/native as client #38
+[2018-10-29 12:45:38:069] [0000000001f474c8] pulse audio output debug: using protocol 30, server protocol 30
+[2018-10-29 12:45:38:079] [0000000001f474c8] pulse audio output debug: adding sink 0: alsa_output.pci-0000_00_05.0.analog-stereo (Audio Interno Estéreo analógico)
+[2018-10-29 12:45:38:084] [0000000001f474c8] core audio output debug: using audio output module "pulse"
+[2018-10-29 12:45:38:096] [0000000001f2cf18] core playlist debug: keeping audio output
+[2018-10-29 12:45:38:111] [0000000001f2cf18] core playlist debug: adding item `rtsp://10.0.0.1:5004/' ( rtsp://10.0.0.1:5004/ )
+[2018-10-29 12:45:38:123] [0000000001f5abd8] core interface debug: looking for interface module matching "hotkeys,none": 19 candidates
+[2018-10-29 12:45:38:129] [0000000001f5abd8] core interface debug: using interface module "hotkeys"
+[2018-10-29 12:45:38:131] [0000000001f5f9d8] core interface debug: looking for interface module matching "globalhotkeys,none": 19 candidates
+[2018-10-29 12:45:38:136] [0000000001f5f9d8] core interface debug: using interface module "xcb_hotkeys"
+[2018-10-29 12:45:38:144] [0000000001f60908] core interface debug: looking for interface module matching "dbus,none": 19 candidates
+[2018-10-29 12:45:38:147] [0000000001f2cf18] core playlist debug: meta ok for (null), need to fetch art
+[2018-10-29 12:45:38:157] [00007fce58000bb8] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-10-29 12:45:38:157] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:159] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:168] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-10-29 12:45:38:173] [00007fce58000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-10-29 12:45:38:178] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:179] [00007fce58000bb8] core art finder debug: no meta fetcher modules matched
+[2018-10-29 12:45:38:184] [0000000001f2cf18] core playlist debug: searching art for rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:38:186] [00007fce58000bb8] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-10-29 12:45:38:232] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-10-29 12:45:38:248] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-10-29 12:45:38:249] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-10-29 12:45:38:252] [00007fce58000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-10-29 12:45:38:252] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-10-29 12:45:38:254] [0000000001f60908] dbus interface error: Failed to connect to the D-Bus session daemon: Failed to connect to socket /tmp/dbus-7CU4FyFwcw: Conexión rehusada
+[2018-10-29 12:45:38:256] [0000000001f60908] core interface debug: no interface modules matched
+[2018-10-29 12:45:38:257] [0000000001f60908] core interface error: no suitable interface module
+[2018-10-29 12:45:38:259] [0000000001e44148] core libvlc error: interface "dbus,none" initialization failed
+[2018-10-29 12:45:38:262] [0000000001e44148] core libvlc: Ejecutar vlc con la interfaz predeterminada. Use «cvlc» para usar vlc sin interfaz.
+[2018-10-29 12:45:38:263] [0000000001f61638] core interface debug: looking for interface module matching "any": 19 candidates
+[2018-10-29 12:45:38:264] [00007fce58000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-10-29 12:45:38:267] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-10-29 12:45:38:269] [00007fce58000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-10-29 12:45:38:273] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-10-29 12:45:38:273] [00007fce58000bb8] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-10-29 12:45:38:277] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-10-29 12:45:38:278] [00007fce58000bb8] core art finder debug: no art finder modules matched
+[2018-10-29 12:45:38:279] [00007fce58000bb8] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-10-29 12:45:38:280] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:283] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:284] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-10-29 12:45:38:284] [00007fce58000bb8] core art finder debug: using meta fetcher module "lua"
+[2018-10-29 12:45:38:285] [00007fce58000bb8] core art finder debug: removing module "lua"
+[2018-10-29 12:45:38:294] [0000000001f2cf18] core playlist debug: searching art for rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:38:299] [00007fce58000bb8] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-10-29 12:45:38:304] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-10-29 12:45:38:306] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-10-29 12:45:38:307] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-10-29 12:45:38:309] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-10-29 12:45:38:312] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-10-29 12:45:38:313] [00007fce58000bb8] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-10-29 12:45:38:317] [00007fce58000bb8] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-10-29 12:45:38:318] [00007fce58000bb8] core art finder debug: no art finder modules matched
+[2018-10-29 12:45:38:318] [0000000001f2cf18] core playlist debug: art not found for rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:38:319] [00007fce500b3e28] core generic debug: looking for extension module matching "any": 1 candidates
+[2018-10-29 12:45:38:323] [00007fce500b3e28] lua generic debug: Opening Lua Extension module
+[2018-10-29 12:45:38:324] [00007fce500b3e28] lua generic debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/extensions
+[2018-10-29 12:45:38:326] [00007fce500b3e28] lua generic debug: Trying Lua scripts in /usr/lib/vlc/lua/extensions
+[2018-10-29 12:45:38:348] [00007fce500b3e28] lua generic debug: Trying Lua playlist script /usr/lib/vlc/lua/extensions/VLSub.luac
+[2018-10-29 12:45:38:349] [00007fce500b3e28] lua generic debug: Scanning Lua script /usr/lib/vlc/lua/extensions/VLSub.luac
+[2018-10-29 12:45:38:355] [00007fce500b3e28] lua generic debug: Script /usr/lib/vlc/lua/extensions/VLSub.luac has the following capability flags: 0x5
+[2018-10-29 12:45:38:362] [00007fce500b3e28] lua generic debug: Trying Lua scripts in /usr/share/vlc/lua/extensions
+[2018-10-29 12:45:38:364] [00007fce500b3e28] core generic debug: using extension module "lua"
+[2018-10-29 12:45:38:371] [0000000001f61638] core interface debug: using interface module "qt4"
+[2018-10-29 12:45:38:372] [0000000001f2cf18] core playlist debug: processing request item: null, node: Lista de reproducción, skip: 0
+[2018-10-29 12:45:38:391] [0000000001f2cf18] core playlist debug: rebuilding array of current - root Lista de reproducción
+[2018-10-29 12:45:38:400] [0000000001f2cf18] core playlist debug: rebuild done - 1 items, index -1
+[2018-10-29 12:45:38:404] [0000000001f2cf18] core playlist debug: starting playback of the new playlist item
+[2018-10-29 12:45:38:414] [0000000001f2cf18] core playlist debug: resyncing on rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:38:440] [0000000001f2cf18] core playlist debug: rtsp://10.0.0.1:5004/ is at 0
+[2018-10-29 12:45:38:441] [0000000001f2cf18] core playlist debug: creating new input thread
+[2018-10-29 12:45:38:459] [00007fce58000bb8] core input debug: Creating an input for 'rtsp://10.0.0.1:5004/'
+[2018-10-29 12:45:38:466] [0000000001f2cf18] core playlist debug: requesting art for rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:38:480] [0000000001f61638] qt4 interface debug: IM: Setting an input
+[2018-10-29 12:45:38:486] [00007fce44000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-10-29 12:45:38:519] [00007fce44000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:538] [00007fce44000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:547] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-10-29 12:45:38:559] [00007fce58000bb8] core input debug: using timeshift granularity of 50 MiB, in path '/tmp'
+[2018-10-29 12:45:38:589] [00007fce58000bb8] core input debug: `rtsp://10.0.0.1:5004/' gives access `rtsp' demux `' path `10.0.0.1:5004/'
+[2018-10-29 12:45:38:629] [00007fce58000bb8] core input debug: specified demux `any'
+[2018-10-29 12:45:38:635] [00007fce58000bb8] core input debug: creating demux: access='rtsp' demux='any' location='10.0.0.1:5004/' file='(null)'
+[2018-10-29 12:45:38:647] [00007fce3c000e88] core demux debug: looking for access_demux module matching "rtsp": 20 candidates
+[2018-10-29 12:45:38:672] [00007fce3c000e88] live555 demux debug: version 2016.02.09
+[2018-10-29 12:45:38:679] Opening connection to 10.0.0.1, port 5004...
+[2018-10-29 12:45:38:695] ...remote connection opened
+[2018-10-29 12:45:38:704] Sending request: OPTIONS rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-10-29 12:45:38:711] CSeq: 2
+[2018-10-29 12:45:38:754] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-10-29 12:45:38:756] 
+[2018-10-29 12:45:38:757]
+[2018-10-29 12:45:38:774] [00007fce44000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-10-29 12:45:38:776] [00007fce44000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:787] [00007fce44000958] core art finder debug: no meta fetcher modules matched
+[2018-10-29 12:45:38:792] [0000000001e44148] core libvlc debug: searching art for rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:38:805] [00007fce44000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-10-29 12:45:38:806] [00007fce44000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-10-29 12:45:38:817] [00007fce44000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-10-29 12:45:38:825] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-10-29 12:45:38:835] [00007fce44000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-10-29 12:45:38:836] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-10-29 12:45:38:842] [00007fce44000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-10-29 12:45:38:848] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-10-29 12:45:38:854] [00007fce44000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-10-29 12:45:38:862] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-10-29 12:45:38:873] Received 124 new bytes of response data.
+[2018-10-29 12:45:38:885] Received a complete OPTIONS response:
+[2018-10-29 12:45:38:886] RTSP/1.0 200 OK
+[2018-10-29 12:45:38:899] Server: VLC/2.2.2
+[2018-10-29 12:45:38:901] Content-Length: 0
+[2018-10-29 12:45:38:910] Cseq: 2
+[2018-10-29 12:45:38:912] Public: DESCRIBE,SETUP,TEARDOWN,PLAY,PAUSE,GET_PARAMETER
+[2018-10-29 12:45:38:919] 
+[2018-10-29 12:45:38:920]
+[2018-10-29 12:45:38:929] Sending request: DESCRIBE rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-10-29 12:45:38:936] CSeq: 3
+[2018-10-29 12:45:38:949] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-10-29 12:45:38:950] Accept: application/sdp
+[2018-10-29 12:45:38:950] 
+[2018-10-29 12:45:38:956]
+[2018-10-29 12:45:38:960] [00007fce44000958] lua art finder debug: skipping script (unmatched scope) /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-10-29 12:45:38:969] [00007fce44000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-10-29 12:45:38:974] [00007fce44000958] core art finder debug: no art finder modules matched
+[2018-10-29 12:45:38:979] [00007fce44000958] core art finder debug: looking for meta fetcher module matching "any": 1 candidates
+[2018-10-29 12:45:38:991] [00007fce44000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:992] [00007fce44000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/fetcher
+[2018-10-29 12:45:38:998] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/fetcher/tvrage.luac
+[2018-10-29 12:45:39:006] [00007fce44000958] core art finder debug: using meta fetcher module "lua"
+[2018-10-29 12:45:39:010] [00007fce44000958] core art finder debug: removing module "lua"
+[2018-10-29 12:45:39:019] [0000000001e44148] core libvlc debug: searching art for rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:39:020] [00007fce44000958] core art finder debug: looking for art finder module matching "any": 2 candidates
+[2018-10-29 12:45:39:033] [00007fce44000958] lua art finder debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/art
+[2018-10-29 12:45:39:038] [00007fce44000958] lua art finder debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/art
+[2018-10-29 12:45:39:049] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/00_musicbrainz.luac
+[2018-10-29 12:45:39:050] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/01_googleimage.luac
+[2018-10-29 12:45:39:058] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/02_frenchtv.luac
+[2018-10-29 12:45:39:064] [00007fce44000958] lua art finder debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/art/03_lastfm.luac
+[2018-10-29 12:45:39:073] Received 198 new bytes of response data.
+[2018-10-29 12:45:39:076] Have received 198 total bytes of a DESCRIBE RTSP response; awaiting 720 bytes more.
+[2018-10-29 12:45:39:084] [00007fce44000958] lua art finder debug: Trying Lua scripts in /usr/share/vlc/lua/meta/art
+[2018-10-29 12:45:39:088] [00007fce44000958] core art finder debug: no art finder modules matched
+[2018-10-29 12:45:39:094] [0000000001e44148] core libvlc debug: art not found for rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:39:103] Received 720 new bytes of response data.
+[2018-10-29 12:45:39:106] Received a complete DESCRIBE response:
+[2018-10-29 12:45:39:114] RTSP/1.0 200 OK
+[2018-10-29 12:45:39:116] Server: VLC/2.2.2
+[2018-10-29 12:45:39:120] Date: Mon, 29 Oct 2018 11:45:38 GMT
+[2018-10-29 12:45:39:124] Content-Type: application/sdp
+[2018-10-29 12:45:39:134] Content-Base: rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:39:136] Content-Length: 720
+[2018-10-29 12:45:39:145] Cache-Control: no-cache
+[2018-10-29 12:45:39:147] Cseq: 3
+[2018-10-29 12:45:39:160] 
+[2018-10-29 12:45:39:162] v=0
+[2018-10-29 12:45:39:174] o=- 16105278408857578584 16105278408857578584 IN IP4 bayes-VirtualBox
+[2018-10-29 12:45:39:175] s=77d29fce-99eb-41b9-b886-3dfe5c646819
+[2018-10-29 12:45:39:186] i=N/A
+[2018-10-29 12:45:39:193] c=IN IP4 0.0.0.0
+[2018-10-29 12:45:39:194] t=0 0
+[2018-10-29 12:45:39:198] a=tool:vlc 2.2.2
+[2018-10-29 12:45:39:208] a=recvonly
+[2018-10-29 12:45:39:209] a=type:broadcast
+[2018-10-29 12:45:39:212] a=charset:UTF-8
+[2018-10-29 12:45:39:223] a=control:rtsp://10.0.0.1:5004/
+[2018-10-29 12:45:39:223] m=video 0 RTP/AVP 96
+[2018-10-29 12:45:39:229] b=RR:0
+[2018-10-29 12:45:39:241] a=rtpmap:96 MP4V-ES/90000
+[2018-10-29 12:45:39:242] a=fmtp:96 profile-level-id=3; config=000001b001000001b58913000001000000012000c48d8800cd28045a1443000001b24c61766335342e39322e313030;
+[2018-10-29 12:45:39:250] a=control:rtsp://10.0.0.1:5004/trackID=0
+[2018-10-29 12:45:39:252] m=audio 0 RTP/AVP 96
+[2018-10-29 12:45:39:267] b=RR:0
+[2018-10-29 12:45:39:268] a=rtpmap:96 mpeg4-generic/48000/6
+[2018-10-29 12:45:39:268] a=fmtp:96 streamtype=5; profile-level-id=15; mode=AAC-hbr; config=11b0; SizeLength=13; IndexLength=3; IndexDeltaLength=3; Profile=1;
+[2018-10-29 12:45:39:274] a=control:rtsp://10.0.0.1:5004/trackID=1
+[2018-10-29 12:45:39:290]
+[2018-10-29 12:45:39:293] [00007fce3c000e88] live555 demux debug: RTP subsession 'video/MP4V-ES'
+[2018-10-29 12:45:39:300] Sending request: SETUP rtsp://10.0.0.1:5004/trackID=0 RTSP/1.0
+[2018-10-29 12:45:39:304] CSeq: 4
+[2018-10-29 12:45:39:308] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-10-29 12:45:39:313] Transport: RTP/AVP;unicast;client_port=53822-53823
+[2018-10-29 12:45:39:322] 
+[2018-10-29 12:45:39:328]
+[2018-10-29 12:45:39:341] Received 270 new bytes of response data.
+[2018-10-29 12:45:39:341] Received a complete SETUP response:
+[2018-10-29 12:45:39:349] RTSP/1.0 200 OK
+[2018-10-29 12:45:39:351] Server: VLC/2.2.2
+[2018-10-29 12:45:39:360] Date: Mon, 29 Oct 2018 11:45:38 GMT
+[2018-10-29 12:45:39:374] Transport: RTP/AVP/UDP;unicast;client_port=53822-53823;server_port=43453-43454;ssrc=C034FE91;mode=play
+[2018-10-29 12:45:39:375] Session: 603d14c211ff4656;timeout=60
+[2018-10-29 12:45:39:375] Content-Length: 0
+[2018-10-29 12:45:39:381] Cache-Control: no-cache
+[2018-10-29 12:45:39:394] Cseq: 4
+[2018-10-29 12:45:39:400] 
+[2018-10-29 12:45:39:409]
+[2018-10-29 12:45:39:412] [00007fce58000bb8] core input debug: selecting program id=0
+[2018-10-29 12:45:39:419] [00007fce3c000e88] live555 demux debug: RTP subsession 'audio/MPEG4-GENERIC'
+[2018-10-29 12:45:39:439] Sending request: SETUP rtsp://10.0.0.1:5004/trackID=1 RTSP/1.0
+[2018-10-29 12:45:39:440] CSeq: 5
+[2018-10-29 12:45:39:444] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-10-29 12:45:39:457] Transport: RTP/AVP;unicast;client_port=43850-43851
+[2018-10-29 12:45:39:462] Session: 603d14c211ff4656
+[2018-10-29 12:45:39:471] 
+[2018-10-29 12:45:39:472]
+[2018-10-29 12:45:39:482] Received 270 new bytes of response data.
+[2018-10-29 12:45:39:483] Received a complete SETUP response:
+[2018-10-29 12:45:39:489] RTSP/1.0 200 OK
+[2018-10-29 12:45:39:496] Server: VLC/2.2.2
+[2018-10-29 12:45:39:497] Date: Mon, 29 Oct 2018 11:45:38 GMT
+[2018-10-29 12:45:39:527] Transport: RTP/AVP/UDP;unicast;client_port=43850-43851;server_port=56102-56103;ssrc=4710BBD5;mode=play
+[2018-10-29 12:45:39:532] Session: 603d14c211ff4656;timeout=60
+[2018-10-29 12:45:39:537] Content-Length: 0
+[2018-10-29 12:45:39:538] Cache-Control: no-cache
+[2018-10-29 12:45:39:557] Cseq: 5
+[2018-10-29 12:45:39:563] 
+[2018-10-29 12:45:39:588]
+[2018-10-29 12:45:39:598] [00007fce3c000e88] live555 demux debug: setup start: 0,000000 stop:0,000000
+[2018-10-29 12:45:39:610] Sending request: PLAY rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-10-29 12:45:39:637] CSeq: 6
+[2018-10-29 12:45:39:642] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-10-29 12:45:39:645] Session: 603d14c211ff4656
+[2018-10-29 12:45:39:645] Range: npt=0.000-
+[2018-10-29 12:45:39:662] 
+[2018-10-29 12:45:39:667]
+[2018-10-29 12:45:39:677] Received 326 new bytes of response data.
+[2018-10-29 12:45:39:685] Received a complete PLAY response:
+[2018-10-29 12:45:39:697] RTSP/1.0 200 OK
+[2018-10-29 12:45:39:698] Server: VLC/2.2.2
+[2018-10-29 12:45:39:714] Date: Mon, 29 Oct 2018 11:45:38 GMT
+[2018-10-29 12:45:39:724] RTP-Info: url=rtsp://10.0.0.1:5004/trackID=0;seq=22806;rtptime=962576264, url=rtsp://10.0.0.1:5004/trackID=1;seq=34539;rtptime=513374007
+[2018-10-29 12:45:39:754] Range: npt=2.046317-
+[2018-10-29 12:45:39:757] Session: 603d14c211ff4656;timeout=60
+[2018-10-29 12:45:39:766] Content-Length: 0
+[2018-10-29 12:45:39:780] Cache-Control: no-cache
+[2018-10-29 12:45:39:802] Cseq: 6
+[2018-10-29 12:45:39:808] 
+[2018-10-29 12:45:39:816]
+[2018-10-29 12:45:39:819] [00007fce3c000e88] live555 demux debug: We have a timeout of 60 seconds
+[2018-10-29 12:45:39:827] [00007fce3c000e88] live555 demux debug: spawned timeout thread
+[2018-10-29 12:45:39:838] [00007fce3c000e88] live555 demux debug: play start: 2,046317 stop:0,000000
+[2018-10-29 12:45:39:839] [00007fce3c000e88] core demux debug: using access_demux module "live555"
+[2018-10-29 12:45:39:845] [00007fce3c040c88] core decoder debug: looking for decoder module matching "any": 42 candidates
+[2018-10-29 12:45:39:850] [00007fce3c040c88] avcodec decoder debug: CPU flags: 0x0100d3db
+[2018-10-29 12:45:39:852] [00007fce3c040c88] avcodec decoder debug: trying to use direct rendering
+[2018-10-29 12:45:39:885] [00007fce3c040c88] avcodec decoder debug: allowing 1 thread(s) for decoding
+[2018-10-29 12:45:39:902] [00007fce3c040c88] avcodec decoder debug: avcodec codec (MPEG-4 Video) started
+[2018-10-29 12:45:39:906] [00007fce3c040c88] core decoder debug: using decoder module "avcodec"
+[2018-10-29 12:45:39:919] [00007fce3c0649d8] core decoder debug: looking for decoder module matching "any": 42 candidates
+[2018-10-29 12:45:39:923] [00007fce3c0649d8] core decoder debug: using decoder module "faad"
+[2018-10-29 12:45:39:929] [00007fce3c069aa8] core demux meta debug: looking for meta reader module matching "any": 2 candidates
+[2018-10-29 12:45:39:936] [00007fce3c069aa8] lua demux meta debug: Trying Lua scripts in /home/bayes/.local/share/vlc/lua/meta/reader
+[2018-10-29 12:45:39:945] [00007fce3c069aa8] lua demux meta debug: Trying Lua scripts in /usr/lib/vlc/lua/meta/reader
+[2018-10-29 12:45:39:957] [00007fce3c069aa8] lua demux meta debug: Trying Lua playlist script /usr/lib/vlc/lua/meta/reader/filename.luac
+[2018-10-29 12:45:39:958] [00007fce3c069aa8] lua demux meta debug: Trying Lua scripts in /usr/share/vlc/lua/meta/reader
+[2018-10-29 12:45:39:959] [00007fce3c069aa8] core demux meta debug: no meta reader modules matched
+[2018-10-29 12:45:39:967] [00007fce58000bb8] core input debug: `rtsp://10.0.0.1:5004/' successfully opened
+[2018-10-29 12:45:39:980] Sending request: GET_PARAMETER rtsp://10.0.0.1:5004/ RTSP/1.0
+[2018-10-29 12:45:39:980] CSeq: 7
+[2018-10-29 12:45:39:992] User-Agent: LibVLC/2.2.2 (LIVE555 Streaming Media v2016.02.09)
+[2018-10-29 12:45:39:995] Session: 603d14c211ff4656
+[2018-10-29 12:45:40:024] 
+[2018-10-29 12:45:40:025]
+[2018-10-29 12:45:40:029] [00007fce3c0649d8] faad decoder warning: decoded zero sample
+[2018-10-29 12:45:40:037] [00007fce58000bb8] core input debug: Buffering 0%
+[2018-10-29 12:45:40:040] [0000000001f2cf18] core playlist debug: reusing audio output
+[2018-10-29 12:45:40:052] [0000000001f474c8] pulse audio output debug: using surround-51 channel map
+[2018-10-29 12:45:40:060] [0000000001f474c8] pulse audio output debug: changed buffer metrics: maxlength=4194312, tlength=207288, prebuf=0, minreq=46080
+[2018-10-29 12:45:40:069] [0000000001f474c8] pulse audio output debug: connected to sink alsa_output.pci-0000_00_05.0.analog-stereo
+[2018-10-29 12:45:40:070] [0000000001f474c8] core audio output debug: output 'f32l' 48000 Hz 3F2R/LFE frame=1 samples/24 bytes
+[2018-10-29 12:45:40:087] [00007fce44000958] core volume debug: looking for audio volume module matching "any": 2 candidates
+[2018-10-29 12:45:40:088] [00007fce44000958] core volume debug: using audio volume module "float_mixer"
+[2018-10-29 12:45:40:097] [0000000001f474c8] core audio output debug: input 'f32l' 48000 Hz 3F2R/LFE frame=1 samples/24 bytes
+[2018-10-29 12:45:40:105] [00007fce440150a8] core audio filter debug: looking for audio filter module matching "scaletempo": 14 candidates
+[2018-10-29 12:45:40:116] [00007fce440150a8] scaletempo audio filter debug: format: 48000 rate, 6 nch, 4 bps, fl32
+[2018-10-29 12:45:40:117] [00007fce440150a8] scaletempo audio filter debug: params: 30 stride, 0,200 overlap, 14 search
+[2018-10-29 12:45:40:123] [00007fce440150a8] scaletempo audio filter debug: 1,000 scale, 1440,000 stride_in, 1440 stride_out, 1152 standing, 288 overlap, 672 search, 2400 queue, fl32 mode
+[2018-10-29 12:45:40:135] [00007fce440150a8] core audio filter debug: using audio filter module "scaletempo"
+[2018-10-29 12:45:40:147] [0000000001f474c8] core audio output debug: conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz 3F2R/LFE->3F2R/LFE
+[2018-10-29 12:45:40:153] [0000000001f474c8] core audio output debug: conversion pipeline complete
+[2018-10-29 12:45:40:159] [0000000001f474c8] core audio output debug: conversion: 'f32l'->'f32l' 48000 Hz->48000 Hz 3F2R/LFE->3F2R/LFE
+[2018-10-29 12:45:40:173] [0000000001f474c8] core audio output debug: conversion pipeline complete
+[2018-10-29 12:45:40:174] [00007fce4402a9a8] core audio resampler debug: looking for audio resampler module matching "any": 3 candidates
+[2018-10-29 12:45:40:176] [00007fce4402a9a8] core audio resampler debug: using audio resampler module "samplerate"
+[2018-10-29 12:45:40:185] [00007fce3c0649d8] core decoder debug: End of audio preroll
+[2018-10-29 12:45:40:186] [00007fce58000bb8] core input debug: Buffering 10%
+[2018-10-29 12:45:40:195] [00007fce58000bb8] core input debug: Buffering 21%
+[2018-10-29 12:45:40:196] [00007fce58000bb8] core input debug: Buffering 32%
+[2018-10-29 12:45:40:210] [00007fce3c040c88] avcodec decoder debug: available hardware decoder output format 53 (vaapi_vld)
+[2018-10-29 12:45:40:217] [00007fce3c040c88] avcodec decoder debug: available hardware decoder output format 109 (vdpau)
+[2018-10-29 12:45:40:220] [00007fce3c040c88] avcodec decoder debug: available software decoder output format 0 (yuv420p)
+[2018-10-29 12:45:40:237] [00007fce300009c8] core generic debug: looking for hw decoder module matching "any": 4 candidates
+[2018-10-29 12:45:40:239] [00007fce58000bb8] core input debug: Buffering 32%
+[2018-10-29 12:45:40:259] Failed to open VDPAU backend libvdpau_nvidia.so: no se puede abrir el archivo del objeto compartido: No existe el archivo o el directorio
+[2018-10-29 12:45:40:270] [00007fce300009c8] core generic debug: no hw decoder modules matched
+[2018-10-29 12:45:40:272] [00007fce3c040c88] avcodec decoder debug: available hardware decoder output format 53 (vaapi_vld)
+[2018-10-29 12:45:40:278] [00007fce3c040c88] avcodec decoder debug: available hardware decoder output format 109 (vdpau)
+[2018-10-29 12:45:40:285] [00007fce3c040c88] avcodec decoder debug: available software decoder output format 0 (yuv420p)
+[2018-10-29 12:45:40:298] [00007fce30001c48] core generic debug: looking for hw decoder module matching "any": 4 candidates
+[2018-10-29 12:45:40:299] [00007fce58000bb8] core input debug: Buffering 42%
+[2018-10-29 12:45:40:300] Received 166 new bytes of response data.
+[2018-10-29 12:45:40:305] Received a complete GET_PARAMETER response:
+[2018-10-29 12:45:40:313] RTSP/1.0 200 OK
+[2018-10-29 12:45:40:320] Server: VLC/2.2.2
+[2018-10-29 12:45:40:324] Date: Mon, 29 Oct 2018 11:45:38 GMT
+[2018-10-29 12:45:40:333] Session: 603d14c211ff4656;timeout=60
+[2018-10-29 12:45:40:343] Content-Length: 0
+[2018-10-29 12:45:40:385] Cache-Control: no-cache
+[2018-10-29 12:45:40:398] Cseq: 7
+[2018-10-29 12:45:40:401] 
+[2018-10-29 12:45:40:430]
+[2018-10-29 12:45:40:431] [00007fce58000bb8] core input debug: Buffering 42%
+[2018-10-29 12:45:40:448] [00007fce58000bb8] core input debug: Buffering 42%
+[2018-10-29 12:45:40:464] [00007fce58000bb8] core input debug: Buffering 53%
+[2018-10-29 12:45:40:468] Failed to open VDPAU backend libvdpau_nvidia.so: no se puede abrir el archivo del objeto compartido: No existe el archivo o el directorio
+[2018-10-29 12:45:40:472] [00007fce30001c48] core generic debug: no hw decoder modules matched
+[2018-10-29 12:45:40:484] [00007fce3010e508] core spu text debug: looking for text renderer module matching "any": 2 candidates
+[2018-10-29 12:45:40:500] [00007fce3010e508] freetype spu text debug: Building font databases.
+[2018-10-29 12:45:40:502] [00007fce3010e508] freetype spu text debug: Took 0 microseconds
+[2018-10-29 12:45:40:507] [00007fce3010e508] freetype spu text debug: Using Serif Bold as font from file /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+[2018-10-29 12:45:40:521] [00007fce3010e508] freetype spu text debug: Using Monospace as mono-font from file /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+[2018-10-29 12:45:40:529] [00007fce3010e508] freetype spu text debug: using fontsize: 2
+[2018-10-29 12:45:40:537] [00007fce3010e508] core spu text debug: using text renderer module "freetype"
+[2018-10-29 12:45:40:545] [00007fce30110b58] core scale debug: looking for video filter2 module matching "any": 63 candidates
+[2018-10-29 12:45:40:547] [00007fce30110b58] swscale scale debug: 32x32 (32x32) chroma: YUVA -> 16x16 (16x16) chroma: RGBA with scaling using Bicubic (good quality)
+[2018-10-29 12:45:40:562] [00007fce30110b58] core scale debug: using video filter2 module "swscale"
+[2018-10-29 12:45:40:575] [00007fce30143788] core scale debug: looking for video filter2 module matching "any": 63 candidates
+[2018-10-29 12:45:40:598] [00007fce30143788] yuvp scale debug: YUVP to YUVA converter
+[2018-10-29 12:45:40:623] [00007fce30143788] core scale debug: using video filter2 module "yuvp"
+[2018-10-29 12:45:40:626] [00007fce30012cd8] core video output debug: Deinterlacing available
+[2018-10-29 12:45:40:632] [00007fce30012cd8] core video output debug: deinterlace 0, mode blend, is_needed 0
+[2018-10-29 12:45:40:645] [00007fce30012cd8] core video output debug: Opening vout display wrapper
+[2018-10-29 12:45:40:647] [00007fce28001268] core vout display debug: looking for vout display module matching "any": 14 candidates
+[2018-10-29 12:45:40:653] [00007fce28001cd8] core window debug: looking for vout window xid module matching "qt4,any": 4 candidates
+[2018-10-29 12:45:40:664] [00007fce28001cd8] qt4 window debug: requesting video window...
+[2018-10-29 12:45:40:665] [0000000001f61638] qt4 interface debug: Video was requested 0, 0
+[2018-10-29 12:45:40:670] [00007fce58000bb8] core input debug: Buffering 64%
+[2018-10-29 12:45:40:671] [00007fce28001cd8] core window debug: using vout window xid module "qt4"
+[2018-10-29 12:45:40:705] [00007fce28001ed8] core inhibit debug: looking for inhibit module matching "any": 2 candidates
+[2018-10-29 12:45:40:722] [00007fce58000bb8] core input debug: Buffering 64%
+[2018-10-29 12:45:40:724] [00007fce58000bb8] core input debug: Buffering 74%
+[2018-10-29 12:45:40:743] [00007fce28001ed8] dbus_screensaver inhibit error: cannot connect to session bus: Failed to connect to socket /tmp/dbus-7CU4FyFwcw: Conexión rehusada
+[2018-10-29 12:45:40:745] [00007fce28001ed8] core inhibit debug: using inhibit module "xdg"
+[2018-10-29 12:45:40:762] [00007fce28001268] xcb vout display debug: connected to X11.0 server
+[2018-10-29 12:45:40:763] [00007fce28001268] xcb vout display debug: vendor : The X.Org Foundation
+[2018-10-29 12:45:40:764] [00007fce28001268] xcb vout display debug: version: 11903000
+[2018-10-29 12:45:40:781] [00007fce28001268] xcb vout display debug: using screen 0x281
+[2018-10-29 12:45:40:785] Failed to open VDPAU backend libvdpau_nvidia.so: no se puede abrir el archivo del objeto compartido: No existe el archivo o el directorio
+[2018-10-29 12:45:40:798] [00007fce58000bb8] core input debug: Buffering 85%
+[2018-10-29 12:45:40:805] [00007fce28001268] vdpau_display vout display debug: device creation failure: error 1
+[2018-10-29 12:45:40:805] [00007fce30012cd8] core video output debug: Reusing previous vout window
+[2018-10-29 12:45:40:816] [00007fce28001268] xcb vout display debug: connected to X11.0 server
+[2018-10-29 12:45:40:817] [00007fce28001268] xcb vout display debug: vendor : The X.Org Foundation
+[2018-10-29 12:45:40:829] [00007fce28001268] xcb vout display debug: version: 11903000
+[2018-10-29 12:45:40:845] [00007fce28001268] xcb vout display debug: using screen 0x281
+[2018-10-29 12:45:40:846] [00007fce28001268] xcb_xv vout display debug: using XVideo extension v2.2
+[2018-10-29 12:45:40:848] [00007fce28001268] xcb_xv vout display error: no available XVideo adaptor
+[2018-10-29 12:45:40:855] [00007fce30012cd8] core video output debug: Reusing previous vout window
+[2018-10-29 12:45:40:921] [00007fce28001268] xcb vout display debug: connected to X11.0 server
+[2018-10-29 12:45:40:922] [00007fce28001268] xcb vout display debug: vendor : The X.Org Foundation
+[2018-10-29 12:45:40:966] [00007fce28001268] xcb vout display debug: version: 11903000
+[2018-10-29 12:45:40:973] [00007fce28001268] xcb vout display debug: using screen 0x281
+[2018-10-29 12:45:40:984] [00007fce2800a4b8] core gl debug: looking for opengl module matching "glx": 2 candidates
+[2018-10-29 12:45:41:007] [00007fce58000bb8] core input debug: Buffering 85%
+[2018-10-29 12:45:41:015] [00007fce58000bb8] core input debug: Buffering 85%
+[2018-10-29 12:45:41:027] [00007fce58000bb8] core input debug: Buffering 85%
+[2018-10-29 12:45:41:047] [00007fce58000bb8] core input debug: Buffering 85%
+[2018-10-29 12:45:41:055] [00007fce58000bb8] core input debug: Buffering 85%
+[2018-10-29 12:45:41:065] [00007fce58000bb8] core input debug: Buffering 96%
+[2018-10-29 12:45:41:068] [00007fce58000bb8] core input debug: Buffering 96%
+[2018-10-29 12:45:41:088] [00007fce58000bb8] core input debug: Buffering 96%
+[2018-10-29 12:45:41:098] [00007fce58000bb8] core input debug: Buffering 96%
+[2018-10-29 12:45:41:101] [00007fce58000bb8] core input debug: Buffering 96%
+[2018-10-29 12:45:41:104] [00007fce2800a4b8] glx gl debug: using GLX extension version 1.4
+[2018-10-29 12:45:41:114] [00007fce58000bb8] core input debug: Stream buffering done (213 ms in 129 ms)
+[2018-10-29 12:45:41:137] [00007fce2800a4b8] core gl debug: using opengl module "glx"
+[2018-10-29 12:45:41:145] [00007fce28001268] core vout display debug: VoutDisplayEvent 'fullscreen' 0
+[2018-10-29 12:45:41:148] [00007fce28001268] core vout display debug: VoutDisplayEvent 'resize' 1280x720 window
+[2018-10-29 12:45:41:163] [00007fce28001268] core vout display debug: using vout display module "xcb_glx"
+[2018-10-29 12:45:41:168] [00007fce30012cd8] core video output debug: original format sz 1280x736, of (0,0), vsz 1280x720, 4cc I420, sar 1:1, msk r0x0 g0x0 b0x0
+[2018-10-29 12:45:41:178] [00007fce3010e508] core spu text debug: removing module "freetype"
+[2018-10-29 12:45:41:210] [00007fce3010e508] core spu text debug: looking for text renderer module matching "any": 2 candidates
+[2018-10-29 12:45:41:264] [00007fce3010e508] freetype spu text debug: Building font databases.
+[2018-10-29 12:45:41:313] [00007fce3010e508] freetype spu text debug: Took 0 microseconds
+[2018-10-29 12:45:41:316] [00007fce3010e508] freetype spu text debug: Using Serif Bold as font from file /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+[2018-10-29 12:45:41:324] [00007fce3010e508] freetype spu text debug: Using Monospace as mono-font from file /usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf
+[2018-10-29 12:45:41:348] [00007fce3010e508] freetype spu text debug: using fontsize: 2
+[2018-10-29 12:45:41:355] [00007fce3010e508] core spu text debug: using text renderer module "freetype"
+[2018-10-29 12:45:41:357] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:41:374] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:41:378] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:41:394] [00007fce28001268] xcb vout display debug: unhandled event 18
+[2018-10-29 12:45:41:402] [00007fce28001268] xcb vout display debug: unhandled event 19
+[2018-10-29 12:45:41:416] [00007fce3c040c88] core decoder debug: End of video preroll
+[2018-10-29 12:45:41:420] [00007fce3c040c88] core decoder debug: Received first picture
+[2018-10-29 12:45:41:434] [00007fce58000bb8] core input debug: Decoder wait done in 969 ms
+[2018-10-29 12:45:41:442] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:41:445] [0000000001f474c8] pulse audio output debug: deferring start (28872 us)
+[2018-10-29 12:45:41:468] [0000000001f474c8] pulse audio output debug: deferring start (3230 us)
+[2018-10-29 12:45:41:469] [0000000001f474c8] pulse audio output warning: starting late (-19283 us)
+[2018-10-29 12:45:41:470] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:41:473] [0000000001f474c8] pulse audio output debug: underflow
+[2018-10-29 12:45:41:492] [0000000001f474c8] pulse audio output debug: underflow
+[2018-10-29 12:45:41:497] [00007fce28001268] core vout display debug: auto hiding mouse cursor
+[2018-10-29 12:45:41:508] [0000000001f474c8] pulse audio output debug: underflow
+[2018-10-29 12:45:41:510] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:41:528] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:41:529] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:41:530] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:41:544] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 133 ms)
+[2018-10-29 12:45:41:557] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 93 ms)
+[2018-10-29 12:45:41:558] [0000000001f474c8] core audio output warning: buffer too late (-170484 us): dropped
+[2018-10-29 12:45:41:568] [0000000001f474c8] core audio output warning: buffer too late (-152893 us): dropped
+[2018-10-29 12:45:41:574] [0000000001f474c8] core audio output warning: buffer too late (-136741 us): dropped
+[2018-10-29 12:45:41:580] [0000000001f474c8] core audio output warning: buffer too late (-115959 us): dropped
+[2018-10-29 12:45:41:588] [0000000001f474c8] core audio output warning: buffer too late (-95519 us): dropped
+[2018-10-29 12:45:41:593] [0000000001f474c8] core audio output warning: buffer too late (-75776 us): dropped
+[2018-10-29 12:45:41:600] [0000000001f474c8] core audio output debug: playback too late (869451): flushing buffers
+[2018-10-29 12:45:41:633] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:41:645] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:41:646] [0000000001f474c8] pulse audio output warning: starting late (-55606 us)
+[2018-10-29 12:45:41:651] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:41:664] [0000000001f474c8] core audio output warning: playback too late (63422): up-sampling
+[2018-10-29 12:45:41:677] [0000000001f474c8] core audio output warning: timing screwed (drift: 140528 us): stopping resampling
+[2018-10-29 12:45:41:678] [0000000001f474c8] core audio output warning: playback too late (140557): up-sampling
+[2018-10-29 12:45:41:690] [0000000001f474c8] core audio output warning: playback way too late (194007): flushing buffers
+[2018-10-29 12:45:41:698] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:41:704] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:41:710] [0000000001f474c8] pulse audio output debug: deferring start (234139 us)
+[2018-10-29 12:45:41:716] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:41:723] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:41:724] [0000000001f474c8] pulse audio output debug: deferring start (233998 us)
+[2018-10-29 12:45:41:733] [0000000001f474c8] pulse audio output debug: deferring start (210330 us)
+[2018-10-29 12:45:41:736] [0000000001f474c8] pulse audio output debug: deferring start (210322 us)
+[2018-10-29 12:45:41:758] [0000000001f474c8] pulse audio output debug: deferring start (210312 us)
+[2018-10-29 12:45:41:770] [0000000001f474c8] pulse audio output debug: deferring start (210308 us)
+[2018-10-29 12:45:41:772] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:41:776] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:41:787] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:41:792] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:41:795] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:41:806] [0000000001f474c8] pulse audio output debug: deferring start (196155 us)
+[2018-10-29 12:45:41:809] [0000000001f474c8] pulse audio output debug: deferring start (195489 us)
+[2018-10-29 12:45:41:815] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 1153 ms)
+[2018-10-29 12:45:41:826] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 4113 ms)
+[2018-10-29 12:45:41:827] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 4073 ms)
+[2018-10-29 12:45:41:839] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 4033 ms)
+[2018-10-29 12:45:41:851] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 3993 ms)
+[2018-10-29 12:45:41:858] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 3953 ms)
+[2018-10-29 12:45:41:860] [0000000001f474c8] pulse audio output debug: deferring start (152949 us)
+[2018-10-29 12:45:41:874] [0000000001f474c8] pulse audio output debug: deferring start (131303 us)
+[2018-10-29 12:45:41:900] [0000000001f474c8] pulse audio output debug: deferring start (105089 us)
+[2018-10-29 12:45:41:903] [0000000001f474c8] pulse audio output debug: deferring start (67459 us)
+[2018-10-29 12:45:41:913] [0000000001f474c8] pulse audio output debug: deferring start (66911 us)
+[2018-10-29 12:45:41:924] [0000000001f474c8] pulse audio output debug: deferring start (22030 us)
+[2018-10-29 12:45:41:928] [0000000001f474c8] pulse audio output warning: starting late (-21250 us)
+[2018-10-29 12:45:41:932] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:41:936] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:41:944] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:41:946] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:41:953] [0000000001f474c8] core audio output warning: playback too early (-44282): down-sampling
+[2018-10-29 12:45:41:964] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:41:965] [0000000001f474c8] core audio output debug: resampling stopped (drift: 18029 us)
+[2018-10-29 12:45:41:980] [0000000001f474c8] core audio output warning: playback too late (60667): up-sampling
+[2018-10-29 12:45:41:981] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:41:984] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:41:986] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:41:996] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:41:997] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:005] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:026] [0000000001f474c8] core audio output warning: timing screwed (drift: 136319 us): stopping resampling
+[2018-10-29 12:45:42:050] [0000000001f474c8] core audio output warning: playback too late (161229): up-sampling
+[2018-10-29 12:45:42:051] [0000000001f474c8] core audio output warning: playback way too late (180730): flushing buffers
+[2018-10-29 12:45:42:052] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:42:060] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:42:066] [0000000001f474c8] pulse audio output debug: deferring start (193031 us)
+[2018-10-29 12:45:42:068] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:42:074] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:42:087] [0000000001f474c8] pulse audio output debug: deferring start (192897 us)
+[2018-10-29 12:45:42:090] [0000000001f474c8] pulse audio output debug: deferring start (159331 us)
+[2018-10-29 12:45:42:091] [0000000001f474c8] pulse audio output debug: deferring start (159318 us)
+[2018-10-29 12:45:42:104] [0000000001f474c8] pulse audio output debug: deferring start (159307 us)
+[2018-10-29 12:45:42:105] [0000000001f474c8] pulse audio output debug: deferring start (159302 us)
+[2018-10-29 12:45:42:111] [0000000001f474c8] pulse audio output debug: deferring start (149185 us)
+[2018-10-29 12:45:42:145] [0000000001f474c8] pulse audio output debug: deferring start (143895 us)
+[2018-10-29 12:45:42:146] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:147] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:166] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:174] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:189] [0000000001f474c8] pulse audio output debug: deferring start (98260 us)
+[2018-10-29 12:45:42:192] [0000000001f474c8] pulse audio output debug: deferring start (97668 us)
+[2018-10-29 12:45:42:198] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:206] [0000000001f474c8] pulse audio output debug: deferring start (58572 us)
+[2018-10-29 12:45:42:209] [0000000001f474c8] pulse audio output debug: deferring start (11715 us)
+[2018-10-29 12:45:42:216] [0000000001f474c8] pulse audio output debug: deferring start (11633 us)
+[2018-10-29 12:45:42:231] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:42:232] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:42:233] [0000000001f474c8] core audio output warning: playback too early (-87721): down-sampling
+[2018-10-29 12:45:42:243] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:247] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:272] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:276] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:282] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:287] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:301] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:302] [0000000001f474c8] core audio output debug: resampling stopped (drift: 11963 us)
+[2018-10-29 12:45:42:305] [0000000001f474c8] core audio output warning: playback too late (71489): up-sampling
+[2018-10-29 12:45:42:317] [0000000001f474c8] core audio output warning: timing screwed (drift: 145340 us): stopping resampling
+[2018-10-29 12:45:42:325] [0000000001f474c8] core audio output warning: playback too late (176972): up-sampling
+[2018-10-29 12:45:42:335] [0000000001f474c8] core audio output warning: playback way too late (196701): flushing buffers
+[2018-10-29 12:45:42:340] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:42:345] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:42:360] [0000000001f474c8] pulse audio output debug: deferring start (196193 us)
+[2018-10-29 12:45:42:363] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:42:367] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:42:385] [0000000001f474c8] pulse audio output debug: deferring start (190387 us)
+[2018-10-29 12:45:42:402] [0000000001f474c8] pulse audio output debug: deferring start (159265 us)
+[2018-10-29 12:45:42:402] [0000000001f474c8] pulse audio output debug: deferring start (159257 us)
+[2018-10-29 12:45:42:405] [0000000001f474c8] pulse audio output debug: deferring start (159249 us)
+[2018-10-29 12:45:42:409] [0000000001f474c8] pulse audio output debug: deferring start (159243 us)
+[2018-10-29 12:45:42:412] [0000000001f474c8] pulse audio output debug: deferring start (147813 us)
+[2018-10-29 12:45:42:425] [0000000001f474c8] pulse audio output debug: deferring start (134993 us)
+[2018-10-29 12:45:42:430] [0000000001f474c8] pulse audio output debug: deferring start (107827 us)
+[2018-10-29 12:45:42:432] [0000000001f474c8] pulse audio output debug: deferring start (84673 us)
+[2018-10-29 12:45:42:440] [0000000001f474c8] pulse audio output debug: deferring start (67700 us)
+[2018-10-29 12:45:42:445] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:455] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:455] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:471] [0000000001f474c8] pulse audio output debug: deferring start (16425 us)
+[2018-10-29 12:45:42:479] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:486] [0000000001f474c8] pulse audio output debug: deferring start (12274 us)
+[2018-10-29 12:45:42:498] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:42:514] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:42:519] [0000000001f474c8] core audio output warning: playback too early (-88271): down-sampling
+[2018-10-29 12:45:42:529] [0000000001f474c8] core audio output debug: resampling stopped (drift: 19547 us)
+[2018-10-29 12:45:42:530] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:536] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:544] [0000000001f474c8] core audio output warning: playback too late (77050): up-sampling
+[2018-10-29 12:45:42:544] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:555] [0000000001f474c8] core audio output warning: timing screwed (drift: 163648 us): stopping resampling
+[2018-10-29 12:45:42:567] [0000000001f474c8] core audio output warning: playback too late (174908): up-sampling
+[2018-10-29 12:45:42:568] [0000000001f474c8] core audio output warning: playback way too late (195681): flushing buffers
+[2018-10-29 12:45:42:578] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:42:583] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:42:590] [0000000001f474c8] pulse audio output debug: deferring start (215720 us)
+[2018-10-29 12:45:42:596] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:42:598] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:42:603] [0000000001f474c8] pulse audio output debug: deferring start (206784 us)
+[2018-10-29 12:45:42:611] [0000000001f474c8] pulse audio output debug: deferring start (178537 us)
+[2018-10-29 12:45:42:612] [0000000001f474c8] pulse audio output debug: deferring start (178529 us)
+[2018-10-29 12:45:42:612] [0000000001f474c8] pulse audio output debug: deferring start (178521 us)
+[2018-10-29 12:45:42:625] [0000000001f474c8] pulse audio output debug: deferring start (178515 us)
+[2018-10-29 12:45:42:638] [0000000001f474c8] pulse audio output debug: deferring start (170311 us)
+[2018-10-29 12:45:42:645] [0000000001f474c8] pulse audio output debug: deferring start (169215 us)
+[2018-10-29 12:45:42:651] [0000000001f474c8] pulse audio output debug: deferring start (128667 us)
+[2018-10-29 12:45:42:665] [0000000001f474c8] pulse audio output debug: deferring start (127853 us)
+[2018-10-29 12:45:42:672] [0000000001f474c8] pulse audio output debug: deferring start (73523 us)
+[2018-10-29 12:45:42:683] [0000000001f474c8] pulse audio output debug: deferring start (44236 us)
+[2018-10-29 12:45:42:704] [0000000001f474c8] pulse audio output debug: deferring start (44055 us)
+[2018-10-29 12:45:42:704] [0000000001f474c8] pulse audio output warning: starting late (-16028 us)
+[2018-10-29 12:45:42:705] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:42:712] [0000000001f474c8] core audio output warning: playback too early (-87199): down-sampling
+[2018-10-29 12:45:42:716] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:727] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:731] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:736] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:740] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:751] [0000000001f474c8] core audio output debug: resampling stopped (drift: -12288 us)
+[2018-10-29 12:45:42:753] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:756] [0000000001f474c8] core audio output warning: playback too late (60695): up-sampling
+[2018-10-29 12:45:42:764] [0000000001f474c8] core audio output warning: timing screwed (drift: 128082 us): stopping resampling
+[2018-10-29 12:45:42:773] [0000000001f474c8] core audio output warning: playback too late (139938): up-sampling
+[2018-10-29 12:45:42:774] [0000000001f474c8] core audio output warning: playback way too late (188631): flushing buffers
+[2018-10-29 12:45:42:793] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:42:797] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:42:799] [0000000001f474c8] pulse audio output debug: deferring start (198997 us)
+[2018-10-29 12:45:42:806] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:42:819] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:42:824] [0000000001f474c8] pulse audio output debug: deferring start (197450 us)
+[2018-10-29 12:45:42:829] [0000000001f474c8] pulse audio output debug: deferring start (171735 us)
+[2018-10-29 12:45:42:854] [0000000001f474c8] pulse audio output debug: deferring start (171727 us)
+[2018-10-29 12:45:42:855] [0000000001f474c8] pulse audio output debug: deferring start (171717 us)
+[2018-10-29 12:45:42:856] [0000000001f474c8] pulse audio output debug: deferring start (171713 us)
+[2018-10-29 12:45:42:876] [0000000001f474c8] pulse audio output debug: deferring start (156306 us)
+[2018-10-29 12:45:42:880] [0000000001f474c8] pulse audio output debug: deferring start (152785 us)
+[2018-10-29 12:45:42:898] [0000000001f474c8] pulse audio output debug: deferring start (111664 us)
+[2018-10-29 12:45:42:900] [0000000001f474c8] pulse audio output debug: deferring start (111483 us)
+[2018-10-29 12:45:42:904] [0000000001f474c8] pulse audio output debug: deferring start (64660 us)
+[2018-10-29 12:45:42:916] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:917] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:925] [0000000001f474c8] pulse audio output debug: deferring start (24438 us)
+[2018-10-29 12:45:42:925] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:937] [0000000001f474c8] pulse audio output debug: deferring start (23285 us)
+[2018-10-29 12:45:42:941] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:947] [0000000001f474c8] pulse audio output warning: starting late (-14110 us)
+[2018-10-29 12:45:42:951] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:42:963] [0000000001f474c8] core audio output warning: playback too early (-70956): down-sampling
+[2018-10-29 12:45:42:967] [0000000001f474c8] core audio output debug: resampling stopped (drift: -12416 us)
+[2018-10-29 12:45:42:971] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:42:987] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:000] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:006] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:025] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:026] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:029] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:033] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:043] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:046] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:054] [0000000001f474c8] core audio output warning: playback too late (67842): up-sampling
+[2018-10-29 12:45:43:055] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:069] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:071] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:076] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:095] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:103] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:104] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:113] [0000000001f474c8] core audio output warning: timing screwed (drift: 154053 us): stopping resampling
+[2018-10-29 12:45:43:131] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:131] [0000000001f474c8] core audio output warning: playback way too late (181105): flushing buffers
+[2018-10-29 12:45:43:148] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:43:154] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:43:156] [0000000001f474c8] pulse audio output debug: deferring start (205348 us)
+[2018-10-29 12:45:43:171] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:43:173] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:43:186] [0000000001f474c8] pulse audio output debug: deferring start (205184 us)
+[2018-10-29 12:45:43:187] [0000000001f474c8] pulse audio output debug: deferring start (180540 us)
+[2018-10-29 12:45:43:195] [0000000001f474c8] pulse audio output debug: deferring start (180531 us)
+[2018-10-29 12:45:43:196] [0000000001f474c8] pulse audio output debug: deferring start (180521 us)
+[2018-10-29 12:45:43:198] [0000000001f474c8] pulse audio output debug: deferring start (180517 us)
+[2018-10-29 12:45:43:208] [0000000001f474c8] pulse audio output debug: deferring start (171263 us)
+[2018-10-29 12:45:43:219] [0000000001f474c8] pulse audio output debug: deferring start (160935 us)
+[2018-10-29 12:45:43:220] [0000000001f474c8] pulse audio output debug: deferring start (119627 us)
+[2018-10-29 12:45:43:226] [0000000001f474c8] pulse audio output debug: deferring start (119212 us)
+[2018-10-29 12:45:43:236] [0000000001f474c8] pulse audio output debug: deferring start (74899 us)
+[2018-10-29 12:45:43:244] [0000000001f474c8] pulse audio output debug: deferring start (33137 us)
+[2018-10-29 12:45:43:245] [0000000001f474c8] pulse audio output debug: deferring start (28830 us)
+[2018-10-29 12:45:43:248] [0000000001f474c8] pulse audio output warning: starting late (-4945 us)
+[2018-10-29 12:45:43:257] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:43:262] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:278] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:280] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:286] [0000000001f474c8] core audio output warning: playback too early (-70973): down-sampling
+[2018-10-29 12:45:43:291] [0000000001f474c8] core audio output debug: resampling stopped (drift: -9751 us)
+[2018-10-29 12:45:43:303] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:306] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:348] [0000000001f474c8] core audio output warning: playback too late (79801): up-sampling
+[2018-10-29 12:45:43:357] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:366] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:377] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:382] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:391] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:402] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:405] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:410] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:415] [0000000001f474c8] core audio output warning: timing screwed (drift: 162618 us): stopping resampling
+[2018-10-29 12:45:43:432] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:438] [0000000001f474c8] core audio output warning: playback way too late (188121): flushing buffers
+[2018-10-29 12:45:43:452] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:43:456] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:43:465] [0000000001f474c8] pulse audio output debug: deferring start (197869 us)
+[2018-10-29 12:45:43:473] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:43:476] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:43:500] [0000000001f474c8] pulse audio output debug: deferring start (197700 us)
+[2018-10-29 12:45:43:503] [0000000001f474c8] pulse audio output debug: deferring start (173470 us)
+[2018-10-29 12:45:43:520] [0000000001f474c8] pulse audio output debug: deferring start (173462 us)
+[2018-10-29 12:45:43:521] [0000000001f474c8] pulse audio output debug: deferring start (173451 us)
+[2018-10-29 12:45:43:522] [0000000001f474c8] pulse audio output debug: deferring start (173447 us)
+[2018-10-29 12:45:43:528] [0000000001f474c8] pulse audio output debug: deferring start (155445 us)
+[2018-10-29 12:45:43:536] [0000000001f474c8] pulse audio output debug: deferring start (154688 us)
+[2018-10-29 12:45:43:542] [0000000001f474c8] pulse audio output debug: deferring start (115221 us)
+[2018-10-29 12:45:43:543] [0000000001f474c8] pulse audio output debug: deferring start (91352 us)
+[2018-10-29 12:45:43:549] [0000000001f474c8] pulse audio output debug: deferring start (69719 us)
+[2018-10-29 12:45:43:564] [0000000001f474c8] pulse audio output debug: deferring start (29026 us)
+[2018-10-29 12:45:43:567] [0000000001f474c8] pulse audio output debug: deferring start (7442 us)
+[2018-10-29 12:45:43:586] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:587] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:594] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:601] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:608] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:614] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:43:627] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:43:636] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:640] [0000000001f474c8] core audio output warning: playback too early (-87720): down-sampling
+[2018-10-29 12:45:43:648] [0000000001f474c8] core audio output debug: resampling stopped (drift: -28479 us)
+[2018-10-29 12:45:43:649] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:665] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:43:673] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:43:678] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:43:684] [0000000001f474c8] core audio output warning: playback too late (60723): up-sampling
+[2018-10-29 12:45:43:686] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:43:692] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:43:709] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:43:710] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:43:717] [0000000001f474c8] core audio output warning: timing screwed (drift: 141562 us): stopping resampling
+[2018-10-29 12:45:43:724] [0000000001f474c8] core audio output warning: playback too late (163458): up-sampling
+[2018-10-29 12:45:43:733] [0000000001f474c8] core audio output warning: playback way too late (188632): flushing buffers
+[2018-10-29 12:45:43:735] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:43:746] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:43:757] [0000000001f474c8] pulse audio output debug: deferring start (196883 us)
+[2018-10-29 12:45:43:775] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:43:776] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:43:778] [0000000001f474c8] pulse audio output debug: deferring start (196735 us)
+[2018-10-29 12:45:43:787] [0000000001f474c8] pulse audio output debug: deferring start (173089 us)
+[2018-10-29 12:45:43:794] [0000000001f474c8] pulse audio output debug: deferring start (173080 us)
+[2018-10-29 12:45:43:802] [0000000001f474c8] pulse audio output debug: deferring start (173072 us)
+[2018-10-29 12:45:43:808] [0000000001f474c8] pulse audio output debug: deferring start (173066 us)
+[2018-10-29 12:45:43:812] [0000000001f474c8] pulse audio output debug: deferring start (159799 us)
+[2018-10-29 12:45:43:822] [0000000001f474c8] pulse audio output debug: deferring start (156513 us)
+[2018-10-29 12:45:43:823] [0000000001f474c8] pulse audio output debug: deferring start (116815 us)
+[2018-10-29 12:45:43:833] [0000000001f474c8] pulse audio output debug: deferring start (115055 us)
+[2018-10-29 12:45:43:835] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 114 ms)
+[2018-10-29 12:45:43:851] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 74 ms)
+[2018-10-29 12:45:43:856] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 32 ms)
+[2018-10-29 12:45:43:857] [0000000001f474c8] pulse audio output debug: deferring start (74172 us)
+[2018-10-29 12:45:43:858] [0000000001f474c8] pulse audio output debug: deferring start (25977 us)
+[2018-10-29 12:45:43:858] [0000000001f474c8] pulse audio output debug: deferring start (23946 us)
+[2018-10-29 12:45:43:859] [0000000001f474c8] pulse audio output warning: starting late (-18095 us)
+[2018-10-29 12:45:43:860] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:43:864] [0000000001f474c8] core audio output warning: playback too early (-79766): down-sampling
+[2018-10-29 12:45:43:864] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 69 ms)
+[2018-10-29 12:45:43:865] [0000000001f474c8] core audio output debug: resampling stopped (drift: -9488 us)
+[2018-10-29 12:45:43:877] [0000000001f474c8] core audio output warning: playback too late (69677): up-sampling
+[2018-10-29 12:45:43:886] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:43:894] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:43:902] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:43:914] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:43:931] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:43:935] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:43:938] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:43:947] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:43:950] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 155 ms)
+[2018-10-29 12:45:43:962] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 115 ms)
+[2018-10-29 12:45:43:963] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 75 ms)
+[2018-10-29 12:45:43:971] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 35 ms)
+[2018-10-29 12:45:43:973] [0000000001f474c8] core audio output warning: timing screwed (drift: 164432 us): stopping resampling
+[2018-10-29 12:45:43:982] [0000000001f474c8] core audio output warning: playback way too late (182310): flushing buffers
+[2018-10-29 12:45:43:990] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:43:995] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:44:004] [0000000001f474c8] pulse audio output debug: deferring start (202365 us)
+[2018-10-29 12:45:44:006] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:44:011] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:44:017] [0000000001f474c8] pulse audio output debug: deferring start (202234 us)
+[2018-10-29 12:45:44:032] [0000000001f474c8] pulse audio output debug: deferring start (179485 us)
+[2018-10-29 12:45:44:039] [0000000001f474c8] pulse audio output debug: deferring start (179475 us)
+[2018-10-29 12:45:44:048] [0000000001f474c8] pulse audio output debug: deferring start (179465 us)
+[2018-10-29 12:45:44:069] [0000000001f474c8] pulse audio output debug: deferring start (179461 us)
+[2018-10-29 12:45:44:069] [0000000001f474c8] pulse audio output debug: deferring start (164659 us)
+[2018-10-29 12:45:44:071] [0000000001f474c8] pulse audio output debug: deferring start (164635 us)
+[2018-10-29 12:45:44:083] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 76 ms)
+[2018-10-29 12:45:44:087] [0000000001f474c8] pulse audio output debug: deferring start (120960 us)
+[2018-10-29 12:45:44:117] [0000000001f474c8] pulse audio output debug: deferring start (115088 us)
+[2018-10-29 12:45:44:133] [0000000001f474c8] pulse audio output debug: deferring start (76958 us)
+[2018-10-29 12:45:44:147] [0000000001f474c8] pulse audio output debug: deferring start (27768 us)
+[2018-10-29 12:45:44:152] [00007fce3c000e88] live555 demux debug: tk->rtpSource->hasBeenSynchronizedUsingRTCP()
+[2018-10-29 12:45:44:164] [00007fce58000bb8] core input error: ES_OUT_RESET_PCR called
+[2018-10-29 12:45:44:167] [0000000001f474c8] pulse audio output debug: deferring start (27263 us)
+[2018-10-29 12:45:44:171] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:44:178] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:44:184] [00007fce3c000e88] live555 demux debug: tk->rtpSource->hasBeenSynchronizedUsingRTCP()
+[2018-10-29 12:45:44:204] [00007fce58000bb8] core input error: ES_OUT_RESET_PCR called
+[2018-10-29 12:45:44:204] [00007fce3c0649d8] core decoder debug: End of audio preroll
+[2018-10-29 12:45:44:205] [00007fce3c0649d8] core decoder error: Could not convert timestamp 0
+[2018-10-29 12:45:44:214] [00007fce3c0649d8] core decoder debug: discarded audio buffer
+[2018-10-29 12:45:44:218] [00007fce58000bb8] core input debug: Buffering 0%
+[2018-10-29 12:45:44:229] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:44:237] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:44:244] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:44:262] [00007fce3c040c88] core decoder debug: End of video preroll
+[2018-10-29 12:45:44:262] [00007fce3c0649d8] core decoder debug: End of audio preroll
+[2018-10-29 12:45:44:265] [00007fce58000bb8] core input debug: Buffering 1%
+[2018-10-29 12:45:44:276] [00007fce3c040c88] core decoder debug: Received first picture
+[2018-10-29 12:45:44:283] [00007fce58000bb8] core input debug: Buffering 10%
+[2018-10-29 12:45:44:284] [00007fce58000bb8] core input debug: Buffering 21%
+[2018-10-29 12:45:44:297] [00007fce58000bb8] core input debug: Buffering 21%
+[2018-10-29 12:45:44:306] [00007fce58000bb8] core input debug: Buffering 32%
+[2018-10-29 12:45:44:310] [00007fce58000bb8] core input debug: Buffering 42%
+[2018-10-29 12:45:44:327] [00007fce58000bb8] core input debug: Buffering 42%
+[2018-10-29 12:45:44:331] [00007fce58000bb8] core input debug: Buffering 53%
+[2018-10-29 12:45:44:344] [00007fce58000bb8] core input debug: Buffering 64%
+[2018-10-29 12:45:44:345] [00007fce58000bb8] core input debug: Buffering 64%
+[2018-10-29 12:45:44:352] [00007fce58000bb8] core input debug: Buffering 74%
+[2018-10-29 12:45:44:358] [00007fce58000bb8] core input debug: Buffering 81%
+[2018-10-29 12:45:44:366] [00007fce58000bb8] core input debug: Buffering 85%
+[2018-10-29 12:45:44:375] [00007fce58000bb8] core input debug: Buffering 96%
+[2018-10-29 12:45:44:404] [00007fce58000bb8] core input debug: Stream buffering done (203 ms in 179 ms)
+[2018-10-29 12:45:44:406] [00007fce58000bb8] core input debug: Decoder wait done in 50 ms
+[2018-10-29 12:45:44:415] [0000000001f474c8] pulse audio output debug: deferring start (103135 us)
+[2018-10-29 12:45:44:429] [0000000001f474c8] pulse audio output debug: deferring start (76456 us)
+[2018-10-29 12:45:44:435] [0000000001f474c8] pulse audio output debug: deferring start (54466 us)
+[2018-10-29 12:45:44:445] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:44:446] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:44:453] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:44:456] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:44:468] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:44:468] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:44:474] [0000000001f474c8] pulse audio output debug: deferring start (24896 us)
+[2018-10-29 12:45:44:488] [0000000001f474c8] pulse audio output debug: deferring start (2132 us)
+[2018-10-29 12:45:44:488] [0000000001f474c8] pulse audio output warning: starting late (-20369 us)
+[2018-10-29 12:45:44:493] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:44:495] [0000000001f474c8] core audio output warning: playback too early (-71166): down-sampling
+[2018-10-29 12:45:44:516] [0000000001f474c8] core audio output debug: resampling stopped (drift: -20751 us)
+[2018-10-29 12:45:44:527] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:44:530] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:44:536] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:44:553] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:44:556] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:44:563] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:44:575] [0000000001f474c8] core audio output warning: playback too late (86668): up-sampling
+[2018-10-29 12:45:44:583] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:44:584] [0000000001f474c8] core audio output warning: playback way too late (197522): flushing buffers
+[2018-10-29 12:45:44:586] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:44:594] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:44:603] [0000000001f474c8] pulse audio output debug: deferring start (195089 us)
+[2018-10-29 12:45:44:604] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:44:613] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:44:614] [0000000001f474c8] pulse audio output debug: deferring start (194939 us)
+[2018-10-29 12:45:44:620] [0000000001f474c8] pulse audio output debug: deferring start (172268 us)
+[2018-10-29 12:45:44:650] [0000000001f474c8] pulse audio output debug: deferring start (172257 us)
+[2018-10-29 12:45:44:651] [0000000001f474c8] pulse audio output debug: deferring start (172248 us)
+[2018-10-29 12:45:44:654] [0000000001f474c8] pulse audio output debug: deferring start (172244 us)
+[2018-10-29 12:45:44:669] [0000000001f474c8] pulse audio output debug: deferring start (161454 us)
+[2018-10-29 12:45:44:677] [0000000001f474c8] pulse audio output debug: deferring start (153333 us)
+[2018-10-29 12:45:44:688] [0000000001f474c8] pulse audio output debug: deferring start (115413 us)
+[2018-10-29 12:45:44:691] [0000000001f474c8] pulse audio output debug: deferring start (114977 us)
+[2018-10-29 12:45:44:711] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 215 ms)
+[2018-10-29 12:45:44:712] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 175 ms)
+[2018-10-29 12:45:44:719] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 135 ms)
+[2018-10-29 12:45:44:725] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 95 ms)
+[2018-10-29 12:45:44:733] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 55 ms)
+[2018-10-29 12:45:44:746] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 15 ms)
+[2018-10-29 12:45:44:747] [0000000001f474c8] pulse audio output debug: deferring start (72493 us)
+[2018-10-29 12:45:44:747] [0000000001f474c8] pulse audio output debug: deferring start (31193 us)
+[2018-10-29 12:45:44:754] [0000000001f474c8] pulse audio output debug: deferring start (27765 us)
+[2018-10-29 12:45:44:761] [0000000001f474c8] pulse audio output warning: starting late (-16846 us)
+[2018-10-29 12:45:44:767] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:44:772] [0000000001f474c8] core audio output warning: playback too early (-71856): down-sampling
+[2018-10-29 12:45:44:778] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 101 ms)
+[2018-10-29 12:45:44:789] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 61 ms)
+[2018-10-29 12:45:44:793] [0000000001f474c8] core audio output debug: resampling stopped (drift: -4321 us)
+[2018-10-29 12:45:44:796] [0000000001f474c8] core audio output warning: playback too late (80077): up-sampling
+[2018-10-29 12:45:44:808] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:44:809] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:44:825] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:44:839] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:44:843] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:44:847] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:44:854] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:44:867] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:44:876] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 183 ms)
+[2018-10-29 12:45:44:883] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 143 ms)
+[2018-10-29 12:45:44:884] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 103 ms)
+[2018-10-29 12:45:44:889] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 63 ms)
+[2018-10-29 12:45:44:904] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 23 ms)
+[2018-10-29 12:45:44:905] [0000000001f474c8] core audio output warning: timing screwed (drift: 160225 us): stopping resampling
+[2018-10-29 12:45:44:907] [0000000001f474c8] core audio output warning: playback way too late (184143): flushing buffers
+[2018-10-29 12:45:44:916] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:44:927] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:44:936] [0000000001f474c8] pulse audio output debug: deferring start (200573 us)
+[2018-10-29 12:45:44:939] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:44:941] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:44:947] [0000000001f474c8] pulse audio output debug: deferring start (200447 us)
+[2018-10-29 12:45:44:950] [0000000001f474c8] pulse audio output debug: deferring start (177612 us)
+[2018-10-29 12:45:44:966] [0000000001f474c8] pulse audio output debug: deferring start (177604 us)
+[2018-10-29 12:45:44:967] [0000000001f474c8] pulse audio output debug: deferring start (177593 us)
+[2018-10-29 12:45:45:004] [0000000001f474c8] pulse audio output debug: deferring start (177589 us)
+[2018-10-29 12:45:45:013] [0000000001f474c8] pulse audio output debug: deferring start (164927 us)
+[2018-10-29 12:45:45:023] [0000000001f474c8] pulse audio output debug: deferring start (159045 us)
+[2018-10-29 12:45:45:027] [0000000001f474c8] pulse audio output debug: deferring start (122276 us)
+[2018-10-29 12:45:45:033] [0000000001f474c8] pulse audio output debug: deferring start (116014 us)
+[2018-10-29 12:45:45:039] [0000000001f474c8] pulse audio output debug: deferring start (73693 us)
+[2018-10-29 12:45:45:049] [0000000001f474c8] pulse audio output debug: deferring start (36630 us)
+[2018-10-29 12:45:45:054] [0000000001f474c8] pulse audio output debug: deferring start (26445 us)
+[2018-10-29 12:45:45:056] [0000000001f474c8] pulse audio output warning: starting late (-11464 us)
+[2018-10-29 12:45:45:075] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:45:076] [0000000001f474c8] core audio output warning: playback too early (-74307): down-sampling
+[2018-10-29 12:45:45:080] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:082] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:091] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:138] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:144] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:161] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:162] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:174] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:175] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:186] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 206 ms)
+[2018-10-29 12:45:45:197] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 166 ms)
+[2018-10-29 12:45:45:202] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 126 ms)
+[2018-10-29 12:45:45:208] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 86 ms)
+[2018-10-29 12:45:45:223] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 46 ms)
+[2018-10-29 12:45:45:224] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 6 ms)
+[2018-10-29 12:45:45:226] [0000000001f474c8] core audio output debug: resampling stopped (drift: -7637 us)
+[2018-10-29 12:45:45:236] [0000000001f474c8] core audio output warning: playback too late (63603): up-sampling
+[2018-10-29 12:45:45:243] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 106 ms)
+[2018-10-29 12:45:45:249] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 66 ms)
+[2018-10-29 12:45:45:251] [0000000001f474c8] core audio output warning: timing screwed (drift: 142886 us): stopping resampling
+[2018-10-29 12:45:45:274] [0000000001f474c8] core audio output warning: playback too late (164090): up-sampling
+[2018-10-29 12:45:45:275] [0000000001f474c8] core audio output warning: playback way too late (191530): flushing buffers
+[2018-10-29 12:45:45:283] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:45:291] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:45:294] [0000000001f474c8] pulse audio output debug: deferring start (193228 us)
+[2018-10-29 12:45:45:294] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:45:303] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:45:310] [0000000001f474c8] pulse audio output debug: deferring start (192013 us)
+[2018-10-29 12:45:45:312] [0000000001f474c8] pulse audio output debug: deferring start (169176 us)
+[2018-10-29 12:45:45:324] [0000000001f474c8] pulse audio output debug: deferring start (169168 us)
+[2018-10-29 12:45:45:328] [0000000001f474c8] pulse audio output debug: deferring start (169157 us)
+[2018-10-29 12:45:45:337] [0000000001f474c8] pulse audio output debug: deferring start (169154 us)
+[2018-10-29 12:45:45:338] [0000000001f474c8] pulse audio output debug: deferring start (159955 us)
+[2018-10-29 12:45:45:349] [0000000001f474c8] pulse audio output debug: deferring start (154273 us)
+[2018-10-29 12:45:45:356] [0000000001f474c8] pulse audio output debug: deferring start (115831 us)
+[2018-10-29 12:45:45:360] [0000000001f474c8] pulse audio output debug: deferring start (108374 us)
+[2018-10-29 12:45:45:370] [0000000001f474c8] pulse audio output debug: deferring start (70532 us)
+[2018-10-29 12:45:45:379] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:385] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:390] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:397] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:410] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 164 ms)
+[2018-10-29 12:45:45:411] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 124 ms)
+[2018-10-29 12:45:45:417] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 84 ms)
+[2018-10-29 12:45:45:421] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 44 ms)
+[2018-10-29 12:45:45:428] [0000000001f474c8] pulse audio output debug: deferring start (26655 us)
+[2018-10-29 12:45:45:452] [0000000001f474c8] pulse audio output debug: deferring start (26240 us)
+[2018-10-29 12:45:45:453] [0000000001f474c8] pulse audio output warning: starting late (-17412 us)
+[2018-10-29 12:45:45:453] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:45:462] [0000000001f474c8] core audio output warning: playback too early (-71672): down-sampling
+[2018-10-29 12:45:45:465] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:483] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:489] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 125 ms)
+[2018-10-29 12:45:45:522] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 85 ms)
+[2018-10-29 12:45:45:523] [0000000001f474c8] core audio output debug: resampling stopped (drift: -1893 us)
+[2018-10-29 12:45:45:524] [0000000001f474c8] core audio output warning: playback too late (78576): up-sampling
+[2018-10-29 12:45:45:525] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:544] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:552] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:555] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:558] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:564] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:584] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 50 ms)
+[2018-10-29 12:45:45:585] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 9 ms)
+[2018-10-29 12:45:45:586] [0000000001f474c8] core audio output warning: timing screwed (drift: 169839 us): stopping resampling
+[2018-10-29 12:45:45:598] [0000000001f474c8] core audio output warning: playback way too late (191521): flushing buffers
+[2018-10-29 12:45:45:598] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:45:607] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:45:608] [0000000001f474c8] pulse audio output debug: deferring start (193128 us)
+[2018-10-29 12:45:45:613] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:45:616] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:45:643] [0000000001f474c8] pulse audio output debug: deferring start (191100 us)
+[2018-10-29 12:45:45:651] [0000000001f474c8] pulse audio output debug: deferring start (168247 us)
+[2018-10-29 12:45:45:670] [0000000001f474c8] pulse audio output debug: deferring start (168239 us)
+[2018-10-29 12:45:45:676] [0000000001f474c8] pulse audio output debug: deferring start (168228 us)
+[2018-10-29 12:45:45:688] [0000000001f474c8] pulse audio output debug: deferring start (168225 us)
+[2018-10-29 12:45:45:689] [0000000001f474c8] pulse audio output debug: deferring start (155370 us)
+[2018-10-29 12:45:45:691] [0000000001f474c8] pulse audio output debug: deferring start (153071 us)
+[2018-10-29 12:45:45:696] [0000000001f474c8] pulse audio output debug: deferring start (112269 us)
+[2018-10-29 12:45:45:706] [0000000001f474c8] pulse audio output debug: deferring start (90751 us)
+[2018-10-29 12:45:45:707] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 90 ms)
+[2018-10-29 12:45:45:713] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 50 ms)
+[2018-10-29 12:45:45:720] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 10 ms)
+[2018-10-29 12:45:45:729] [0000000001f474c8] pulse audio output debug: deferring start (69467 us)
+[2018-10-29 12:45:45:731] [0000000001f474c8] pulse audio output debug: deferring start (27441 us)
+[2018-10-29 12:45:45:739] [0000000001f474c8] pulse audio output debug: deferring start (26967 us)
+[2018-10-29 12:45:45:744] [0000000001f474c8] pulse audio output warning: starting late (-20015 us)
+[2018-10-29 12:45:45:753] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:45:762] [0000000001f474c8] core audio output warning: playback too early (-64863): down-sampling
+[2018-10-29 12:45:45:762] [0000000001f474c8] core audio output debug: resampling stopped (drift: -3989 us)
+[2018-10-29 12:45:45:772] [0000000001f474c8] core audio output warning: playback too late (61182): up-sampling
+[2018-10-29 12:45:45:780] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:784] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:798] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:798] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:45:804] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 196 ms)
+[2018-10-29 12:45:45:806] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 156 ms)
+[2018-10-29 12:45:45:814] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 116 ms)
+[2018-10-29 12:45:45:823] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 76 ms)
+[2018-10-29 12:45:45:824] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 36 ms)
+[2018-10-29 12:45:45:829] [0000000001f474c8] core audio output warning: timing screwed (drift: 138141 us): stopping resampling
+[2018-10-29 12:45:45:840] [0000000001f474c8] core audio output warning: playback too late (168395): up-sampling
+[2018-10-29 12:45:45:853] [0000000001f474c8] core audio output warning: playback way too late (181447): flushing buffers
+[2018-10-29 12:45:45:861] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:45:868] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:45:900] [0000000001f474c8] pulse audio output debug: deferring start (203538 us)
+[2018-10-29 12:45:45:902] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:45:912] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:45:921] [0000000001f474c8] pulse audio output debug: deferring start (203391 us)
+[2018-10-29 12:45:45:943] [0000000001f474c8] pulse audio output debug: deferring start (180261 us)
+[2018-10-29 12:45:45:948] [0000000001f474c8] pulse audio output debug: deferring start (180252 us)
+[2018-10-29 12:45:45:951] [0000000001f474c8] pulse audio output debug: deferring start (180241 us)
+[2018-10-29 12:45:45:977] [0000000001f474c8] pulse audio output debug: deferring start (180237 us)
+[2018-10-29 12:45:45:978] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:45:978] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:45:994] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:000] [0000000001f474c8] pulse audio output debug: deferring start (165016 us)
+[2018-10-29 12:45:46:009] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:46:017] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:46:018] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:031] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:46:039] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:46:048] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 120 ms)
+[2018-10-29 12:45:46:055] [0000000001f474c8] pulse audio output debug: deferring start (140893 us)
+[2018-10-29 12:45:46:061] [0000000001f474c8] pulse audio output debug: deferring start (112477 us)
+[2018-10-29 12:45:46:072] [0000000001f474c8] pulse audio output debug: deferring start (111592 us)
+[2018-10-29 12:45:46:088] [0000000001f474c8] pulse audio output debug: deferring start (73332 us)
+[2018-10-29 12:45:46:091] [0000000001f474c8] pulse audio output debug: deferring start (32651 us)
+[2018-10-29 12:45:46:104] [0000000001f474c8] pulse audio output debug: deferring start (9141 us)
+[2018-10-29 12:45:46:109] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:46:120] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:46:124] [0000000001f474c8] core audio output warning: playback too early (-99937): down-sampling
+[2018-10-29 12:45:46:128] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:141] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:46:146] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:46:149] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:167] [0000000001f474c8] core audio output debug: resampling stopped (drift: 11695 us)
+[2018-10-29 12:45:46:177] [0000000001f474c8] core audio output warning: playback too late (72455): up-sampling
+[2018-10-29 12:45:46:184] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 179 ms)
+[2018-10-29 12:45:46:198] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 139 ms)
+[2018-10-29 12:45:46:221] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 99 ms)
+[2018-10-29 12:45:46:225] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 58 ms)
+[2018-10-29 12:45:46:226] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 18 ms)
+[2018-10-29 12:45:46:231] [0000000001f474c8] core audio output warning: timing screwed (drift: 170854 us): stopping resampling
+[2018-10-29 12:45:46:242] [0000000001f474c8] core audio output warning: playback way too late (183343): flushing buffers
+[2018-10-29 12:45:46:269] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:46:285] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:46:286] [0000000001f474c8] pulse audio output debug: deferring start (201025 us)
+[2018-10-29 12:45:46:305] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:46:306] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:46:307] [0000000001f474c8] pulse audio output debug: deferring start (197273 us)
+[2018-10-29 12:45:46:310] [0000000001f474c8] pulse audio output debug: deferring start (174583 us)
+[2018-10-29 12:45:46:325] [0000000001f474c8] pulse audio output debug: deferring start (174571 us)
+[2018-10-29 12:45:46:325] [0000000001f474c8] pulse audio output debug: deferring start (174561 us)
+[2018-10-29 12:45:46:326] [0000000001f474c8] pulse audio output debug: deferring start (174556 us)
+[2018-10-29 12:45:46:351] [0000000001f474c8] pulse audio output debug: deferring start (167033 us)
+[2018-10-29 12:45:46:353] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 104 ms)
+[2018-10-29 12:45:46:358] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 64 ms)
+[2018-10-29 12:45:46:358] [0000000001f474c8] pulse audio output debug: deferring start (153790 us)
+[2018-10-29 12:45:46:366] [0000000001f474c8] pulse audio output debug: deferring start (114583 us)
+[2018-10-29 12:45:46:368] [0000000001f474c8] pulse audio output debug: deferring start (113187 us)
+[2018-10-29 12:45:46:377] [0000000001f474c8] pulse audio output debug: deferring start (63412 us)
+[2018-10-29 12:45:46:382] [0000000001f474c8] pulse audio output debug: deferring start (30960 us)
+[2018-10-29 12:45:46:412] [0000000001f474c8] pulse audio output debug: deferring start (30605 us)
+[2018-10-29 12:45:46:421] [0000000001f474c8] pulse audio output warning: starting late (-18215 us)
+[2018-10-29 12:45:46:425] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:46:429] [0000000001f474c8] core audio output warning: playback too early (-73748): down-sampling
+[2018-10-29 12:45:46:438] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:46:447] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:46:458] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:461] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:46:479] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:46:482] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:490] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:46:490] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:46:501] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 176 ms)
+[2018-10-29 12:45:46:504] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 136 ms)
+[2018-10-29 12:45:46:509] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 96 ms)
+[2018-10-29 12:45:46:516] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 56 ms)
+[2018-10-29 12:45:46:523] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 16 ms)
+[2018-10-29 12:45:46:539] [0000000001f474c8] core audio output debug: resampling stopped (drift: -5388 us)
+[2018-10-29 12:45:46:548] [0000000001f474c8] core audio output warning: playback too late (77385): up-sampling
+[2018-10-29 12:45:46:574] [0000000001f474c8] core audio output warning: timing screwed (drift: 166957 us): stopping resampling
+[2018-10-29 12:45:46:576] [0000000001f474c8] core audio output warning: playback way too late (184447): flushing buffers
+[2018-10-29 12:45:46:577] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:46:586] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:46:592] [0000000001f474c8] pulse audio output debug: deferring start (199768 us)
+[2018-10-29 12:45:46:604] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:46:610] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:46:611] [0000000001f474c8] pulse audio output debug: deferring start (197441 us)
+[2018-10-29 12:45:46:622] [0000000001f474c8] pulse audio output debug: deferring start (175022 us)
+[2018-10-29 12:45:46:623] [0000000001f474c8] pulse audio output debug: deferring start (175012 us)
+[2018-10-29 12:45:46:630] [0000000001f474c8] pulse audio output debug: deferring start (175001 us)
+[2018-10-29 12:45:46:632] [0000000001f474c8] pulse audio output debug: deferring start (174997 us)
+[2018-10-29 12:45:46:640] [0000000001f474c8] pulse audio output debug: deferring start (167410 us)
+[2018-10-29 12:45:46:657] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:660] [0000000001f474c8] pulse audio output debug: deferring start (156486 us)
+[2018-10-29 12:45:46:669] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:46:669] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:46:670] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 176 ms)
+[2018-10-29 12:45:46:672] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 136 ms)
+[2018-10-29 12:45:46:688] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 96 ms)
+[2018-10-29 12:45:46:691] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 56 ms)
+[2018-10-29 12:45:46:711] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 16 ms)
+[2018-10-29 12:45:46:722] [0000000001f474c8] pulse audio output debug: deferring start (117647 us)
+[2018-10-29 12:45:46:724] [0000000001f474c8] pulse audio output debug: deferring start (116947 us)
+[2018-10-29 12:45:46:729] [0000000001f474c8] pulse audio output debug: deferring start (75194 us)
+[2018-10-29 12:45:46:754] [0000000001f474c8] pulse audio output debug: deferring start (28509 us)
+[2018-10-29 12:45:46:757] [0000000001f474c8] pulse audio output debug: deferring start (28075 us)
+[2018-10-29 12:45:46:767] [0000000001f474c8] pulse audio output warning: starting late (-17076 us)
+[2018-10-29 12:45:46:768] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:46:774] [0000000001f474c8] core audio output warning: playback too early (-72705): down-sampling
+[2018-10-29 12:45:46:777] [0000000001f474c8] core audio output debug: resampling stopped (drift: -1920 us)
+[2018-10-29 12:45:46:783] [0000000001f474c8] core audio output warning: playback too late (79248): up-sampling
+[2018-10-29 12:45:46:788] [0000000001f474c8] core audio output warning: timing screwed (drift: 159539 us): stopping resampling
+[2018-10-29 12:45:46:802] [0000000001f474c8] core audio output warning: playback way too late (183686): flushing buffers
+[2018-10-29 12:45:46:813] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:46:815] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:46:815] [0000000001f474c8] pulse audio output debug: deferring start (200783 us)
+[2018-10-29 12:45:46:823] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:46:826] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:46:838] [0000000001f474c8] pulse audio output debug: deferring start (200641 us)
+[2018-10-29 12:45:46:838] [0000000001f474c8] pulse audio output debug: deferring start (178056 us)
+[2018-10-29 12:45:46:839] [0000000001f474c8] pulse audio output debug: deferring start (178048 us)
+[2018-10-29 12:45:46:847] [0000000001f474c8] pulse audio output debug: deferring start (178037 us)
+[2018-10-29 12:45:46:860] [0000000001f474c8] pulse audio output debug: deferring start (178033 us)
+[2018-10-29 12:45:46:861] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:865] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:46:873] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:46:880] [0000000001f474c8] pulse audio output debug: deferring start (162920 us)
+[2018-10-29 12:45:46:885] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 358 ms)
+[2018-10-29 12:45:46:904] [0000000001f474c8] pulse audio output debug: deferring start (151857 us)
+[2018-10-29 12:45:46:911] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:46:920] [0000000001f474c8] pulse audio output debug: deferring start (111977 us)
+[2018-10-29 12:45:46:920] [0000000001f474c8] pulse audio output debug: deferring start (111950 us)
+[2018-10-29 12:45:46:930] [0000000001f474c8] pulse audio output debug: deferring start (68254 us)
+[2018-10-29 12:45:46:938] [0000000001f474c8] pulse audio output debug: deferring start (30016 us)
+[2018-10-29 12:45:46:946] [0000000001f474c8] pulse audio output debug: deferring start (8480 us)
+[2018-10-29 12:45:46:948] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:46:955] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:46:963] [0000000001f474c8] core audio output warning: playback too early (-105322): down-sampling
+[2018-10-29 12:45:46:974] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:46:984] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:46:988] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:001] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:008] [00007fce3c040c88] avcodec decoder warning: More than 4 late frames, dropping frame
+[2018-10-29 12:45:47:014] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:042] [0000000001f474c8] core audio output debug: resampling stopped (drift: 894 us)
+[2018-10-29 12:45:47:047] [0000000001f474c8] core audio output warning: playback too late (70087): up-sampling
+[2018-10-29 12:45:47:054] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:056] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:059] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:072] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:073] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:081] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:086] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:096] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:099] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 65 ms)
+[2018-10-29 12:45:47:102] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 25 ms)
+[2018-10-29 12:45:47:108] [0000000001f474c8] core audio output warning: timing screwed (drift: 152010 us): stopping resampling
+[2018-10-29 12:45:47:114] [0000000001f474c8] core audio output warning: playback too late (175073): up-sampling
+[2018-10-29 12:45:47:133] [0000000001f474c8] core audio output warning: playback way too late (199978): flushing buffers
+[2018-10-29 12:45:47:140] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:47:162] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:47:168] [0000000001f474c8] pulse audio output debug: deferring start (205257 us)
+[2018-10-29 12:45:47:185] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:47:188] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:47:192] [0000000001f474c8] pulse audio output debug: deferring start (198458 us)
+[2018-10-29 12:45:47:202] [0000000001f474c8] pulse audio output debug: deferring start (176202 us)
+[2018-10-29 12:45:47:208] [0000000001f474c8] pulse audio output debug: deferring start (176194 us)
+[2018-10-29 12:45:47:212] [0000000001f474c8] pulse audio output debug: deferring start (176185 us)
+[2018-10-29 12:45:47:215] [0000000001f474c8] pulse audio output debug: deferring start (176180 us)
+[2018-10-29 12:45:47:220] [0000000001f474c8] pulse audio output debug: deferring start (168223 us)
+[2018-10-29 12:45:47:231] [0000000001f474c8] pulse audio output debug: deferring start (167736 us)
+[2018-10-29 12:45:47:232] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 74 ms)
+[2018-10-29 12:45:47:246] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 34 ms)
+[2018-10-29 12:45:47:247] [0000000001f474c8] pulse audio output debug: deferring start (123130 us)
+[2018-10-29 12:45:47:250] [0000000001f474c8] pulse audio output debug: deferring start (123095 us)
+[2018-10-29 12:45:47:276] [0000000001f474c8] pulse audio output debug: deferring start (81878 us)
+[2018-10-29 12:45:47:289] [0000000001f474c8] pulse audio output debug: deferring start (40136 us)
+[2018-10-29 12:45:47:292] [0000000001f474c8] pulse audio output debug: deferring start (17245 us)
+[2018-10-29 12:45:47:308] [0000000001f474c8] pulse audio output warning: starting late (-1483 us)
+[2018-10-29 12:45:47:309] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:47:315] [0000000001f474c8] core audio output warning: playback too early (-78919): down-sampling
+[2018-10-29 12:45:47:320] [0000000001f474c8] core audio output debug: resampling stopped (drift: -8994 us)
+[2018-10-29 12:45:47:329] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:334] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:336] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:342] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:354] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 188 ms)
+[2018-10-29 12:45:47:354] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 148 ms)
+[2018-10-29 12:45:47:358] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 108 ms)
+[2018-10-29 12:45:47:369] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 68 ms)
+[2018-10-29 12:45:47:369] [0000000001f474c8] core audio output warning: playback too late (76463): up-sampling
+[2018-10-29 12:45:47:377] [0000000001f474c8] core audio output warning: timing screwed (drift: 166055 us): stopping resampling
+[2018-10-29 12:45:47:380] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:383] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:385] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 163 ms)
+[2018-10-29 12:45:47:386] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 123 ms)
+[2018-10-29 12:45:47:407] [0000000001f474c8] core audio output warning: playback way too late (192678): flushing buffers
+[2018-10-29 12:45:47:423] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:47:429] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:47:437] [0000000001f474c8] pulse audio output debug: deferring start (191238 us)
+[2018-10-29 12:45:47:444] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:47:456] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:47:468] [0000000001f474c8] pulse audio output debug: deferring start (191061 us)
+[2018-10-29 12:45:47:468] [0000000001f474c8] pulse audio output debug: deferring start (168774 us)
+[2018-10-29 12:45:47:472] [0000000001f474c8] pulse audio output debug: deferring start (168763 us)
+[2018-10-29 12:45:47:483] [0000000001f474c8] pulse audio output debug: deferring start (168749 us)
+[2018-10-29 12:45:47:484] [0000000001f474c8] pulse audio output debug: deferring start (168745 us)
+[2018-10-29 12:45:47:488] [0000000001f474c8] pulse audio output debug: deferring start (162646 us)
+[2018-10-29 12:45:47:496] [0000000001f474c8] pulse audio output debug: deferring start (134672 us)
+[2018-10-29 12:45:47:504] [0000000001f474c8] pulse audio output debug: deferring start (114095 us)
+[2018-10-29 12:45:47:507] [0000000001f474c8] pulse audio output debug: deferring start (91609 us)
+[2018-10-29 12:45:47:518] [0000000001f474c8] pulse audio output debug: deferring start (68557 us)
+[2018-10-29 12:45:47:518] [0000000001f474c8] pulse audio output debug: deferring start (24194 us)
+[2018-10-29 12:45:47:528] [0000000001f474c8] pulse audio output debug: deferring start (309 us)
+[2018-10-29 12:45:47:539] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:47:543] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:47:545] [0000000001f474c8] core audio output warning: playback too early (-94169): down-sampling
+[2018-10-29 12:45:47:552] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:573] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:573] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:587] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:589] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:598] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 94 ms)
+[2018-10-29 12:45:47:598] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 60 ms)
+[2018-10-29 12:45:47:611] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 20 ms)
+[2018-10-29 12:45:47:611] [0000000001f474c8] core audio output debug: resampling stopped (drift: 13953 us)
+[2018-10-29 12:45:47:634] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:635] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:644] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:654] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:661] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:662] [0000000001f474c8] core audio output warning: playback too late (75924): up-sampling
+[2018-10-29 12:45:47:674] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 151 ms)
+[2018-10-29 12:45:47:676] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 111 ms)
+[2018-10-29 12:45:47:689] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 71 ms)
+[2018-10-29 12:45:47:690] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 31 ms)
+[2018-10-29 12:45:47:692] [0000000001f474c8] core audio output warning: timing screwed (drift: 161003 us): stopping resampling
+[2018-10-29 12:45:47:712] [0000000001f474c8] core audio output warning: playback too late (179880): up-sampling
+[2018-10-29 12:45:47:719] [0000000001f474c8] core audio output warning: playback way too late (208036): flushing buffers
+[2018-10-29 12:45:47:720] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:47:732] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:47:742] [0000000001f474c8] pulse audio output debug: deferring start (197196 us)
+[2018-10-29 12:45:47:754] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:47:755] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:47:759] [0000000001f474c8] pulse audio output debug: deferring start (194035 us)
+[2018-10-29 12:45:47:762] [0000000001f474c8] pulse audio output debug: deferring start (171921 us)
+[2018-10-29 12:45:47:769] [0000000001f474c8] pulse audio output debug: deferring start (171910 us)
+[2018-10-29 12:45:47:778] [0000000001f474c8] pulse audio output debug: deferring start (171899 us)
+[2018-10-29 12:45:47:782] [0000000001f474c8] pulse audio output debug: deferring start (171895 us)
+[2018-10-29 12:45:47:792] [0000000001f474c8] pulse audio output debug: deferring start (159643 us)
+[2018-10-29 12:45:47:793] [0000000001f474c8] pulse audio output debug: deferring start (156340 us)
+[2018-10-29 12:45:47:802] [0000000001f474c8] pulse audio output debug: deferring start (110710 us)
+[2018-10-29 12:45:47:803] [0000000001f474c8] pulse audio output debug: deferring start (110680 us)
+[2018-10-29 12:45:47:809] [0000000001f474c8] pulse audio output debug: deferring start (77055 us)
+[2018-10-29 12:45:47:818] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 77 ms)
+[2018-10-29 12:45:47:819] [0000000001f474c8] pulse audio output debug: deferring start (23655 us)
+[2018-10-29 12:45:47:828] [0000000001f474c8] pulse audio output debug: deferring start (23530 us)
+[2018-10-29 12:45:47:848] [0000000001f474c8] pulse audio output warning: starting late (-11502 us)
+[2018-10-29 12:45:47:863] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:47:864] [0000000001f474c8] core audio output warning: playback too early (-73682): down-sampling
+[2018-10-29 12:45:47:873] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:884] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:890] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:903] [0000000001f474c8] core audio output debug: resampling stopped (drift: -7218 us)
+[2018-10-29 12:45:47:908] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:47:919] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:47:919] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:47:934] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 167 ms)
+[2018-10-29 12:45:47:937] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 127 ms)
+[2018-10-29 12:45:47:938] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 87 ms)
+[2018-10-29 12:45:47:948] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 47 ms)
+[2018-10-29 12:45:47:949] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 7 ms)
+[2018-10-29 12:45:47:955] [0000000001f474c8] core audio output warning: playback too late (76361): up-sampling
+[2018-10-29 12:45:47:972] [0000000001f474c8] core audio output warning: timing screwed (drift: 160402 us): stopping resampling
+[2018-10-29 12:45:47:973] [0000000001f474c8] core audio output warning: playback way too late (186777): flushing buffers
+[2018-10-29 12:45:47:975] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:47:977] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:47:980] [0000000001f474c8] pulse audio output debug: deferring start (197142 us)
+[2018-10-29 12:45:47:980] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:47:982] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:47:984] [0000000001f474c8] pulse audio output debug: deferring start (196995 us)
+[2018-10-29 12:45:48:009] [0000000001f474c8] pulse audio output debug: deferring start (174984 us)
+[2018-10-29 12:45:48:023] [0000000001f474c8] pulse audio output debug: deferring start (174975 us)
+[2018-10-29 12:45:48:026] [0000000001f474c8] pulse audio output debug: deferring start (174965 us)
+[2018-10-29 12:45:48:035] [0000000001f474c8] pulse audio output debug: deferring start (174961 us)
+[2018-10-29 12:45:48:048] [0000000001f474c8] pulse audio output debug: deferring start (163250 us)
+[2018-10-29 12:45:48:054] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:055] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:061] [0000000001f474c8] pulse audio output debug: deferring start (159437 us)
+[2018-10-29 12:45:48:062] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:073] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:076] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:084] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:087] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 182 ms)
+[2018-10-29 12:45:48:094] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 142 ms)
+[2018-10-29 12:45:48:103] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 102 ms)
+[2018-10-29 12:45:48:108] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 62 ms)
+[2018-10-29 12:45:48:115] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 22 ms)
+[2018-10-29 12:45:48:119] [0000000001f474c8] pulse audio output debug: deferring start (117351 us)
+[2018-10-29 12:45:48:121] [0000000001f474c8] pulse audio output debug: deferring start (117326 us)
+[2018-10-29 12:45:48:127] [0000000001f474c8] pulse audio output debug: deferring start (71437 us)
+[2018-10-29 12:45:48:146] [0000000001f474c8] pulse audio output debug: deferring start (32481 us)
+[2018-10-29 12:45:48:154] [0000000001f474c8] pulse audio output debug: deferring start (31655 us)
+[2018-10-29 12:45:48:159] [0000000001f474c8] pulse audio output warning: starting late (-20785 us)
+[2018-10-29 12:45:48:163] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:48:172] [0000000001f474c8] core audio output warning: playback too early (-75419): down-sampling
+[2018-10-29 12:45:48:183] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:190] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:197] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:214] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:215] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:222] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 106 ms)
+[2018-10-29 12:45:48:222] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 66 ms)
+[2018-10-29 12:45:48:223] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 26 ms)
+[2018-10-29 12:45:48:238] [0000000001f474c8] core audio output debug: resampling stopped (drift: 1138 us)
+[2018-10-29 12:45:48:244] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 62 ms)
+[2018-10-29 12:45:48:248] [0000000001f474c8] core audio output warning: playback too late (76565): up-sampling
+[2018-10-29 12:45:48:258] [0000000001f474c8] core audio output warning: timing screwed (drift: 161584 us): stopping resampling
+[2018-10-29 12:45:48:259] [0000000001f474c8] core audio output warning: playback way too late (182421): flushing buffers
+[2018-10-29 12:45:48:270] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:48:271] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:48:280] [0000000001f474c8] pulse audio output debug: deferring start (201530 us)
+[2018-10-29 12:45:48:294] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:48:306] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:48:313] [0000000001f474c8] pulse audio output debug: deferring start (201409 us)
+[2018-10-29 12:45:48:319] [0000000001f474c8] pulse audio output debug: deferring start (179393 us)
+[2018-10-29 12:45:48:322] [0000000001f474c8] pulse audio output debug: deferring start (179385 us)
+[2018-10-29 12:45:48:337] [0000000001f474c8] pulse audio output debug: deferring start (179375 us)
+[2018-10-29 12:45:48:342] [0000000001f474c8] pulse audio output debug: deferring start (179371 us)
+[2018-10-29 12:45:48:343] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:356] [0000000001f474c8] pulse audio output debug: deferring start (168477 us)
+[2018-10-29 12:45:48:361] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:364] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:380] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:381] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 147 ms)
+[2018-10-29 12:45:48:389] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 107 ms)
+[2018-10-29 12:45:48:393] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 67 ms)
+[2018-10-29 12:45:48:400] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 27 ms)
+[2018-10-29 12:45:48:409] [0000000001f474c8] pulse audio output debug: deferring start (158539 us)
+[2018-10-29 12:45:48:410] [0000000001f474c8] pulse audio output debug: deferring start (122001 us)
+[2018-10-29 12:45:48:423] [0000000001f474c8] pulse audio output debug: deferring start (110981 us)
+[2018-10-29 12:45:48:424] [0000000001f474c8] pulse audio output debug: deferring start (70826 us)
+[2018-10-29 12:45:48:428] [0000000001f474c8] pulse audio output debug: deferring start (35994 us)
+[2018-10-29 12:45:48:452] [0000000001f474c8] pulse audio output debug: deferring start (23109 us)
+[2018-10-29 12:45:48:460] [0000000001f474c8] pulse audio output warning: starting late (-13513 us)
+[2018-10-29 12:45:48:477] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:48:479] [0000000001f474c8] core audio output warning: playback too early (-73720): down-sampling
+[2018-10-29 12:45:48:483] [0000000001f474c8] core audio output debug: resampling stopped (drift: -9208 us)
+[2018-10-29 12:45:48:487] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:501] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:507] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:519] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:520] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:526] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:532] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:537] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:547] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:548] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 185 ms)
+[2018-10-29 12:45:48:551] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 145 ms)
+[2018-10-29 12:45:48:576] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 105 ms)
+[2018-10-29 12:45:48:577] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 65 ms)
+[2018-10-29 12:45:48:595] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 25 ms)
+[2018-10-29 12:45:48:609] [0000000001f474c8] core audio output warning: playback too late (77016): up-sampling
+[2018-10-29 12:45:48:610] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:623] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:628] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:637] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:640] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:653] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:655] [0000000001f474c8] core audio output warning: timing screwed (drift: 167006 us): stopping resampling
+[2018-10-29 12:45:48:656] [0000000001f474c8] core audio output warning: playback way too late (182346): flushing buffers
+[2018-10-29 12:45:48:664] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:48:671] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:48:679] [0000000001f474c8] pulse audio output debug: deferring start (201561 us)
+[2018-10-29 12:45:48:680] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:48:685] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:48:697] [0000000001f474c8] pulse audio output debug: deferring start (201415 us)
+[2018-10-29 12:45:48:702] [0000000001f474c8] pulse audio output debug: deferring start (179392 us)
+[2018-10-29 12:45:48:708] [0000000001f474c8] pulse audio output debug: deferring start (179383 us)
+[2018-10-29 12:45:48:718] [0000000001f474c8] pulse audio output debug: deferring start (179373 us)
+[2018-10-29 12:45:48:728] [0000000001f474c8] pulse audio output debug: deferring start (179369 us)
+[2018-10-29 12:45:48:736] [0000000001f474c8] pulse audio output debug: deferring start (165793 us)
+[2018-10-29 12:45:48:747] [0000000001f474c8] pulse audio output debug: deferring start (155126 us)
+[2018-10-29 12:45:48:748] [0000000001f474c8] pulse audio output debug: deferring start (119765 us)
+[2018-10-29 12:45:48:752] [0000000001f474c8] pulse audio output debug: deferring start (116790 us)
+[2018-10-29 12:45:48:761] [0000000001f474c8] pulse audio output debug: deferring start (66973 us)
+[2018-10-29 12:45:48:775] [0000000001f474c8] pulse audio output debug: deferring start (36004 us)
+[2018-10-29 12:45:48:781] [0000000001f474c8] pulse audio output debug: deferring start (31725 us)
+[2018-10-29 12:45:48:783] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 178 ms)
+[2018-10-29 12:45:48:792] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 138 ms)
+[2018-10-29 12:45:48:794] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 98 ms)
+[2018-10-29 12:45:48:808] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 58 ms)
+[2018-10-29 12:45:48:809] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 18 ms)
+[2018-10-29 12:45:48:813] [0000000001f474c8] pulse audio output warning: starting late (-11923 us)
+[2018-10-29 12:45:48:824] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:48:833] [0000000001f474c8] core audio output warning: playback too early (-71161): down-sampling
+[2018-10-29 12:45:48:833] [0000000001f474c8] core audio output debug: resampling stopped (drift: -10436 us)
+[2018-10-29 12:45:48:841] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 93 ms)
+[2018-10-29 12:45:48:852] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 53 ms)
+[2018-10-29 12:45:48:868] [0000000001f474c8] core audio output warning: playback too late (78484): up-sampling
+[2018-10-29 12:45:48:898] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:924] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:930] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:48:938] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:48:942] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:48:943] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 111 ms)
+[2018-10-29 12:45:48:954] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 71 ms)
+[2018-10-29 12:45:48:957] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 31 ms)
+[2018-10-29 12:45:48:982] [0000000001f474c8] core audio output warning: timing screwed (drift: 170614 us): stopping resampling
+[2018-10-29 12:45:48:983] [0000000001f474c8] core audio output warning: playback way too late (192660): flushing buffers
+[2018-10-29 12:45:48:984] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:48:994] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:48:997] [0000000001f474c8] pulse audio output debug: deferring start (191280 us)
+[2018-10-29 12:45:49:005] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:49:008] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:49:023] [0000000001f474c8] pulse audio output debug: deferring start (191088 us)
+[2018-10-29 12:45:49:024] [0000000001f474c8] pulse audio output debug: deferring start (168780 us)
+[2018-10-29 12:45:49:026] [0000000001f474c8] pulse audio output debug: deferring start (168772 us)
+[2018-10-29 12:45:49:032] [0000000001f474c8] pulse audio output debug: deferring start (168761 us)
+[2018-10-29 12:45:49:041] [0000000001f474c8] pulse audio output debug: deferring start (168757 us)
+[2018-10-29 12:45:49:052] [0000000001f474c8] pulse audio output debug: deferring start (154657 us)
+[2018-10-29 12:45:49:058] [0000000001f474c8] pulse audio output debug: deferring start (151788 us)
+[2018-10-29 12:45:49:067] [0000000001f474c8] pulse audio output debug: deferring start (111366 us)
+[2018-10-29 12:45:49:088] [0000000001f474c8] pulse audio output debug: deferring start (111286 us)
+[2018-10-29 12:45:49:091] [0000000001f474c8] pulse audio output debug: deferring start (65423 us)
+[2018-10-29 12:45:49:097] [0000000001f474c8] pulse audio output debug: deferring start (29195 us)
+[2018-10-29 12:45:49:104] [0000000001f474c8] pulse audio output debug: deferring start (4774 us)
+[2018-10-29 12:45:49:111] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:49:113] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:49:119] [0000000001f474c8] core audio output warning: playback too early (-81722): down-sampling
+[2018-10-29 12:45:49:144] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:49:146] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:49:152] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:49:169] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:49:170] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 193 ms)
+[2018-10-29 12:45:49:181] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 153 ms)
+[2018-10-29 12:45:49:182] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 113 ms)
+[2018-10-29 12:45:49:183] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 73 ms)
+[2018-10-29 12:45:49:189] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 33 ms)
+[2018-10-29 12:45:49:193] [0000000001f474c8] core audio output debug: resampling stopped (drift: 11660 us)
+[2018-10-29 12:45:49:240] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:49:256] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:49:257] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:49:267] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:49:268] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:49:278] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 93 ms)
+[2018-10-29 12:45:49:279] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 53 ms)
+[2018-10-29 12:45:49:290] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 13 ms)
+[2018-10-29 12:45:49:292] [0000000001f474c8] core audio output warning: playback too late (82989): up-sampling
+[2018-10-29 12:45:49:321] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 50 ms)
+[2018-10-29 12:45:49:378] [0000000001f474c8] core audio output warning: playback way too late (185081): flushing buffers
+[2018-10-29 12:45:49:379] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:49:381] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:49:387] [0000000001f474c8] pulse audio output debug: deferring start (198881 us)
+[2018-10-29 12:45:49:394] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:49:399] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:49:408] [0000000001f474c8] pulse audio output debug: deferring start (197441 us)
+[2018-10-29 12:45:49:416] [0000000001f474c8] pulse audio output debug: deferring start (175226 us)
+[2018-10-29 12:45:49:419] [0000000001f474c8] pulse audio output debug: deferring start (175217 us)
+[2018-10-29 12:45:49:440] [0000000001f474c8] pulse audio output debug: deferring start (175205 us)
+[2018-10-29 12:45:49:445] [0000000001f474c8] pulse audio output debug: deferring start (175201 us)
+[2018-10-29 12:45:49:447] [0000000001f474c8] pulse audio output debug: deferring start (159157 us)
+[2018-10-29 12:45:49:455] [0000000001f474c8] pulse audio output debug: deferring start (153832 us)
+[2018-10-29 12:45:49:456] [0000000001f474c8] pulse audio output debug: deferring start (116622 us)
+[2018-10-29 12:45:49:468] [0000000001f474c8] pulse audio output debug: deferring start (111923 us)
+[2018-10-29 12:45:49:476] [0000000001f474c8] pulse audio output debug: deferring start (70530 us)
+[2018-10-29 12:45:49:476] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:49:487] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:49:491] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:49:508] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:49:509] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 125 ms)
+[2018-10-29 12:45:49:514] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 85 ms)
+[2018-10-29 12:45:49:531] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 45 ms)
+[2018-10-29 12:45:49:532] [0000000001f474c8] pulse audio output debug: deferring start (28878 us)
+[2018-10-29 12:45:49:538] [0000000001f474c8] pulse audio output debug: deferring start (28449 us)
+[2018-10-29 12:45:49:561] [0000000001f474c8] pulse audio output warning: starting late (-16344 us)
+[2018-10-29 12:45:49:566] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:49:575] [0000000001f474c8] core audio output warning: playback too early (-66463): down-sampling
+[2018-10-29 12:45:49:579] [0000000001f474c8] core audio output debug: resampling stopped (drift: -9062 us)
+[2018-10-29 12:45:49:589] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:49:590] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:49:599] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 122 ms)
+[2018-10-29 12:45:49:609] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 82 ms)
+[2018-10-29 12:45:49:612] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 42 ms)
+[2018-10-29 12:45:49:634] [0000000001f474c8] core audio output warning: playback too late (76876): up-sampling
+[2018-10-29 12:45:49:663] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:49:738] [0000000001f474c8] core audio output warning: timing screwed (drift: 172568 us): stopping resampling
+[2018-10-29 12:45:49:741] [0000000001f474c8] core audio output warning: playback way too late (182313): flushing buffers
+[2018-10-29 12:45:49:768] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:49:769] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:49:773] [0000000001f474c8] pulse audio output debug: deferring start (201641 us)
+[2018-10-29 12:45:49:779] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:49:785] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:49:792] [0000000001f474c8] pulse audio output debug: deferring start (201539 us)
+[2018-10-29 12:45:49:807] [0000000001f474c8] pulse audio output debug: deferring start (179496 us)
+[2018-10-29 12:45:49:809] [0000000001f474c8] pulse audio output debug: deferring start (179488 us)
+[2018-10-29 12:45:49:819] [0000000001f474c8] pulse audio output debug: deferring start (179477 us)
+[2018-10-29 12:45:49:836] [0000000001f474c8] pulse audio output debug: deferring start (179474 us)
+[2018-10-29 12:45:49:837] [0000000001f474c8] pulse audio output debug: deferring start (169192 us)
+[2018-10-29 12:45:49:844] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:49:859] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:49:860] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:49:865] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:49:876] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:49:880] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:49:881] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:49:904] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:49:905] [0000000001f474c8] pulse audio output debug: deferring start (157315 us)
+[2018-10-29 12:45:49:911] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 52 ms)
+[2018-10-29 12:45:49:917] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 12 ms)
+[2018-10-29 12:45:49:931] [0000000001f474c8] pulse audio output debug: deferring start (126864 us)
+[2018-10-29 12:45:49:932] [0000000001f474c8] pulse audio output debug: deferring start (115763 us)
+[2018-10-29 12:45:49:933] [0000000001f474c8] pulse audio output debug: deferring start (66386 us)
+[2018-10-29 12:45:49:942] [0000000001f474c8] pulse audio output debug: deferring start (42749 us)
+[2018-10-29 12:45:49:953] [0000000001f474c8] pulse audio output debug: deferring start (26008 us)
+[2018-10-29 12:45:49:957] [0000000001f474c8] pulse audio output warning: starting late (-18483 us)
+[2018-10-29 12:45:49:976] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:49:977] [0000000001f474c8] core audio output warning: playback too early (-73963): down-sampling
+[2018-10-29 12:45:49:982] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 93 ms)
+[2018-10-29 12:45:49:998] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 53 ms)
+[2018-10-29 12:45:50:007] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 13 ms)
+[2018-10-29 12:45:50:011] [0000000001f474c8] core audio output debug: resampling stopped (drift: -8701 us)
+[2018-10-29 12:45:50:016] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 75 ms)
+[2018-10-29 12:45:50:024] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 35 ms)
+[2018-10-29 12:45:50:032] [0000000001f474c8] core audio output warning: playback too late (78155): up-sampling
+[2018-10-29 12:45:50:085] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:50:085] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:50:093] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:50:105] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:50:106] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:50:110] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:50:114] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 93 ms)
+[2018-10-29 12:45:50:130] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 53 ms)
+[2018-10-29 12:45:50:131] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 13 ms)
+[2018-10-29 12:45:50:141] [0000000001f474c8] core audio output warning: timing screwed (drift: 166728 us): stopping resampling
+[2018-10-29 12:45:50:155] [0000000001f474c8] core audio output warning: playback way too late (189407): flushing buffers
+[2018-10-29 12:45:50:157] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:50:166] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:50:178] [0000000001f474c8] pulse audio output debug: deferring start (194509 us)
+[2018-10-29 12:45:50:179] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:50:185] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:50:200] [0000000001f474c8] pulse audio output debug: deferring start (194318 us)
+[2018-10-29 12:45:50:201] [0000000001f474c8] pulse audio output debug: deferring start (172299 us)
+[2018-10-29 12:45:50:210] [0000000001f474c8] pulse audio output debug: deferring start (172292 us)
+[2018-10-29 12:45:50:212] [0000000001f474c8] pulse audio output debug: deferring start (172281 us)
+[2018-10-29 12:45:50:216] [0000000001f474c8] pulse audio output debug: deferring start (172277 us)
+[2018-10-29 12:45:50:230] [0000000001f474c8] pulse audio output debug: deferring start (159502 us)
+[2018-10-29 12:45:50:234] [0000000001f474c8] pulse audio output debug: deferring start (157633 us)
+[2018-10-29 12:45:50:246] [0000000001f474c8] pulse audio output debug: deferring start (115853 us)
+[2018-10-29 12:45:50:247] [0000000001f474c8] pulse audio output debug: deferring start (115680 us)
+[2018-10-29 12:45:50:257] [0000000001f474c8] pulse audio output debug: deferring start (73817 us)
+[2018-10-29 12:45:50:258] [0000000001f474c8] pulse audio output debug: deferring start (26052 us)
+[2018-10-29 12:45:50:266] [0000000001f474c8] pulse audio output debug: deferring start (24824 us)
+[2018-10-29 12:45:50:273] [0000000001f474c8] pulse audio output warning: starting late (-13370 us)
+[2018-10-29 12:45:50:291] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:50:295] [0000000001f474c8] core audio output warning: playback too early (-67162): down-sampling
+[2018-10-29 12:45:50:312] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:50:324] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:50:326] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:50:339] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:50:346] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:50:349] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:50:350] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 205 ms)
+[2018-10-29 12:45:50:359] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 165 ms)
+[2018-10-29 12:45:50:366] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 125 ms)
+[2018-10-29 12:45:50:367] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 85 ms)
+[2018-10-29 12:45:50:378] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 45 ms)
+[2018-10-29 12:45:50:380] [0000000001f474c8] core audio output debug: resampling stopped (drift: 1755 us)
+[2018-10-29 12:45:50:418] [0000000001f474c8] core audio output warning: playback too late (76803): up-sampling
+[2018-10-29 12:45:50:422] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:50:435] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:50:436] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:50:451] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:50:476] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 107 ms)
+[2018-10-29 12:45:50:477] [0000000001f474c8] core audio output warning: timing screwed (drift: 155633 us): stopping resampling
+[2018-10-29 12:45:50:500] [0000000001f474c8] core audio output warning: playback too late (161258): up-sampling
+[2018-10-29 12:45:50:524] [0000000001f474c8] core audio output warning: playback way too late (181012): flushing buffers
+[2018-10-29 12:45:50:527] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:50:534] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:50:554] [0000000001f474c8] pulse audio output debug: deferring start (202939 us)
+[2018-10-29 12:45:50:556] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:50:558] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:50:559] [0000000001f474c8] pulse audio output debug: deferring start (202709 us)
+[2018-10-29 12:45:50:579] [0000000001f474c8] pulse audio output debug: deferring start (180676 us)
+[2018-10-29 12:45:50:599] [0000000001f474c8] pulse audio output debug: deferring start (180668 us)
+[2018-10-29 12:45:50:607] [0000000001f474c8] pulse audio output debug: deferring start (180658 us)
+[2018-10-29 12:45:50:614] [0000000001f474c8] pulse audio output debug: deferring start (180654 us)
+[2018-10-29 12:45:50:627] [0000000001f474c8] pulse audio output debug: deferring start (162306 us)
+[2018-10-29 12:45:50:643] [0000000001f474c8] pulse audio output debug: deferring start (158314 us)
+[2018-10-29 12:45:50:656] [0000000001f474c8] pulse audio output debug: deferring start (110378 us)
+[2018-10-29 12:45:50:659] [0000000001f474c8] pulse audio output debug: deferring start (110260 us)
+[2018-10-29 12:45:50:664] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:50:695] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:50:700] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:50:700] [0000000001f474c8] pulse audio output debug: deferring start (67437 us)
+[2018-10-29 12:45:50:701] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:50:712] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:50:716] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:50:746] [0000000001f474c8] pulse audio output debug: deferring start (28199 us)
+[2018-10-29 12:45:50:746] [0000000001f474c8] pulse audio output debug: deferring start (124 us)
+[2018-10-29 12:45:50:747] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:50:748] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:50:749] [0000000001f474c8] core audio output warning: playback too early (-93355): down-sampling
+[2018-10-29 12:45:50:761] [0000000001f474c8] core audio output debug: resampling stopped (drift: 13164 us)
+[2018-10-29 12:45:50:777] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 259 ms)
+[2018-10-29 12:45:50:780] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 219 ms)
+[2018-10-29 12:45:50:781] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 179 ms)
+[2018-10-29 12:45:50:794] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 139 ms)
+[2018-10-29 12:45:50:800] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 99 ms)
+[2018-10-29 12:45:50:805] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 59 ms)
+[2018-10-29 12:45:50:813] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 19 ms)
+[2018-10-29 12:45:50:823] [0000000001f474c8] core audio output warning: playback too late (87278): up-sampling
+[2018-10-29 12:45:50:911] [0000000001f474c8] core audio output warning: playback way too late (191992): flushing buffers
+[2018-10-29 12:45:50:919] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:50:920] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:50:921] [0000000001f474c8] pulse audio output debug: deferring start (191954 us)
+[2018-10-29 12:45:50:933] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:50:934] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:50:949] [0000000001f474c8] pulse audio output debug: deferring start (191571 us)
+[2018-10-29 12:45:50:969] [0000000001f474c8] pulse audio output debug: deferring start (169451 us)
+[2018-10-29 12:45:50:976] [0000000001f474c8] pulse audio output debug: deferring start (169442 us)
+[2018-10-29 12:45:50:982] [0000000001f474c8] pulse audio output debug: deferring start (169431 us)
+[2018-10-29 12:45:50:984] [0000000001f474c8] pulse audio output debug: deferring start (169427 us)
+[2018-10-29 12:45:51:001] [0000000001f474c8] pulse audio output debug: deferring start (157978 us)
+[2018-10-29 12:45:51:009] [0000000001f474c8] pulse audio output debug: deferring start (152966 us)
+[2018-10-29 12:45:51:012] [0000000001f474c8] pulse audio output debug: deferring start (116501 us)
+[2018-10-29 12:45:51:025] [0000000001f474c8] pulse audio output debug: deferring start (94982 us)
+[2018-10-29 12:45:51:026] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:033] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:042] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:044] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:056] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:057] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:063] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:066] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:074] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 162 ms)
+[2018-10-29 12:45:51:086] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 122 ms)
+[2018-10-29 12:45:51:087] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 82 ms)
+[2018-10-29 12:45:51:096] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 42 ms)
+[2018-10-29 12:45:51:097] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 2 ms)
+[2018-10-29 12:45:51:117] [0000000001f474c8] pulse audio output debug: deferring start (73090 us)
+[2018-10-29 12:45:51:118] [0000000001f474c8] pulse audio output debug: deferring start (29437 us)
+[2018-10-29 12:45:51:120] [0000000001f474c8] pulse audio output debug: deferring start (29149 us)
+[2018-10-29 12:45:51:126] [0000000001f474c8] pulse audio output warning: starting late (-10976 us)
+[2018-10-29 12:45:51:134] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:51:144] [0000000001f474c8] core audio output warning: playback too early (-71667): down-sampling
+[2018-10-29 12:45:51:153] [0000000001f474c8] core audio output debug: resampling stopped (drift: -4482 us)
+[2018-10-29 12:45:51:167] [0000000001f474c8] core audio output warning: playback too late (76264): up-sampling
+[2018-10-29 12:45:51:193] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:196] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:203] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:203] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 194 ms)
+[2018-10-29 12:45:51:221] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 154 ms)
+[2018-10-29 12:45:51:221] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 114 ms)
+[2018-10-29 12:45:51:223] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 74 ms)
+[2018-10-29 12:45:51:266] [0000000001f474c8] core audio output warning: timing screwed (drift: 169172 us): stopping resampling
+[2018-10-29 12:45:51:291] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:298] [0000000001f474c8] core audio output warning: playback way too late (190030): flushing buffers
+[2018-10-29 12:45:51:308] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:51:308] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:51:320] [0000000001f474c8] pulse audio output debug: deferring start (193883 us)
+[2018-10-29 12:45:51:321] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:51:324] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:51:337] [0000000001f474c8] pulse audio output debug: deferring start (193738 us)
+[2018-10-29 12:45:51:337] [0000000001f474c8] pulse audio output debug: deferring start (171451 us)
+[2018-10-29 12:45:51:343] [0000000001f474c8] pulse audio output debug: deferring start (171438 us)
+[2018-10-29 12:45:51:350] [0000000001f474c8] pulse audio output debug: deferring start (171427 us)
+[2018-10-29 12:45:51:357] [0000000001f474c8] pulse audio output debug: deferring start (171424 us)
+[2018-10-29 12:45:51:361] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:367] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:368] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:376] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 140 ms)
+[2018-10-29 12:45:51:400] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 100 ms)
+[2018-10-29 12:45:51:409] [0000000001f474c8] pulse audio output debug: deferring start (159189 us)
+[2018-10-29 12:45:51:427] [0000000001f474c8] pulse audio output debug: deferring start (158252 us)
+[2018-10-29 12:45:51:430] [0000000001f474c8] pulse audio output debug: deferring start (111297 us)
+[2018-10-29 12:45:51:440] [0000000001f474c8] pulse audio output debug: deferring start (108580 us)
+[2018-10-29 12:45:51:442] [0000000001f474c8] pulse audio output debug: deferring start (74259 us)
+[2018-10-29 12:45:51:448] [0000000001f474c8] pulse audio output debug: deferring start (27996 us)
+[2018-10-29 12:45:51:467] [0000000001f474c8] pulse audio output debug: deferring start (6400 us)
+[2018-10-29 12:45:51:468] [0000000001f474c8] pulse audio output debug: starting deferred
+[2018-10-29 12:45:51:469] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:51:470] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:480] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:481] [0000000001f474c8] core audio output warning: playback too early (-88966): down-sampling
+[2018-10-29 12:45:51:496] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:507] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:510] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:513] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 50 ms)
+[2018-10-29 12:45:51:526] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 10 ms)
+[2018-10-29 12:45:51:538] [0000000001f474c8] core audio output debug: resampling stopped (drift: 14454 us)
+[2018-10-29 12:45:51:542] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 96 ms)
+[2018-10-29 12:45:51:551] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 56 ms)
+[2018-10-29 12:45:51:578] [0000000001f474c8] core audio output warning: playback too late (76296): up-sampling
+[2018-10-29 12:45:51:640] [0000000001f474c8] core audio output warning: timing screwed (drift: 159955 us): stopping resampling
+[2018-10-29 12:45:51:671] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:688] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:691] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:703] [0000000001f474c8] core audio output warning: playback way too late (183454): flushing buffers
+[2018-10-29 12:45:51:706] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:51:712] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:51:719] [0000000001f474c8] pulse audio output debug: deferring start (200462 us)
+[2018-10-29 12:45:51:736] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:51:739] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:51:747] [0000000001f474c8] pulse audio output debug: deferring start (198559 us)
+[2018-10-29 12:45:51:772] [0000000001f474c8] pulse audio output debug: deferring start (176512 us)
+[2018-10-29 12:45:51:776] [0000000001f474c8] pulse audio output debug: deferring start (176504 us)
+[2018-10-29 12:45:51:782] [0000000001f474c8] pulse audio output debug: deferring start (176492 us)
+[2018-10-29 12:45:51:783] [0000000001f474c8] pulse audio output debug: deferring start (176488 us)
+[2018-10-29 12:45:51:795] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:812] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:816] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:836] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 161 ms)
+[2018-10-29 12:45:51:837] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 121 ms)
+[2018-10-29 12:45:51:838] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 81 ms)
+[2018-10-29 12:45:51:841] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 41 ms)
+[2018-10-29 12:45:51:872] [0000000001f474c8] pulse audio output debug: deferring start (166214 us)
+[2018-10-29 12:45:51:878] [0000000001f474c8] pulse audio output debug: deferring start (156488 us)
+[2018-10-29 12:45:51:900] [0000000001f474c8] pulse audio output debug: deferring start (124373 us)
+[2018-10-29 12:45:51:901] [0000000001f474c8] pulse audio output debug: deferring start (112590 us)
+[2018-10-29 12:45:51:901] [0000000001f474c8] pulse audio output debug: deferring start (65310 us)
+[2018-10-29 12:45:51:920] [0000000001f474c8] pulse audio output debug: deferring start (36627 us)
+[2018-10-29 12:45:51:920] [0000000001f474c8] pulse audio output debug: deferring start (25986 us)
+[2018-10-29 12:45:51:922] [0000000001f474c8] pulse audio output warning: starting late (-13262 us)
+[2018-10-29 12:45:51:935] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:51:949] [0000000001f474c8] core audio output warning: playback too early (-64805): down-sampling
+[2018-10-29 12:45:51:952] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:51:953] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:51:974] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:51:980] [0000000001f474c8] core audio output debug: resampling stopped (drift: 11158 us)
+[2018-10-29 12:45:51:988] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 203 ms)
+[2018-10-29 12:45:51:994] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 163 ms)
+[2018-10-29 12:45:52:002] [0000000001f474c8] core audio output warning: playback too late (74634): up-sampling
+[2018-10-29 12:45:52:048] [0000000001f474c8] core audio output warning: timing screwed (drift: 164310 us): stopping resampling
+[2018-10-29 12:45:52:069] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:52:070] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:52:073] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
+[2018-10-29 12:45:52:079] [0000000001f474c8] core audio output warning: playback way too late (185027): flushing buffers
+[2018-10-29 12:45:52:086] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:52:095] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:52:115] [0000000001f474c8] pulse audio output debug: deferring start (198870 us)
+[2018-10-29 12:45:52:115] [0000000001f474c8] pulse audio output debug: write index corrupt
+[2018-10-29 12:45:52:121] [0000000001f474c8] pulse audio output debug: cannot synchronize start
+[2018-10-29 12:45:52:137] [0000000001f474c8] pulse audio output debug: deferring start (198749 us)
+[2018-10-29 12:45:52:138] [0000000001f474c8] pulse audio output debug: deferring start (176753 us)
+[2018-10-29 12:45:52:141] [0000000001f474c8] pulse audio output debug: deferring start (176744 us)
+[2018-10-29 12:45:52:152] [0000000001f474c8] pulse audio output debug: deferring start (176734 us)
+[2018-10-29 12:45:52:159] [0000000001f474c8] pulse audio output debug: deferring start (176730 us)
+[2018-10-29 12:45:52:178] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 138 ms)
+[2018-10-29 12:45:52:186] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 98 ms)
+[2018-10-29 12:45:52:188] [00007fce30012cd8] core video output warning: picture is too late to be displayed (missing 58 ms)
+[2018-10-29 12:45:52:201] [00007fce30012cd8] core video output debug: picture might be displayed late (missing 18 ms)
+[2018-10-29 12:45:52:216] [0000000001f474c8] pulse audio output debug: deferring start (153306 us)
+[2018-10-29 12:45:52:217] [0000000001f474c8] pulse audio output debug: deferring start (152662 us)
+[2018-10-29 12:45:52:231] [0000000001f474c8] pulse audio output debug: deferring start (115370 us)
+[2018-10-29 12:45:52:244] [0000000001f474c8] pulse audio output debug: deferring start (92028 us)
+[2018-10-29 12:45:52:254] [0000000001f474c8] pulse audio output debug: deferring start (64499 us)
+[2018-10-29 12:45:52:261] [0000000001f474c8] pulse audio output debug: deferring start (20042 us)
+[2018-10-29 12:45:52:269] [0000000001f474c8] pulse audio output debug: deferring start (17921 us)
+[2018-10-29 12:45:52:270] [0000000001f474c8] pulse audio output warning: starting late (-19738 us)
+[2018-10-29 12:45:52:294] [0000000001f474c8] pulse audio output debug: started
+[2018-10-29 12:45:52:303] [0000000001f474c8] core audio output warning: playback too early (-65399): down-sampling
+[2018-10-29 12:45:52:306] [0000000001f474c8] core audio output debug: resampling stopped (drift: -9209 us)
+[2018-10-29 12:45:52:321] [0000000001f474c8] core audio output warning: playback too late (78121): up-sampling
+[2018-10-29 12:45:52:412] [0000000001f474c8] core audio output warning: timing screwed (drift: 165857 us): stopping resampling
+[2018-10-29 12:45:52:479] [00007fce3c040c88] avcodec decoder debug: enabling direct rendering
+[2018-10-29 12:45:52:483] [00007fce3c040c88] avcodec decoder warning: plane 0 not aligned
+[2018-10-29 12:45:52:498] [00007fce3c040c88] avcodec decoder warning: disabling direct rendering
