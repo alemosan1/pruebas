@@ -4,6 +4,7 @@
 * ./filebeat -c filebeat.yml &
 
 ## Elasticsearch
+* sudo sysctl -w vm.max_map_count=262144
 * ./elasticsearch/bin/elasticsearch
 * Nota: si queremos borrar la base de datos tenemos que ejecutar curl -X DELETE "localhost:9200/*"
 
