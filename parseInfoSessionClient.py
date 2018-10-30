@@ -27,6 +27,15 @@ session = subprocess.check_output('grep -m1 "Session*" '+latest_file_client+' | 
 # TODO: ¿QUE LINEA ???
 
 with open(latest_file_client, 'r') as filehandle:  
+	
+	#Var to save info
+	ports= set()
+	identification = set()
+	contador = 0
+	read = False
+
+
+
 	channels = samplerate = bitrate = acodec = "NotApplicable" # Generamos estas variables aunque el audio no se reproduzca | TODO: Al final no metemos nada de esto
 	
 	# IP CLIENT
@@ -42,10 +51,34 @@ with open(latest_file_client, 'r') as filehandle:
 		if "Transport:" in line : # PORTS
 			if "client_port" and "server_port" in line :
 				line = line.split(";")
-				ports = line[2] + " " + line [3]
+				port = line[2] + " " + line [3]
+				ports.add(port)
 
 		if " s=" in line :
 			line = line.split("=")
 			unique_id = line[1].rstrip('\r\n')
 
-file.write(unique_id + " " + "session=" + session + " " + ip_client + " " + ip_server + " " + ports + "\n")
+		if 'audio/' in line:
+			contador = 5
+			read="_audio"
+
+		if 'video/' in line:
+			contador = 5
+			read="_video"
+
+		if (read == "_audio" or read == "_video") and contador > -1:
+			contador-=contador
+			if 'port' in line:
+				line = line.split(";")
+				port = line[2]
+				port = port[:port.find('=')]+read+port[port.find('='):].rstrip('\r\n')
+				identification.add(port)
+	
+
+file.write(unique_id + " " + "session=" + session + " " + ip_client + " " + ip_server + " " )
+for i in ports :
+	for j in identification :		
+		if  j.split('=')[1] in i.split('=')[1] :
+			change ="_port_"+j.split('_')[2].split('=')[0]
+			file.write(i.replace('_port',change)+" ")
+file.write("\n")

@@ -78,8 +78,8 @@ def simpleTest():
     selectVideoURL = {1:'videos/sampleVideo.mkv',2:'videos/small.mp4',3:'videos/exampleAVI.avi'}
    
 	# Configuration parameters
-    codecVideoUsed = videoCodecVlan[13]
-    codecAudioUsed = videoCodecVlan[6]
+    codecVideoUsed = videoCodecVlan[3]
+    codecAudioUsed = audioCodecVlan[1]
     codecMuxerUsed = muxerCodecVlan[2]
     videoURL	   = selectVideoURL[1]
     enableMuxRTP   = "--sout-rtp-rtcp-mux"
