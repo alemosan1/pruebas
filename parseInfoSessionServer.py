@@ -9,8 +9,8 @@ list_of_files_server = glob.glob('/home/bayes/Repositories/pruebas/logs/server*'
 latest_file_server = max(list_of_files_server, key=os.path.getctime)
 id_logFile = re.findall(r'\d+', latest_file_server)[0]
 #Eliminables
-pathOrigin=""
-pathStream=""
+pathOrigin = ""
+pathStream = ""
 
 # FUNCION PARA VER SI EXISTE EL FICHERO
 def  fileExists():
@@ -66,7 +66,8 @@ def getInformation(path, command, unique_id) :
 
 # If logs have the transcode line
 with open(latest_file_server, 'r') as filehandle:  
-
+	transcode = ""
+	gotUniqueID = False
 	for line in filehandle:
 		if "IP =  " in line :
 			IP = line.split("IP =  ")[1].rstrip("\n")
@@ -79,15 +80,14 @@ with open(latest_file_server, 'r') as filehandle:
 			cuenta     = len(pathStream.split("/:")[0])
 			pathStream = pathStream[:cuenta+1] + IP + pathStream[cuenta+1:]
 		if "sout chain=`transcode" in line :
-			line = line.split("{")[1].split("}")[0].split(",")
-			for i in line :
-				if "=" in i :
-					i = i.split('=')
-					file.write(i[0] + "=" + i[1] + ",")
-		if " s=" in line :
+			transcodeLine = line.split("{")[1].split("}")[0]
+		if " s=" in line and not gotUniqueID:
 			line = line.split("=")
 			unique_id = line[1].rstrip('\r\n')
-		
+			gotUniqueID = True
+			if not transcodeLine == "" :
+				transcodeLine = "TRANCODE_LINE," + unique_id + "," + transcodeLine
+				file.write(transcodeLine+"\n")
 #CODIGO DE EJECUCION
 getInformation(pathOrigin, "ORIGINAL", unique_id)
 getInformation(pathStream, "STREAMING", unique_id)
