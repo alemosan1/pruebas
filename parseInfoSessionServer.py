@@ -79,14 +79,11 @@ with open(latest_file_server, 'r') as filehandle:
 			cuenta     = len(pathStream.split("/:")[0])
 			pathStream = pathStream[:cuenta+1] + IP + pathStream[cuenta+1:]
 		if "sout chain=`transcode" in line :
-			line = line.split("{")[1].split("}")[0].split(",")
-			for i in line :
-				if "=" in i :
-					i = i.split('=')
-					file.write(i[0] + "=" + i[1] + ",")
+			transcode = line.split("{")[1].split("}")[0]
 		if " s=" in line :
 			line = line.split("=")
 			unique_id = line[1].rstrip('\r\n')
+			file.write("TRANSCODE_LINE," + unique_id + "," + transcode + "\n")
 		
 #CODIGO DE EJECUCION
 getInformation(pathOrigin, "ORIGINAL", unique_id)
