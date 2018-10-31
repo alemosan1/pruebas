@@ -66,7 +66,7 @@ def getInformation(path, command, unique_id) :
 
 # If logs have the transcode line
 with open(latest_file_server, 'r') as filehandle:  
-	transcode = ""
+	transcodeLine = ""
 	gotUniqueID = False
 	for line in filehandle:
 		if "IP =  " in line :
@@ -86,7 +86,7 @@ with open(latest_file_server, 'r') as filehandle:
 			unique_id = line[1].rstrip('\r\n')
 			gotUniqueID = True
 			if not transcodeLine == "" :
-				transcodeLine = "TRANCODE_LINE," + unique_id + "," + transcodeLine
+				transcodeLine = "TRANSCODE_LINE," + unique_id + "," + transcodeLine
 				file.write(transcodeLine+"\n")
 #CODIGO DE EJECUCION
 getInformation(pathOrigin, "ORIGINAL", unique_id)
