@@ -9,7 +9,6 @@ import re
 list_of_files_client = glob.glob('/home/bayes/Repositories/pruebas/logs/client*')
 latest_file_client = max(list_of_files_client, key=os.path.getctime)
 id_logFile = re.findall(r'\d+', latest_file_client)[0]
-path=""
 
 def  fileExists():
 	fn = "infoSession/infosessionClient"+id_logFile+".log"
@@ -21,38 +20,29 @@ def  fileExists():
 
 file = fileExists()
 session = subprocess.check_output('grep -m1 "Session*" '+latest_file_client+' | cut -d " " -f4 | cut -d ";" -f1', shell=True).rstrip('\n')
-
-# Hemos observado que si le metemos transcodificacion de audio 
-# mpeg_audio decoder va a tener la siguiente linea
-# TODO: ¿QUE LINEA ???
+path = ""
 
 with open(latest_file_client, 'r') as filehandle:  
-	
 	#Var to save info
-	ports= set()
+	get_ports = set()
 	identification = set()
 	contador = 0
-	read = False
-
-
-
-	channels = samplerate = bitrate = acodec = "NotApplicable" # Generamos estas variables aunque el audio no se reproduzca | TODO: Al final no metemos nada de esto
+	read = ports = ""
 	
-	# IP CLIENT
+	# IP_CLIENT
 	line = filehandle.readline()
 	ip = line.split("=  ")
 	ip_client = "ip_client=" + ip[1].rstrip('\n')
 
 	for line in filehandle:
-		if "Content-Base:" in line : # IP SERVER
+		if "Content-Base:" in line : # IP_SERVER
 			ip = re.findall( r'[0-9]+(?:\.[0-9]+){3}', line)
 			ip_server = "ip_server=" + ip[0]
 
-		if "Transport:" in line : # PORTS
-			if "client_port" and "server_port" in line :
-				line = line.split(";")
-				port = line[2] + " " + line [3]
-				ports.add(port)
+		if "Transport:" and "client_port" and "server_port" in line : # PORTS
+			line = line.split(";")
+			port = line[2] + " " + line [3]
+			get_ports.add(port)
 
 		if " s=" in line :
 			line = line.split("=")
@@ -60,25 +50,24 @@ with open(latest_file_client, 'r') as filehandle:
 
 		if 'audio/' in line:
 			contador = 5
-			read="_audio"
+			read = "_audio"
 
 		if 'video/' in line:
 			contador = 5
-			read="_video"
+			read = "_video"
 
 		if (read == "_audio" or read == "_video") and contador > -1:
-			contador-=contador
+			contador -= contador
 			if 'port' in line:
 				line = line.split(";")
 				port = line[2]
-				port = port[:port.find('=')]+read+port[port.find('='):].rstrip('\r\n')
+				port = port[:port.find('=')]+ read + port[port.find('='):].rstrip('\r\n')
 				identification.add(port)
-	
 
-file.write(unique_id + " " + "session=" + session + " " + ip_client + " " + ip_server + " " )
-for i in ports :
+for i in get_ports :
 	for j in identification :		
 		if  j.split('=')[1] in i.split('=')[1] :
-			change ="_port_"+j.split('_')[2].split('=')[0]
-			file.write(i.replace('_port',change)+" ")
-file.write("\n")
+			change ="_port_" + j.split('_')[2].split('=')[0]
+			ports += i.replace('_port', change) + " "
+
+file.write(unique_id + " " + "session=" + session + " " + ip_client + " " + ip_server + " " + ports + "\n")
