@@ -9,9 +9,10 @@ import re
 list_of_files_client = glob.glob('/home/bayes/Repositories/pruebas/logs/client*')
 latest_file_client = max(list_of_files_client, key=os.path.getctime)
 id_logFile = re.findall(r'\d+', latest_file_client)[0]
+unique_id_file = latest_file_client.split("_")[1]
 
 def  fileExists():
-	fn = "infoSession/infosessionClient"+id_logFile+".log"
+	fn = "infoSession/infosessionClient"+id_logFile+"_"+unique_id_file+".log"
 	try:
 	    file = open(fn, 'a')
 	except IOError:

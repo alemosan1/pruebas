@@ -8,13 +8,14 @@ from pprint import pprint
 list_of_files_server = glob.glob('/home/bayes/Repositories/pruebas/logs/server*') # * means all if need specific format then *.csv
 latest_file_server = max(list_of_files_server, key=os.path.getctime)
 id_logFile = re.findall(r'\d+', latest_file_server)[0]
+unique_id_file = latest_file_server.split("_")[1]
 #Eliminables
 pathOrigin = ""
 pathStream = ""
 
 # FUNCION PARA VER SI EXISTE EL FICHERO
 def  fileExists():
-	fn = "infoSession/infosessionServer"+id_logFile+".log"
+	fn = "infoSession/infosessionServer"+id_logFile+"_"+unique_id_file+".log"
 	try:
 	    file = open(fn, 'a')
 	except IOError:

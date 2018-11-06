@@ -90,34 +90,37 @@ def simpleTest():
     cmdServer = ""
     if err_type == '0' : # No errors
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" --sout='#rtp{sdp=rtsp://:5004/}' \
-        --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | ./timestamp.sh server "+err_type+"\""
+        --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | \
+        ./timestamp.sh server "+err_type+" "+unique_id+"\""
     elif err_type == '1' : # Low fps rate and binary bit rate (video)
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
 		--sout='#transcode{vcodec="+codecVideoUsed+",vb=60,vfilter=freeze,fps=5,scale=Automático,samplerate=48000, acodec=audio}\
-        :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | ./timestamp.sh server "+err_type+"\""
+        :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | \
+        ./timestamp.sh server "+err_type+" "+unique_id+"\""
     elif err_type == '2' : #  Low sample rate (Audio)
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#transcode{vcodec="+codecVideoUsed+",scale=Auto,acodec=spx,ab=128,channels=2,samplerate=8000}\
-        :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+ \
-        " --loop 2>&1 | ./timestamp.sh server "+err_type+"\""
+        :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+ " --loop 2>&1 | \
+         ./timestamp.sh server "+err_type+" "+unique_id+"\""
     elif err_type == '3' : # TODO: incompatible mux format 
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
          --sout='#transcode{vcodec=avi,scale=Automático,acodec=mpga,ab=128,channels=2,samplerate=44100}\
          :rtp{mux="+codecMuxerUsed+",sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop  2>&1 \
-         | ./timestamp.sh server "+err_type+"\""
+         | ./timestamp.sh server "+err_type+" "+unique_id+"\""
     elif err_type == '4' : #MP4 example
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#transcode{vcodec="+codecVideoUsed+",vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}\
         :rtp{mux=mpeg1,sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 \
-        | ./timestamp.sh server "+err_type+"\""
+        | ./timestamp.sh server "+err_type+" "+unique_id+"\""
     elif err_type == '5' : #Limitation of CPU limit
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1\
-         | ./timestamp.sh server "+err_type+"\""
+         | ./timestamp.sh server "+err_type+" "+unique_id+"\""
         CPUlimit = "& cpulimit -p `expr $! - 1` -l 15"
     
 	# CLIENT SIDE - TODO: tenemos que poner que la IP se saque programaticamente
-    cmdClient = "su bayes -c \" vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | ./timestamp.sh cliente "+err_type+CPUlimit+"\""
+    cmdClient = "su bayes -c \" vlc-wrapper -vvv -R --network-caching 200 rtsp://10.0.0.1:5004/ 2>&1 | \
+     ./timestamp.sh cliente "+err_type+CPUlimit+" "+unique_id+"\""
     
 	# XTERMS
     termSrc = makeTerm(src, title='VLC Server', term='xterm', display=None, cmd=cmdServer)
