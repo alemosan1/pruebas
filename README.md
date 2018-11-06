@@ -10,9 +10,9 @@
 
 ## Logstash
 * cd logstash
-* ./bin/logstash -f logstash.conf &
+* ./bin/logstash -f logstash.conf
 
 
 ## Mininet
-* cd Repositories/prueba
-* sudo python toponew.py (no hace falta ODL porque está el controlador por defecto)
+* cd Repositories/pruebas
+* sudo python start.py (no hace falta ODL porque está el controlador por defecto)
