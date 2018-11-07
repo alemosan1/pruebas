@@ -6,9 +6,9 @@
 # También puede ocurrir que el cliente se conecte a la misma sesión más de una vez. 
 # Entonces se crearían los logs con el mismo nombre, si no ponemos el date.
 if [[ "$1" == "cliente" ]]; then
-	namefile="cliente$(date +%d%m%Y%H%M)_$3_Err$2.log" 
+	namefile="cliente$(date +%d%m%Y%H%M%S)_$3_Err$2.log" 
 elif [[ "$1" == "server" ]]; then
-	namefile="server$(date +%d%m%Y%H%M)_$3_Err$2.log" 
+	namefile="server$(date +%d%m%Y%H%M%S)_$3_Err$2.log" 
 fi # Más adelante, quitaremos el núm error del nombre.
 
 # Line to get the host IP
