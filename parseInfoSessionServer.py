@@ -6,13 +6,9 @@ import re
 import json
 from pprint import pprint
 
-
-
-
-logname= sys.argv[1]
-id_logFile = re.findall(r'\d+', logname)[0]
-unique_id_file = logname.split("_")[1]
-print id_logFile
+file_to_parse = sys.argv[1]
+id_logFile = re.findall(r'\d+', file_to_parse)[0]
+unique_id_file = file_to_parse.split("_")[1]
 
 #Eliminables
 pathOrigin = ""
@@ -71,11 +67,10 @@ def getInformation(path, command, unique_id) :
 	# We can obtain another information such as data,menu,and so on"
 
 # If logs have the transcode line
-with open(logname, 'r') as filehandle:  
+with open(file_to_parse, 'r') as filehandle:  
 	transcodeLine = ""
 	gotUniqueID = False
 	for line in filehandle:
-		print line
 		if "IP =  " in line :
 			IP = line.split("IP =  ")[1].rstrip("\n")
 		# Obtain the path to the file

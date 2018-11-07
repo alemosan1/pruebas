@@ -97,22 +97,22 @@ def simpleTest():
 		--sout='#transcode{vcodec="+codecVideoUsed+",vb=60,vfilter=freeze,fps=5,scale=Automático,samplerate=48000, acodec=audio}\
         :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 | \
         ./timestamp.sh server "+err_type+" "+unique_id+"\""
-    elif err_type == '2' : #  Low sample rate (Audio)
+    elif err_type == '2' : # Low sample rate (Audio)
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#transcode{vcodec="+codecVideoUsed+",scale=Auto,acodec=spx,ab=128,channels=2,samplerate=8000}\
         :rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+ " --loop 2>&1 | \
          ./timestamp.sh server "+err_type+" "+unique_id+"\""
-    elif err_type == '3' : # TODO: incompatible mux format 
+    elif err_type == '3' : # Incompatible mux format 
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
          --sout='#transcode{vcodec=avi,scale=Automático,acodec=mpga,ab=128,channels=2,samplerate=44100}\
          :rtp{mux="+codecMuxerUsed+",sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop  2>&1 \
          | ./timestamp.sh server "+err_type+" "+unique_id+"\""
-    elif err_type == '4' : #MP4 example
+    elif err_type == '4' : # MP4 example
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#transcode{vcodec="+codecVideoUsed+",vb=2000,scale=Automático,acodec=vorb,ab=128,channels=2,samplerate=44100}\
         :rtp{mux=mpeg1,sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1 \
         | ./timestamp.sh server "+err_type+" "+unique_id+"\""
-    elif err_type == '5' : #Limitation of CPU limit
+    elif err_type == '5' : # Limitation of CPU limit
         cmdServer = "su bayes -c \"cvlc -vvv "+videoURL+" \
         --sout='#rtp{sdp=rtsp://:5004/}' --sout-keep --sout-rtp-name="+unique_id+" --loop 2>&1\
          | ./timestamp.sh server "+err_type+" "+unique_id+"\""
@@ -129,14 +129,16 @@ def simpleTest():
         termDst = makeTerm(dst, title='VLC Client '+str((i+1)), term='xterm', display=None, cmd=cmdClient)
         time.sleep(3)
 	
-	# TODO: Check
-    #Ahora vamos a poner un terminal para sacar informacióm
+	# TODO: Check this. Is this necessary?
+    # Ahora vamos a poner un terminal para sacar informacióm
     cmdInfo = "ifstat 10.0.0.2 > codeccompresion/"+codecVideoUsed+codecMuxerUsed+".info"
     termGetInfo = makeTerm(dst, title= "Monitoring traffic", term='xterm', display=None, cmd=cmdInfo)
 
     # Cogemos la info del video desde el servidor
     # Lo hacemos aquí por problemas con el acceso a esa IP
-    cmdParseInfoServer = "su bayes -c \"python parseInfoSessionServer.py\""
+    cmdParseInfoServer = "su bayes -c \"python parseInfoSessionServer.py \
+    /home/bayes/Repositories/pruebas/logs/server*_"+unique_id+"_*.log\""
+
     termParseInfo = makeTerm(src, title= "Parsing Server Info...", term='xterm', display=None, cmd=cmdParseInfoServer)
 
 	# TODO: Para que es esto que esta comentado?

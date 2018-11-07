@@ -1,16 +1,12 @@
-#usr
-#coding: utf-8
-#Parseo "manual" de logs para coger información de la sesión de streaming
 import glob
 import os
 import subprocess
 import re
 import sys
 
-
-latest_file_client = sys.argv[1]
-id_logFile = re.findall(r'\d+', latest_file_client)[0]
-unique_id_file = latest_file_client.split("_")[1]
+file_to_parse = sys.argv[1]
+id_logFile = re.findall(r'\d+', file_to_parse)[0]
+unique_id_file = file_to_parse.split("_")[1]
 
 def  fileExists():
 	fn = "infoSession/infosessionClient"+id_logFile+"_"+unique_id_file+".log"
@@ -21,10 +17,10 @@ def  fileExists():
 	return file   
 
 file = fileExists()
-session = subprocess.check_output('grep -m1 "Session*" '+latest_file_client+' | cut -d " " -f4 | cut -d ";" -f1', shell=True).rstrip('\n')
+session = subprocess.check_output('grep -m1 "Session*" '+file_to_parse+' | cut -d " " -f4 | cut -d ";" -f1', shell=True).rstrip('\n')
 path = ""
 
-with open(latest_file_client, 'r') as filehandle:  
+with open(file_to_parse, 'r') as filehandle:  
 	#Var to save info
 	get_ports = set()
 	identification = set()
@@ -46,7 +42,6 @@ with open(latest_file_client, 'r') as filehandle:
 			port = line[2] + " " + line [3]
 			get_ports.add(port)
 
-
 		if " s=" in line :
 			line = line.split("=")
 			unique_id = line[1].rstrip('\r\n')
@@ -59,21 +54,19 @@ with open(latest_file_client, 'r') as filehandle:
 			contador = 5
 			read = "_video"
 
-		if (read == "_audio" or read == "_video") and contador > 0:
+		if (read == "_audio" or read == "_video") and contador >= 0:
 			contador -= contador
-			print contador
 			if 'port' in line:
-			
 				line = line.split(";")
-				print line
 				port = line[2]
-				port = port[:port.find('=')]+ read + port[port.find('='):].rstrip('\r\n')
+				port = port[:port.find('=')] + read + port[port.find('='):].rstrip('\r\n')
 				identification.add(port)
+				read = ""
 
 for i in get_ports :
 	for j in identification :		
 		if  j.split('=')[1] in i.split('=')[1] :
-			change ="_port_" + j.split('_')[2].split('=')[0]
+			change = "_port_" + j.split('_')[2].split('=')[0]
 			ports += i.replace('_port', change) + " "
 
 file.write(unique_id + " " + "session=" + session + " " + ip_client + " " + ip_server + " " + ports + "\n")
