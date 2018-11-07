@@ -5,9 +5,10 @@ import glob
 import os
 import subprocess
 import re
+import sys
 
-list_of_files_client = glob.glob('/home/bayes/Repositories/pruebas/logs/client*')
-latest_file_client = max(list_of_files_client, key=os.path.getctime)
+
+latest_file_client = sys.argv[1]
 id_logFile = re.findall(r'\d+', latest_file_client)[0]
 unique_id_file = latest_file_client.split("_")[1]
 
@@ -45,6 +46,7 @@ with open(latest_file_client, 'r') as filehandle:
 			port = line[2] + " " + line [3]
 			get_ports.add(port)
 
+
 		if " s=" in line :
 			line = line.split("=")
 			unique_id = line[1].rstrip('\r\n')
@@ -57,10 +59,13 @@ with open(latest_file_client, 'r') as filehandle:
 			contador = 5
 			read = "_video"
 
-		if (read == "_audio" or read == "_video") and contador > -1:
+		if (read == "_audio" or read == "_video") and contador > 0:
 			contador -= contador
+			print contador
 			if 'port' in line:
+			
 				line = line.split(";")
+				print line
 				port = line[2]
 				port = port[:port.find('=')]+ read + port[port.find('='):].rstrip('\r\n')
 				identification.add(port)

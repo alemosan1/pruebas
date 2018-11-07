@@ -1,14 +1,19 @@
 import glob
+import sys
 import os
 import subprocess
 import re
 import json
 from pprint import pprint
 
-list_of_files_server = glob.glob('/home/bayes/Repositories/pruebas/logs/server*') # * means all if need specific format then *.csv
-latest_file_server = max(list_of_files_server, key=os.path.getctime)
-id_logFile = re.findall(r'\d+', latest_file_server)[0]
-unique_id_file = latest_file_server.split("_")[1]
+
+
+
+logname= sys.argv[1]
+id_logFile = re.findall(r'\d+', logname)[0]
+unique_id_file = logname.split("_")[1]
+print id_logFile
+
 #Eliminables
 pathOrigin = ""
 pathStream = ""
@@ -66,10 +71,11 @@ def getInformation(path, command, unique_id) :
 	# We can obtain another information such as data,menu,and so on"
 
 # If logs have the transcode line
-with open(latest_file_server, 'r') as filehandle:  
+with open(logname, 'r') as filehandle:  
 	transcodeLine = ""
 	gotUniqueID = False
 	for line in filehandle:
+		print line
 		if "IP =  " in line :
 			IP = line.split("IP =  ")[1].rstrip("\n")
 		# Obtain the path to the file
